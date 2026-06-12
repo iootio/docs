@@ -1,8 +1,8 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "almond",
-  "name": "Product Guide",
-  "description": "Step-by-step guides for every product—platform setup, analytics, and integrations in one place.",
+  "name": "Tenovo Hjälpcenter",
+  "description": "Guider och dokumentation för att komma igång och få ut det mesta av Tenovo.",
   "colors": {
     "primary": "#166E3F",
     "light": "#26BD6C",
@@ -16,62 +16,92 @@
     "eyebrows": "breadcrumbs"
   },
   "contextual": {
-    "options": ["copy", "view", "assistant", "mcp", "add-mcp"]
+    "options": ["copy", "view", "assistant"]
   },
   "navigation": {
     "global": {
       "anchors": [
         {
-          "anchor": "Home",
+          "anchor": "Hem",
           "icon": "house",
           "href": "/"
         },
         {
-          "anchor": "Changelog",
-          "icon": "scroll-text",
-          "href": "https://www.mintlify.com/docs/changelog"
-        },
-        {
-          "anchor": "Help",
-          "icon": "life-buoy",
-          "href": "https://www.mintlify.com/docs/contact-support"
+          "anchor": "Tenovo-appen",
+          "icon": "external-link",
+          "href": "https://app.tenovo.se"
         }
       ]
     },
     "directory": "card",
     "groups": [
       {
-        "group": "Platform",
-        "icon": "layers",
+        "group": "Kom igång",
+        "icon": "rocket",
         "expanded": true,
         "pages": [
-          "platform/quickstart",
-          "platform/key-concepts",
-          "platform/configuration/settings",
-          "platform/configuration/user-management",
-          "platform/administration/roles-permissions"
+          "kom-igang"
         ]
       },
       {
-        "group": "Analytics",
-        "icon": "chart-bar",
+        "group": "Fastigheter & hyresobjekt",
+        "icon": "building-2",
         "expanded": true,
         "pages": [
-          "analytics/quickstart",
-          "analytics/connect-data",
-          "analytics/dashboards/create-dashboard",
-          "analytics/reports/scheduled-reports"
+          "fastigheter/oversikt",
+          "fastigheter/lagga-till-fastighet",
+          "fastigheter/hyresobjekt"
         ]
       },
       {
-        "group": "Integrations",
-        "icon": "plug",
+        "group": "Hyresgäster",
+        "icon": "users",
         "expanded": true,
         "pages": [
-          "integrations/quickstart",
-          "integrations/authentication",
-          "integrations/connectors/crm",
-          "integrations/webhooks/configure"
+          "hyresgaster/oversikt",
+          "hyresgaster/lagga-till-hyresgast",
+          "hyresgaster/bjuda-in-till-portalen"
+        ]
+      },
+      {
+        "group": "Hyreskontrakt",
+        "icon": "file-text",
+        "expanded": true,
+        "pages": [
+          "avtal/oversikt",
+          "avtal/skapa-hyreskontrakt",
+          "avtal/signera-med-bankid",
+          "avtal/avtalsmallar"
+        ]
+      },
+      {
+        "group": "Hyror & betalningar",
+        "icon": "banknote",
+        "expanded": true,
+        "pages": [
+          "hyror/oversikt",
+          "hyror/skapa-hyra",
+          "hyror/betalningsstatus"
+        ]
+      },
+      {
+        "group": "Kalender",
+        "icon": "calendar",
+        "expanded": true,
+        "pages": [
+          "kalender/oversikt",
+          "kalender/synkronisering"
+        ]
+      },
+      {
+        "group": "Inställningar",
+        "icon": "settings",
+        "expanded": true,
+        "pages": [
+          "installningar/oversikt",
+          "installningar/avtalsparter",
+          "installningar/medlemmar",
+          "installningar/integrationer"
         ]
       }
     ]
@@ -84,14 +114,13 @@
     "links": [],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Öppna Tenovo",
+      "href": "https://app.tenovo.se"
     }
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/yourcompany",
-      "linkedin": "https://linkedin.com/company/yourcompany"
+      "linkedin": "https://linkedin.com/company/tenovo"
     }
   }
 }
