@@ -103,6 +103,14 @@
           "installningar/medlemmar",
           "installningar/integrationer"
         ]
+      },
+      {
+        "group": "Säkerhet & efterlevnad",
+        "icon": "shield",
+        "expanded": true,
+        "pages": [
+          "sakerhet/datahantering"
+        ]
       }
     ]
   },
