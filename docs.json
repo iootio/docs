@@ -111,6 +111,14 @@
         "pages": [
           "sakerhet/datahantering"
         ]
+      },
+      {
+        "group": "Support",
+        "icon": "headset",
+        "expanded": true,
+        "pages": [
+          "support"
+        ]
       }
     ]
   },
