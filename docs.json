@@ -4,9 +4,9 @@
   "name": "Tenovo Hjälpcenter",
   "description": "Guider och dokumentation för att komma igång och få ut det mesta av Tenovo.",
   "colors": {
-    "primary": "#166E3F",
-    "light": "#26BD6C",
-    "dark": "#166E3F"
+    "primary": "#208B8B",
+    "light": "#29A3A3",
+    "dark": "#1A7373"
   },
   "favicon": "/favicon.svg",
   "icons": {
