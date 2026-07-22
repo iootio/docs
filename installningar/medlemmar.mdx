@@ -7,13 +7,27 @@ description: Så här bjuder du in och hanterar medlemmar i din Tenovo-organisat
 
 Du kan bjuda in kollegor till din organisation i Tenovo så att flera personer kan hantera fastigheter, kontrakt och hyror tillsammans.
 
+## Roller
+
+Medlemmar har olika roller som styr vad de kan göra i organisationen:
+
+| Roll | Vad det innebär |
+|---|---|
+| **Ägare** | Full åtkomst, kan hantera andra medlemmars roller och ta bort ägare |
+| **Admin** | Full åtkomst, kan hantera andra medlemmars roller (inte ta bort ägare) |
+| **Manager** | Hanterar fastigheter, kontrakt och hyror |
+| **Medlem** | Grundläggande åtkomst till organisationens data |
+
+Endast ägare och admin kan ändra andra medlemmars roller och bjuda in nya medlemmar.
+
 ## Bjud in en medlem
 
 1. Gå till **Inställningar**.
 2. Klicka på **Medlemmar** i menyn till vänster.
 3. Klicka på **Bjud in medlem**.
 4. Ange personens **e-postadress**.
-5. Klicka på **Skicka inbjudan**.
+5. Välj **roll** (Ägare, Admin, Manager eller Medlem).
+6. Klicka på **Skicka inbjudan**.
 
 Den inbjudna personen får ett e-postmeddelande med en länk för att gå med i organisationen.
 
@@ -21,12 +35,12 @@ Den inbjudna personen får ett e-postmeddelande med en länk för att gå med i 
 
 På sidan **Medlemmar** ser du en lista över alla personer som har tillgång till organisationen. För varje medlem kan du:
 
-- **Se status** – inbjuden, aktiv eller inaktiv
-- **Skicka om inbjudan** – om den första inbjudan inte kom fram
+- **Se status** – inbjuden eller aktiv
+- **Ändra roll** – välj en ny roll i rullgardinsmenyn (kräver ägare- eller admin-roll)
 - **Ta bort** – ta bort åtkomsten för en medlem
 
 <Note>
-Alla medlemmar i organisationen har samma åtkomstnivå till organisationens data. Se till att endast betrodda personer bjuds in.
+Du kan inte ta bort dig själv, och endast ägare kan ta bort andra ägare.
 </Note>
 
 ## Vad medlemmar kan göra
@@ -35,6 +49,6 @@ Medlemmar kan:
 
 - Se och hantera alla fastigheter och hyresobjekt
 - Skapa och signera hyreskontrakt
-- Skapa och skicka hyror
-- Hantera hyresgäster och avtalsparter
-- Ändra organisationens inställningar
+- Skapa och skicka hyresaviseringar
+- Hantera hyresgäster och hyresvärdar
+- Ändra organisationens inställningar (ägar- och admin-roll)

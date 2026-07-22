@@ -19,14 +19,18 @@ Sökfältet letar bland standardiserade BAS-konton och visar både nummer och be
 
 ## Vilka transaktionstyper kan mappas?
 
-Tenovo mappar de vanligaste transaktionstyperna inom uthyrning, till exempel:
+Tenovo mappar följande transaktionstyper till BAS-konton:
 
-- Hyresintäkter
-- Debiteringar (tillägg, parkering, driftsräkning)
-- Moms
-- Inbetalningar
+- **Kundfordran** – för utgående aviseringar
+- **Bank** – standardkonto för inbetalningar
+- **Hyresintäkt** – uppdelat per momssats (0 %, 6 %, 12 %, 25 %)
+- **Övrig intäkt** – tillägg, parkering, driftsräkning (0 % och 25 %)
+- **Utgående moms** – per momssats (25 %, 12 %, 6 %)
+- **Förseningsavgift**
+- **Ränteintäkt**
+- **Öresutjämning**
 
-Den exakta listan beror på din organisations uppsättning. Kontakta din bokförare om du är osäker på vilka konton som ska användas.
+Kontakta din bokförare om du är osäker på vilka konton som ska användas.
 
 <Tip>
 Om du använder [Fortnox](/installningar/integrationer) kan fakturor och betalningar skickas dit automatiskt, och då används kontomappningen som underlag för verifikaten.

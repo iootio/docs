@@ -16,26 +16,42 @@ Tenovo stödjer elektronisk signering av hyreskontrakt med BankID. Det innebär 
    - **Skicka för signering till hyresgäst** – hyresgästen signerar först
 4. Den andra parten signeras därefter, och kontraktet markeras som **Aktivt**.
 
+Om kontraktet har borgensmän kan du skicka till borgensmännen först med **Skicka till borgensmän**. Borgensmännen signerar innan hyresgästen och hyresvärden.
+
 ## Signera som hyresvärd
 
-1. Öppna kontraktet från listan eller Kanban-tavlan.
-2. Klicka på **pennikonen** (*Signera som hyresvärd*).
-3. Bekräfta signeringen med ditt BankID på den enhet du väljer.
+1. Öppna kontraktet från listan eller Kanban-vyn.
+2. Klicka på **Signera som hyresvärd** (pennikonen).
+3. En BankID-modal öppnas med två alternativ:
+   - **Scanna QR-kod** – en QR-kod visas som du scannar med BankID-appen på din telefon
+   - **Starta på samma enhet** – om du sitter på en enhet med BankID installerat kan du starta direkt via en länk
+4. Följ instruktionerna i BankID-appen för att slutföra signeringen.
 
 ## Skicka för signering till hyresgäst
 
 1. Öppna kontraktet.
-2. Klicka på **dokumentikonen** (*Skicka för signering till hyresgäst*).
+2. Klicka på **Skicka för signering** (dokumentikonen).
 3. Hyresgästen får en länk för att signera med sitt BankID.
 4. När hyresgästen har signerat kan du signera som hyresvärd om du inte redan gjort det.
 
 <Warning>
-Ett kontrakt som väntar på signering kan inte redigeras. Om du behöver ändra något måste du avbryta signeringsprocessen och spara om utkastet.
+Ett kontrakt som väntar på signering kan inte redigeras. Om du behöver ändra något måste du makulera signeringsprocessen och spara om utkastet.
 </Warning>
+
+## Signeringsstatus
+
+Under signeringen visas en förloppsindikator som visar vilka parter som har signerat och vilka som återstår. Statuserna i BankID-modalen är:
+
+- **Förbereder** – signeringen initieras
+- **Väntar på QR** – QR-koden håller på att genereras
+- **Scannar** – väntar på att BankID-appen scannar QR-koden
+- **Signerar** – BankID-appen är öppen och signering pågår
+- **Klar** – signeringen är slutförd
+- **Avbruten / Misslyckad** – signeringen avbröts eller misslyckades
 
 ## Efter signering
 
-När båda parter har signerat:
+När alla parter har signerat:
 
 - Kontraktets status ändras till **Aktivt**
 - En signerad PDF genereras

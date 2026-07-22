@@ -1,0 +1,83 @@
+---
+title: Avtalsdetaljer
+description: Allt du kan se och göra på ett hyreskontrakts detaljsida.
+---
+
+# Avtalsdetaljer
+
+När du öppnar ett hyreskontrakt från listan eller Kanban-vyn kommer du till avtalets detaljsida. Här ser du hela avtalet, signeringsstatus, versionshistorik, IMD-inställningar och en onboarding-checklista.
+
+## Åtgärder i sidhuvudet
+
+Beroende på avtalets status kan du:
+
+- **Signera som hyresvärd** – signera med BankID (pennikon)
+- **Skicka till borgensmän** – skicka för signering till borgensmän
+- **Skicka för signering** – skicka till hyresgästen för signering (dokumentikon)
+- **Makulera** – avbryt ett avtal som väntar på signering
+- **Säg upp** – säg upp ett aktivt avtal
+- **Förnya avtal** – skapa en ny version av ett aktivt avtal
+- **Skriv ut** – skriv ut eller spara som PDF (i overflow-menyn)
+- **Spara som mall** – spara avtalet som mall för framtida bruk (i overflow-menyn)
+- **Arkivera** – arkivera ett avslutat avtal (i overflow-menyn)
+
+Läs mer om signering på sidan om [BankID-signering](/avtal/signera-med-bankid).
+
+## Avtalsinnehåll
+
+Till höger visas själva avtalet:
+
+- **Uppladdat avtal** – om avtalet skapades genom uppladdning visas en inbäddad PDF-läsare med möjlighet att öppna i ny flik
+- **Avtalsförhandsgranskning** – om avtalet skapades från mall visas det formaterade avtalet med alla avsnitt, signaturer och parter
+
+## Signaturpanel
+
+Signaturpanelen visar status för varje signerare — hyresvärd, hyresgäster och borgensmän. För varje signerare visas:
+
+- Roll och namn
+- Personnummer
+- Signeringsstatus (väntar, signerad, misslyckad)
+- Signeringstidpunkt
+
+Klicka på en signerad rad för att visa BankID-detajer som signatur-ID och transaktionsreferens.
+
+## Signaturbevis
+
+För signerade avtal kan du visa och ladda ner ett **signaturbevis** — ett formellt dokument som intygar att signeringen har utförts med BankID. Beviset innehåller BankID-logotyp, verifieringsstämpel, per-signerare-block med roll, namn, personnummer, signatur-ID och BankID-transaktionsreferens.
+
+## Versionshistorik
+
+Om hyran har ändrats under avtalets löptid visas alla versioner i en tidslinje. För varje version visas:
+
+- Versionsnummer
+- Ikraftträdandedatum
+- Status
+- Ändringsbeskrivning
+- Månadshyra för den versionen
+
+### Ändra hyra
+
+För aktiva avtal kan du klicka på **Ändra hyra** för att skapa en ny version med ett nytt hyresbelopp och ikraftträdandedatum. En sammanfattning visas innan du bekräftar.
+
+## El-IMD
+
+För aktiva avtal kan du aktivera **Individuell mätning och debitering (IMD)** av el:
+
+1. Slå på IMD-reglaget.
+2. Ange **pris per kWh**.
+3. Mätaren identifieras automatiskt om en elmätare är kopplad till hyresobjektet (via Propeye). Senaste avläsning visas.
+4. Klicka på **Spara IMD-inställningar**.
+
+Om ingen elmätare hittas visas en varning om att koppla en mätare via Propeye-integrationen.
+
+## Onboarding-checklista
+
+En checklista för avtalets onboarding- och offboarding-process. Markera uppgifter som slutförda i takt med att inflyttning eller utflyttning genomförs.
+
+## Aktivitetslogg
+
+En logg över händelser för avtalet — signeringar, statusändringar, hyresjusteringar med mera.
+
+<Card title="Skapa hyreskontrakt" icon="file-plus" href="/avtal/skapa-hyreskontrakt">
+  Lär dig hur du skapar ett nytt avtal från mall eller uppladdad fil.
+</Card>

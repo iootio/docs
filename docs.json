@@ -43,7 +43,9 @@
         "icon": "rocket",
         "expanded": true,
         "pages": [
-          "kom-igang"
+          "kom-igang",
+          "organisationer",
+          "profil"
         ]
       },
       {
@@ -53,7 +55,10 @@
         "pages": [
           "fastigheter/oversikt",
           "fastigheter/lagga-till-fastighet",
-          "fastigheter/hyresobjekt"
+          "fastigheter/hyresobjekt",
+          "fastigheter/dokument",
+          "fastigheter/besiktningar",
+          "fastigheter/kostnader"
         ]
       },
       {
@@ -63,6 +68,7 @@
         "pages": [
           "hyresgaster/oversikt",
           "hyresgaster/lagga-till-hyresgast",
+          "hyresgaster/hyresgastdetaljer",
           "hyresgaster/bjuda-in-till-portalen"
         ]
       },
@@ -73,6 +79,7 @@
         "pages": [
           "avtal/oversikt",
           "avtal/skapa-hyreskontrakt",
+          "avtal/avtalsdetaljer",
           "avtal/signera-med-bankid",
           "avtal/avtalsmallar"
         ]
@@ -84,6 +91,7 @@
         "pages": [
           "hyror/oversikt",
           "hyror/skapa-debitering",
+          "hyror/aviseringdetaljer",
           "hyror/betalningsstatus",
           "hyror/betalningsavstamning"
         ]
@@ -129,6 +137,7 @@
         "expanded": true,
         "pages": [
           "installningar/oversikt",
+          "installningar/betalning",
           "installningar/avtalsparter",
           "installningar/medlemmar",
           "installningar/integrationer",
@@ -148,7 +157,8 @@
         "icon": "headset",
         "expanded": true,
         "pages": [
-          "support"
+          "support",
+          "e-postmeddelanden"
         ]
       }
     ]
