@@ -1,0 +1,56 @@
+---
+title: Betalningsavstämning
+description: Importera bankgiro-utdrag och matcha inbetalningar mot dina hyresaviseringar.
+---
+
+# Betalningsavstämning
+
+Betalningsavstämning låter dig importera bankgiro-utdrag som CSV och automatiskt matcha inbetalningar mot dina hyresaviseringar via OCR eller referens. Du får snabbt överblick över vad som har betalats och vad som fortfarande är obetalt.
+
+<Note>
+Betalningsavstämning är en funktion som måste aktiveras för din organisation. Kontakta support om du inte ser den i appen.
+</Note>
+
+## Importera bankgiro-utdrag
+
+1. Gå till **Betalningsavstämning** under **Verktyg** i huvudmenyn.
+2. Klicka på **Importera CSV** uppe till höger.
+3. Välj den CSV-fil du har laddat ner från din bank.
+4. Tenovo läser av filen och försöker matcha varje rad mot en befintlig avisering.
+
+<Tip>
+Kontrollera att din bankfil innehåller kolumner för datum, belopp och OCR eller referens. Det är vad Tenovo använder för att matcha betalningarna.
+</Tip>
+
+## Statistik
+
+Överst på sidan visas tre siffror:
+
+- **Obetalda aviseringar** – antal aviseringar som ännu inte är markerade som betalda
+- **Matchade betalningar** – antal inbetalningar som automatiskt har kopplats till en avisering
+- **Omatchade betalningar** – antal inbetalningar som inte kunde kopplas automatiskt
+
+## Hantera omatchade betalningar
+
+Inbetalningar som inte kunde matchas automatiskt listas i tabellen **Omatchade inbetalningar**. För varje rad ser du datum, avsändare, OCR eller referens och belopp.
+
+För att matcha en omatchad betalning manuellt:
+
+1. Klicka på **Matcha** på raden.
+2. Välj den avisering som betalningen ska kopplas till.
+3. Bekräfta.
+
+Aviseringen markeras som betald och betalningen försvinner från listan över omatchade.
+
+## När matchningen är klar
+
+När alla inbetalningar är matchade är dina aviseringar uppdaterade med rätt betalningsstatus. Du kan följa upp förfallna aviseringar och skicka påminnelser direkt från [Hyresaviseringar](/hyror/oversikt).
+
+<CardGroup>
+  <Card title="Hyresaviseringar" icon="banknote" href="/hyror/oversikt">
+    Översikt över aviseringar och betalningsstatus.
+  </Card>
+  <Card title="Bokföring" icon="book" href="/installningar/bokforing">
+    Ställ in BAS-konton så att verifikat skapas automatiskt.
+  </Card>
+</CardGroup>

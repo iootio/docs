@@ -84,7 +84,34 @@
         "pages": [
           "hyror/oversikt",
           "hyror/skapa-debitering",
-          "hyror/betalningsstatus"
+          "hyror/betalningsstatus",
+          "hyror/betalningsavstamning"
+        ]
+      },
+      {
+        "group": "Felanmälan",
+        "icon": "wrench",
+        "expanded": true,
+        "pages": [
+          "felanmalan/oversikt"
+        ]
+      },
+      {
+        "group": "Hyresgästportalen",
+        "icon": "door-open",
+        "expanded": true,
+        "pages": [
+          "hyresgastportalen/oversikt"
+        ]
+      },
+      {
+        "group": "Verktyg",
+        "icon": "sparkles",
+        "expanded": true,
+        "pages": [
+          "ai-assistent",
+          "hyrespris",
+          "bostadsko"
         ]
       },
       {
@@ -104,7 +131,8 @@
           "installningar/oversikt",
           "installningar/avtalsparter",
           "installningar/medlemmar",
-          "installningar/integrationer"
+          "installningar/integrationer",
+          "installningar/bokforing"
         ]
       },
       {

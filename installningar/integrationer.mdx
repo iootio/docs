@@ -5,44 +5,68 @@ description: Översikt över tillgängliga integrationer i Tenovo.
 
 # Integrationer
 
-Tenovo integrerar med externa tjänster för att underlätta din vardag. Här är en översikt över tillgängliga integrationer och hur du aktiverar dem.
+Tenovo integrerar med externa tjänster för att berika din fastighetsdata, säkra dina avtal och underlätta din bokföring. Vissa integrationer är förkonfigurerade och aktiva från start, andra kopplar du på själv.
 
-## BankID
+Under **Inställningar > Integrationer** ser du alla integrationer uppdelade i **Aktiva integrationer** och **Tillgängliga integrationer**.
 
-**BankID** är förkonfigurerat i Tenovo och används för elektronisk signering av hyreskontrakt. Ingen särskild aktivering krävs – signering fungerar direkt när du skapar ett kontrakt.
+## Förkonfigurerade integrationer
+
+Följande integrationer är aktiva som standard och kräver ingen åtgärd från dig:
+
+### Lantmäteriet
+
+Hämtar officiell fastighetsdata, tomtgränser och kartor direkt från Lantmäteriet. Informationen används för att komplettera och verifiera dina fastighetsuppgifter när du registrerar en ny fastighet.
+
+### Boverket
+
+Ger tillgång till byggnadsinformation och regelverk så att du kan säkerställa att fastigheter uppfyller gällande krav och normer.
+
+### Google Maps API
+
+Visar kartor och geografisk positionering för fastigheter och hyresobjekt så att du enkelt ser var de ligger.
+
+### BankID
+
+Säker elektronisk signering av hyresavtal via BankID. Hyresgäster, borgensmän och hyresvärdar signerar direkt i Tenovo med BankID-verifiering. Signering fungerar direkt när du skapar ett kontrakt – ingen aktivering krävs.
+
+Läs mer i guiden om att [signera med BankID](/avtal/signera-med-bankid).
+
+## Integrationer du kopplar själv
+
+### Fortnox
+
+Synkar fakturor och betalningar med Fortnox för smidig bokföring och avstämning. När Fortnox är kopplat skickas fakturor automatiskt till Fortnox och betalningar läses av därifrån.
+
+**Koppla Fortnox:**
+
+1. Gå till **Inställningar > Integrationer**.
+2. Leta upp **Fortnox** under tillgängliga integrationer.
+3. Klicka på **Koppla**.
+4. Följ instruktionerna för att godkänna åtkomst.
+
+När Fortnox är kopplat kan du klicka på **Konfigurera** för att justera inställningarna.
+
+<Tip>
+För att verifikaten i Fortnox ska få rätt konton måste du först ställa in [Bokföring](/installningar/bokforing) i Tenovo.
+</Tip>
+
+### Propeye
+
+Hämtar förbrukningsmätare och avläsningar för el, vatten och värme från Propeye och kopplar dem till rätt hyresobjekt. Det gör att du kan fakturera förbrukning utan att manuellt föra in avläsningar.
+
+**Koppla Propeye:**
+
+1. Gå till **Inställningar > Integrationer**.
+2. Leta upp **Propeye** under tillgängliga integrationer.
+3. Klicka på **Koppla**.
+4. Ange inloggningsuppgifterna för ditt Propeye-konto.
+5. Mappa dina Propeye-mätare till rätt hyresobjekt i Tenovo.
+
+När Propeye är kopplat kan du klicka på **Konfigurera** för att uppdatera mappningen eller inloggningsuppgifterna.
 
 ## Kalendersynkronisering
 
-Synkronisera Tenovos kalender med:
-
-- **Google Calendar**
-- **Outlook Calendar**
-
-När synkronisering är aktiverad skickas händelser från Tenovo till din externa kalender automatiskt.
-
-### Aktivera kalendersynkronisering
-
-1. Gå till **Kalender** i huvudmenyn.
-2. Klicka på **Synk-inställningar**.
-3. Aktivera **Automatisk synk**.
-4. Fyll i ditt kalender-ID för Google eller Outlook.
-5. Klicka på **Spara inställningar**.
-
-Läs mer i guiden för [kalendersynkronisering](/kalender/synkronisering).
-
-## Automatiska uppslag
-
-Under **Inställningar > Allmänt** kan du aktivera automatiska uppslag från:
-
-- **Boverket** – fastighetsinformation och byggnadsdata
-- **Lantmäteriet** – fastighetsbeteckning och arealuppgifter
-- **SMHI** – väderdata kopplat till fastighetens plats
-
-När uppslagen är aktiverade hämtas tillgänglig information automatiskt när du registrerar en ny fastighet.
-
-<Note>
-Automatiska uppslag är ett komplement. Kontrollera alltid att uppgifterna stämmer innan du förlitar dig på dem i kontrakt eller beslut.
-</Note>
+Synkronisering med Google Calendar och Outlook hanteras separat, direkt från kalendern. Läs mer på sidan om [kalendersynkronisering](/kalender/synkronisering).
 
 ## Framtida integrationer
 
