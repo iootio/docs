@@ -12,14 +12,16 @@ När du öppnar ett hyreskontrakt från listan eller Kanban-vyn kommer du till a
 Beroende på avtalets status kan du:
 
 - **Signera som hyresvärd** – signera med BankID (pennikon)
-- **Skicka till borgensmän** – skicka för signering till borgensmän
-- **Skicka för signering** – skicka till hyresgästen för signering (dokumentikon)
+- **Skicka till borgensmän** – skicka för signering till borgensmän (visas om avtalet har borgensmän som ska signera)
+- **Skicka för signering** – skicka till hyresgästen för signering (visas om hyresgästen ska signera och inga borgensmän återstår)
 - **Makulera** – avbryt ett avtal som väntar på signering
 - **Säg upp** – säg upp ett aktivt avtal
 - **Förnya avtal** – skapa en ny version av ett aktivt avtal
+- **Ändra hyra** – skapa en ny version med ett nytt hyresbelopp och ikraftträdandedatum
 - **Skriv ut** – skriv ut eller spara som PDF (i overflow-menyn)
-- **Spara som mall** – spara avtalet som mall för framtida bruk (i overflow-menyn)
+- **Spara som mall** – spara avtalet som mall för framtida bruk (i overflow-menyn, visas för avtal med sektioner)
 - **Arkivera** – arkivera ett avslutat avtal (i overflow-menyn)
+- **Historik** – öppna aktivitetsloggen för avtalet i en sidopanel
 
 Läs mer om signering på sidan om [BankID-signering](/avtal/signera-med-bankid).
 
@@ -39,7 +41,7 @@ Signaturpanelen visar status för varje signerare — hyresvärd, hyresgäster o
 - Signeringsstatus (väntar, signerad, misslyckad)
 - Signeringstidpunkt
 
-Klicka på en signerad rad för att visa BankID-detajer som signatur-ID och transaktionsreferens.
+Klicka på en signerad rad för att visa BankID-detajer som verifierat namn, personnummer, signeringstidpunkt, IP-adress och BankID-transaktionsreferens.
 
 ## Signaturbevis
 
@@ -65,18 +67,36 @@ För aktiva avtal kan du aktivera **Individuell mätning och debitering (IMD)** 
 
 1. Slå på IMD-reglaget.
 2. Ange **pris per kWh**.
-3. Mätaren identifieras automatiskt om en elmätare är kopplad till hyresobjektet (via Propeye). Senaste avläsning visas.
+3. Mätaren identifieras automatiskt om en elmätare är kopplad till hyresobjektet (via Nordic Propeye). Senaste avläsning visas.
 4. Klicka på **Spara IMD-inställningar**.
 
-Om ingen elmätare hittas visas en varning om att koppla en mätare via Propeye-integrationen.
+Om ingen elmätare hittas visas en varning om att koppla en mätare via Nordic Propeye-integrationen. Läs mer på sidan om [energi](/fastigheter/energi).
 
 ## Onboarding-checklista
 
-En checklista för avtalets onboarding- och offboarding-process. Markera uppgifter som slutförda i takt med att inflyttning eller utflyttning genomförs.
+En checklista för avtalets onboarding- och offboarding-process, med rubriken **Inflyttning & utflyttning**. Markera uppgifter som slutförda i takt med att inflyttning eller utflyttning genomförs.
+
+Inflyttningssteg:
+
+- Hyreskontrakt signerat
+- Hyresgäst inbjuden till portal
+- Deposition mottagen
+- Nyckelöverlämning
+- Inflyttningsbesiktning
+- Första hyresavi skickad
+
+Utflyttningssteg:
+
+- Uppsägning registrerad
+- Utflyttningsbesiktning
+- Nycklar återlämnade
+- Slutavräkning skickad
+- Deposition återbetald/avräknad
+- Hyresobjekt markerat ledigt
 
 ## Aktivitetslogg
 
-En logg över händelser för avtalet — signeringar, statusändringar, hyresjusteringar med mera.
+En logg över händelser för avtalet — signeringar, statusändringar, hyresjusteringar med mera. Öppnas via knappen **Historik** i sidhuvudet.
 
 <Card title="Skapa hyreskontrakt" icon="file-plus" href="/avtal/skapa-hyreskontrakt">
   Lär dig hur du skapar ett nytt avtal från mall eller uppladdad fil.
