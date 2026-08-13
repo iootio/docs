@@ -45,7 +45,8 @@
         "pages": [
           "kom-igang",
           "organisationer",
-          "profil"
+          "profil",
+          "aktivitet"
         ]
       },
       {
@@ -56,6 +57,8 @@
           "fastigheter/oversikt",
           "fastigheter/lagga-till-fastighet",
           "fastigheter/hyresobjekt",
+          "fastigheter/byggnader",
+          "fastigheter/energi",
           "fastigheter/dokument",
           "fastigheter/besiktningar",
           "fastigheter/kostnader"
@@ -140,8 +143,10 @@
           "installningar/betalning",
           "installningar/avtalsparter",
           "installningar/medlemmar",
+          "installningar/moduler",
           "installningar/integrationer",
-          "installningar/bokforing"
+          "installningar/bokforing",
+          "installningar/abonnemang"
         ]
       },
       {

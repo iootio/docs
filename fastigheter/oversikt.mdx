@@ -5,7 +5,7 @@ description: Översikt över hur du hanterar fastigheter och hyresobjekt i Tenov
 
 # Fastigheter & hyresobjekt
 
-I Tenovo är fastigheter och hyresobjekt grunden för all förvaltning. En **fastighet** är byggnaden eller tomten, medan **hyresobjekt** är de enskilda enheterna inom den – lägenheter, lokaler eller parkeringsplatser.
+I Tenovo är fastigheter och hyresobjekt grunden för all förvaltning. En **fastighet** är den fysiska egendomen med adress och beteckning, medan **hyresobjekt** är de enskilda enheterna inom den – lägenheter, lokaler eller parkeringsplatser. En fastighet kan också ha flera **byggnader**, med data hämtad från Lantmäteriet och Boverket.
 
 ## Struktur
 
@@ -13,23 +13,25 @@ Tenovo följer en enkel hierarki:
 
 1. **Organisation** – ditt företag eller din förvaltning
 2. **Fastighet** – den fysiska egendomen med adress och beteckning
-3. **Hyresobjekt** – enskilda enheter som hyrs ut
+3. **Byggnad** – enskilda byggnader på fastigheten (hämtas från Lantmäteriet)
+4. **Hyresobjekt** – enskilda enheter som hyrs ut
 
 ## Vad du kan göra
 
 - **Lägga till och redigera fastigheter** – adress hämtas med autosök, fastighetsbeteckning och objektidentitet hämtas från Lantmäteriet, Street View och karta visas automatiskt
-- **Hantera hyresobjekt** – skapa enheter med typ, yta, antal rum, lägenhetsnummer, hyra och tillhörande utrymmen
-- **Filtrera och söka** – hitta snabbt bland många fastigheter
+- **Hantera byggnader** – se byggnadsdata från Lantmäteriet och Boverket, energicertifikat och detaljerade attribut per byggnad
+- **Hantera hyresobjekt** – skapa enheter med typ, yta, antal rum, lägenhetsnummer, hyra, byggnadstillhörighet och tillhörande utrymmen
+- **Filtrera och söka** – hitta snabbt bland många fastigheter, grupperade per postort
 - **Exportera** – ladda ner fastighetslistan som CSV
 - **Portföljstatistik** – se sammanställning av ditt fastighetsbestånd på fastighetssidan
-- **Detaljsida med flikar** – på en fastighets detaljsida ser du översikt, hyresobjekt, hyresgäster, avtal, dokument, kalender samt (beroende på vilka funktioner som är aktiverade) besiktningar, felanmälningar och kostnader
+- **Detaljsida med flikar** – på en fastighets detaljsida ser du översikt, byggnader, hyresobjekt, hyreskontrakt, dokument, kalender, energi och solpaneler, samt (beroende på vilka moduler som är aktiverade) drift och ekonomi
 
 <Note>
 När du registrerar en ny fastighet hämtas tillgänglig information från Lantmäteriet automatiskt baserat på adressen.
 </Note>
 
 <Note>
-Flikarna **Besiktningar**, **Felanmälningar** och **Kostnader** på fastighetens detaljsida visas bara om motsvarande funktioner är aktiverade för din organisation.
+Fliken **Drift** (som samlar besiktningar och felanmälningar) och fliken **Ekonomi** (kostnader) visas bara om motsvarande moduler är aktiverade för din organisation. Du aktiverar moduler under [Inställningar → Moduler](/installningar/moduler).
 </Note>
 
 ## Snabbstart
@@ -40,5 +42,11 @@ Flikarna **Besiktningar**, **Felanmälningar** och **Kostnader** på fastigheten
   </Card>
   <Card title="Hantera hyresobjekt" icon="door-open" href="/fastigheter/hyresobjekt">
     Så här skapar och kopplar du hyresobjekt till en fastighet.
+  </Card>
+  <Card title="Byggnader" icon="building" href="/fastigheter/byggnader">
+    Byggnadsdata från Lantmäteriet och Boverket, energicertifikat och attribut.
+  </Card>
+  <Card title="Energi" icon="zap" href="/fastigheter/energi">
+    Förbrukningsöversikt, mätare och solpanelsproduktion.
   </Card>
 </CardGroup>

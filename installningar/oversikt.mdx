@@ -5,7 +5,7 @@ description: Översikt över organisationens inställningar i Tenovo.
 
 # Inställningar
 
-Under **Inställningar** konfigurerar du din organisations uppgifter, betalningsinformation, avtalsparter, teammedlemmar och integrationer.
+Under **Inställningar** konfigurerar du din organisations uppgifter, betalningsinformation, hyresvärdar, teammedlemmar, integrationer, moduler, bokföring och abonnemang.
 
 ## Inställningskategorier
 
@@ -24,7 +24,7 @@ Konfigurera betalningsalternativ som visas i hyreskontraktet för dina hyresgäs
 
 Läs mer på sidan om [betalningsalternativ](/installningar/betalning).
 
-### Hyresvärdar
+### Hyresvärdar (avtalsparter)
 
 Hantera de juridiska personer som organisationen hyr ut som — det vill säga de som står som hyresvärd i dina hyreskontrakt. Läs mer på sidan om [hyresvärdar](/installningar/avtalsparter).
 
@@ -36,6 +36,19 @@ Bjud in kollegor till organisationen och hantera deras åtkomst och roller:
 - **Roller** – ägare, admin, manager eller medlem
 - **Ta bort** – ta bort medlemmar som slutat
 
+### Moduler
+
+Slå på och av funktioner för din organisation:
+
+- Felanmälningar
+- Kostnader
+- Besiktningar
+- Bostadskö
+- Hyrespris
+- Betalningsavstämning
+
+Läs mer på sidan om [moduler](/installningar/moduler).
+
 ### Integrationer
 
 Anslut Tenovo till externa tjänster:
@@ -44,16 +57,35 @@ Anslut Tenovo till externa tjänster:
 - **Boverket** – byggnadsinformation och regelverk (förkonfigurerat)
 - **Google Maps** – kartvisning och geolokalisering (förkonfigurerat)
 - **BankID** – elektronisk signering (förkonfigurerat)
+- **SCB** – hyresstatistik och benchmarkdata (förkonfigurerat)
+- **Lettermint** – e-postutskick och leverans (förkonfigurerat)
+- **SMHI** – väderdata och prognoser (förkonfigurerat)
 - **Fortnox** – synk av fakturor och betalningar (kopplas på)
-- **Propeye** – mätare och avläsningar för hushållsel (kopplas på)
+- **Nordic Propeye** – mätare och avläsningar för hushållsel (kopplas på)
+- **Kivra** – digital brevlåda för hyresavier (kopplas på)
+- **FusionSolar** – solpanelsproduktion från Huawei (kopplas på)
 
 Läs mer på sidan om [integrationer](/installningar/integrationer).
 
 ### Bokföring
 
-Ställ in vilka BAS-konton som ska användas när Tenovo skapar verifikat för hyresaviseringar och betalningar. Det gör det enklare att föra över transaktioner till ditt bokföringssystem, särskilt i kombination med Fortnox.
+Ställ in vilka BAS-konton som ska användas när Tenovo skapar verifikat för hyresaviseringar och betalningar, samt verifikatserier och periodisering. Det gör det enklare att föra över transaktioner till ditt bokföringssystem, särskilt i kombination med Fortnox.
 
 Läs mer på sidan om [bokföring](/installningar/bokforing).
+
+### Abonnemang
+
+Hantera ditt abonnemang och se hur många hyresobjekt du använder av din plans gräns:
+
+- **Gratis** – 1–2 hyresobjekt
+- **Small** – 3–10 hyresobjekt
+- **Medium** – 11–50 hyresobjekt
+- **Large** – 51–100 hyresobjekt
+- **Enterprise** – för 100+ hyresobjekt eller allmännyttan
+
+Växla mellan månads- och årsbetalning (år ger 20 % rabatt).
+
+Läs mer på sidan om [abonnemang](/installningar/abonnemang).
 
 <Note>
 Endast användare med tillgång till organisationen kan se och ändra inställningar. Se till att endast betrodda personer har tillgång.
@@ -71,10 +103,16 @@ Endast användare med tillgång till organisationen kan se och ändra inställni
   <Card title="Medlemmar" icon="users" href="/installningar/medlemmar">
     Bjud in kollegor och hantera teamets roller och åtkomst.
   </Card>
+  <Card title="Moduler" icon="toggle-right" href="/installningar/moduler">
+    Aktivera och inaktivera funktioner för din organisation.
+  </Card>
   <Card title="Integrationer" icon="puzzle" href="/installningar/integrationer">
     Lär dig mer om tillgängliga integrationer och hur du aktiverar dem.
   </Card>
   <Card title="Bokföring" icon="book" href="/installningar/bokforing">
     Ställ in BAS-konton för verifikat och bokföring.
+  </Card>
+  <Card title="Abonnemang" icon="credit-card" href="/installningar/abonnemang">
+    Hantera ditt abonnemang och se förbrukning.
   </Card>
 </CardGroup>

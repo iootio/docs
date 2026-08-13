@@ -1,24 +1,49 @@
 ---
 title: Besiktningar
-description: Se besiktningsrapporter kopplade till en fastighet.
+description: Skapa och hantera besiktningsrapporter kopplade till en fastighet eller hyresobjekt.
 ---
 
 # Besiktningar
 
-På fastighetens detaljsida finns fliken **Besiktningar**, där du ser besiktningsrapporter som är kopplade till fastigheten.
+På fastighetens detaljsida finns fliken **Drift**, där du ser och skapar besiktningsrapporter kopplade till fastigheten och dess hyresobjekt.
 
 <Note>
-Besiktningar är en funktion som måste aktiveras för din organisation. Kontakta support om du inte ser fliken i appen.
+Besiktningar är en modul som måste aktiveras för din organisation. Aktivera den under [Inställningar → Moduler](/installningar/moduler) om du inte ser fliken i appen.
 </Note>
 
-## Vad du ser
+## Skapa en besiktning
+
+Du skapar besiktningar direkt i appen – ingen support behövs.
+
+1. Öppna en fastighet och välj fliken **Drift**.
+2. Klicka på **Skapa besiktning**.
+3. Fyll i uppgifterna:
+   - **Typ av besiktning** – Inflyttning, Utflyttning, Rutinbesiktning eller Allmänna utrymmen (de tillgängliga typerna beror på om besiktningen gäller en fastighet eller ett specifikt hyresobjekt)
+   - **Besiktningsdatum**
+   - **Besiktare** – vem som utför besiktningen
+   - **Hyresobjekt** – välj vilket objekt besiktningen avser, eller lämna tomt för fastighetsnivå
+   - **Totalt skick** – Utmärkt, Bra, Godtagbart eller Dåligt
+   - **Hyresgäst närvarande** – kryssruta
+   - **Anteckningar**
+4. Lägg till **besiktningspunkter** – en per rum eller objekt:
+   - **Rum** – exempelvis *Kök* eller *Badrum*
+   - **Objekt** – vad som besiktas
+   - **Skick** – Utmärkt, Bra, Godtagbart, Dåligt eller Skadat
+   - **Anteckning**
+   - **Foto** – ladda upp en bild per punkt
+5. Klicka på **Spara**.
+
+## Signering
+
+Efter en besiktning kan både hyresvärd och hyresgäst signera (godkänna) rapporten med separata knappar. När en part har signerat visas en tidsstämpel.
+
+## Vad du ser i listan
 
 Varje besiktningsrapport visas med:
 
-- **Typ av rapport** – exempelvis inflyttningsbesiktning eller utflyttningsbesiktning
+- **Typ av rapport** – Inflyttning, Utflyttning, Rutinbesiktning eller Allmänna utrymmen
 - **Datum** – när besiktningen utfördes
-- **Skick** – en sammanfattande bedömning av fastighetens skick
+- **Skick** – den sammanfattande bedömningen av skicket
+- **Signeringsstatus** – om hyresvärd och hyresgäst har signerat
 
-## Lägga till besiktningar
-
-Besiktningsrapporter läggs till via integrationspartners eller manuellt av support. Kontakta support om du behöver lägga till en rapport.
+Klicka på en rapport för att expandera och se besiktningspunkter, foton och signeringar.
