@@ -45,7 +45,14 @@
         "pages": [
           "kom-igang",
           "organisationer",
-          "profil",
+          "profil"
+        ]
+      },
+      {
+        "group": "Översikt",
+        "icon": "clock",
+        "expanded": true,
+        "pages": [
           "aktivitet"
         ]
       },
@@ -62,6 +69,14 @@
           "fastigheter/dokument",
           "fastigheter/besiktningar",
           "fastigheter/kostnader"
+        ]
+      },
+      {
+        "group": "Register",
+        "icon": "folder",
+        "expanded": true,
+        "pages": [
+          "dokument"
         ]
       },
       {
@@ -122,7 +137,8 @@
         "pages": [
           "ai-assistent",
           "hyrespris",
-          "bostadsko"
+          "bostadsko",
+          "bokforing"
         ]
       },
       {
@@ -143,10 +159,10 @@
           "installningar/betalning",
           "installningar/avtalsparter",
           "installningar/medlemmar",
-          "installningar/moduler",
           "installningar/integrationer",
-          "installningar/bokforing",
-          "installningar/abonnemang"
+          "installningar/moduler",
+          "installningar/abonnemang",
+          "installningar/bokforing"
         ]
       },
       {

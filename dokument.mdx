@@ -1,0 +1,76 @@
+---
+title: Dokument
+description: Hantera alla dokument i din organisation, med AI-assisterad extrahering och granskning.
+---
+
+# Dokument
+
+Under **Dokument** i huvudmenyn samlar du alla dokument i organisationen, oavsett vilken fastighet de hör till. Här laddar du upp filer, låter Tenovo extrahera uppgifter automatiskt med AI och kopplar dokument till rätt fastighet.
+
+<Note>
+Detta är den organisationsövergripande dokumentvyn. För att hantera dokument för en specifik fastighet, använd fliken **Dokument** på fastighetens detaljsida. Se [Dokument per fastighet](/fastigheter/dokument).
+</Note>
+
+## Ladda upp dokument
+
+1. Gå till **Dokument** i huvudmenyn.
+2. Klicka på **Ladda upp dokument** uppe till höger, eller dra och släpp en fil direkt på sidan.
+3. Fyll i **Dokumentnamn**.
+4. Välj **Kategori**.
+5. Välj **Fastighet** (valfritt — du kan koppla dokumentet senare).
+6. Välj fil (PDF, Word eller bilder).
+7. Klicka på **Ladda upp**.
+
+När filen har laddats upp startar Tenovo en AI-analys som försöker läsa av uppgifter i dokumentet automatiskt.
+
+## Statusar
+
+Varje dokument har en extraheringsstatus som visas i listan och på detaljsidan:
+
+- **Klar** — AI-analysen är klar med hög säkerhet. Granska och korrigera vid behov.
+- **Låg säkerhet** — AI-analysen är osäker. Granska och korrigera uppgifterna innan du litar på dem.
+- **Misslyckade** — AI-analysen kunde inte läsas av. Fyll i uppgifterna manuellt.
+- **Okopplade** — dokument som inte är kopplade till någon fastighet.
+
+Du filtrerar dokument efter status med flikarna högst upp i listan. En röd siffra i huvudmenyn visar hur många dokument som behöver granskas.
+
+## Kategorier
+
+Varje dokument sorteras i en kategori:
+
+- **Kontrakt**
+- **Faktura**
+- **Besiktning**
+- **Offert**
+- **Energiavtal**
+- **Kvalitetsdokument**
+- **Ritning**
+- **Fastighetsfoto**
+- **Försäkring**
+- **Annat**
+
+Filtrera på kategori med rullgardinsmenyn **Kategori**.
+
+## Söka och filtrera
+
+- **Sök** — sök på dokumentnamn, kategori eller den sammanfattning som AI:n har dragit ut.
+- **Status** — visa alla, eller filtrera på Låg säkerhet, Misslyckade eller Okopplade.
+- **Kategori** — visa alla kategorier eller en specifik kategori.
+
+## Öppna ett dokument
+
+Klicka på ett dokument för att öppna detaljsidan. Där ser du:
+
+- Filens namn, kategori, storlek och datum
+- AI-analysens status och säkerhet
+- Extraherade uppgifter, som du kan granska och korrigera
+- Vilken fastighet dokumentet är kopplat till
+
+<CardGroup>
+  <Card title="Dokument per fastighet" icon="building-2" href="/fastigheter/dokument">
+    Hantera dokument direkt på en fastighets detaljsida.
+  </Card>
+  <Card title="Fastighetsbestånd" icon="building-office" href="/fastigheter/oversikt">
+    Översikt över dina fastigheter och hyresobjekt.
+  </Card>
+</CardGroup>
