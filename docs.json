@@ -64,6 +64,8 @@
           "fastigheter/oversikt",
           "fastigheter/lagga-till-fastighet",
           "fastigheter/hyresobjekt",
+          "fastigheter/byggnader",
+          "fastigheter/energi",
           "fastigheter/dokument",
           "fastigheter/besiktningar",
           "fastigheter/kostnader"

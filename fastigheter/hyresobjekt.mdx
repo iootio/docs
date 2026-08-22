@@ -5,7 +5,7 @@ description: Skapa och hantera hyresobjekt som lägenheter, lokaler och parkerin
 
 # Hantera hyresobjekt
 
-Ett **hyresobjekt** är den enskilda enhet som hyrs ut – till exempel en lägenhet, en butikslokal eller en parkeringsplats. Varje hyresobjekt tillhör alltid en fastighet.
+Ett **hyresobjekt** är den enskilda enhet som hyrs ut – till exempel en lägenhet, en butikslokal eller en parkeringsplats. Varje hyresobjekt tillhör alltid en fastighet och kan kopplas till en specifik byggnad.
 
 Hyresobjekt hanteras inifrån fastighetens detaljsida, inte från en egen meny.
 
@@ -16,13 +16,14 @@ Hyresobjekt hanteras inifrån fastighetens detaljsida, inte från en egen meny.
 3. Klicka på **Lägg till hyresobjekt**.
 4. Fyll i uppgifterna:
    - **Fastighet** – välj den fastighet objektet tillhör (förifylld om du startar från en fastighet)
-   - **Typ** – bostad, lokal, parkering eller annat
+   - **Byggnad** – välj vilken byggnad objektet ligger i (väljs automatiskt om fastigheten bara har en byggnad)
+   - **Typ** – välj bland bostadstyper (Bostad, Bostadsrätt, Villa, Våning) eller lokaltyper (Lokal, Garage, Förråd, Kontor, Lager, Verkstad, Parkering, Byggnad, Annat). Klicka på **Visa fler** för att se alla lokaltyper.
    - **Intern beteckning** – exempelvis *Lgh 1201* eller *Lokal A*
    - **Lägenhetsnummer** – 4-siffrigt nationellt lägenhetsnummer från Lantmäteriet (visas för bostäder)
-   - **Våning (trappor)** – fyll i om det är tillämpligt
+   - **Våning (trappor)** – våningsnummer, där 0 = BV, 1 = 1 tr, 2 = 2 tr. Fylls i automatiskt från lägenhetsnumret om du anger ett sådant.
    - **Area (kvm)** och **Antal rum**
    - **Hyra (kr/mån)** – månadshyra för objektet
-   - **Adress** – används som standard fastighetens adress; slå på *Hyresobjektet har en annan adress än fastigheten* för att ange en egen adress
+   - **Belägenhetsadress** – välj en adress från fastigheten i rullgardinsmenyn, eller låt stå som *Ingen adress*
    - **Tillhörande utrymmen** – vindsutrymme nr och källarutrymme nr (visas för bostäder)
 5. Klicka på **Spara**.
 
@@ -30,9 +31,15 @@ Hyresobjekt hanteras inifrån fastighetens detaljsida, inte från en egen meny.
 
 Under fliken **Hyresobjekt** på fastighetens detaljsida kan du:
 
-- **Filtrera på status** – visa alla, endast uthyrda eller endast lediga objekt
-- **Växla vy** – klicka på grid- eller tabellikonen för att byta mellan golvplan-vy och listvy
-- **Golvplan-vy** – bostäder med lägenhetsnummer visas i en visuell golvplan; övriga objekt grupperas per typ
+- **Filtrera på status** – visa alla, endast uthyrda eller endast lediga objekt (med antal per filter)
+- **Filtrera på byggnad** – visa objekt för en specifik byggnad via byggnadsfiltret
+- **Växla vy** – klicka på byggnadsikonen för **Byggnadsvy** eller listikonen för **Listvy**
+- **Byggnadsvy** – bostäder med lägenhetsnummer visas i en visuell golvplan; övriga objekt grupperas per typ med kort som visar ikon, beteckning, yta, hyra och hyresgäst
+- **Listvy** – objekt grupperas i avsnitten *Bostäder* och *Lokaler*
+
+<Tip>
+Om du når gränsen för antal hyresobjekt i ditt abonnemang visas en banner med uppmaning att uppgradera. Läs mer under [Inställningar → Abonnemang](/installningar/abonnemang).
+</Tip>
 
 ## Kopplingar
 
@@ -41,7 +48,12 @@ Varje hyresobjekt kan kopplas till:
 - **Ett eller flera hyreskontrakt** – aktiva och historiska
 - **En eller flera hyresgäster** – via kontraktet
 - **Hyror** – fakturor skapas utifrån det aktiva kontraktet
+- **Mätare** – elmätare kopplade via Nordic Propeye för förbrukningsdebitering
 
-<Tip>
+<Note>
 Du kan se alla kopplade avtal och hyresgäster direkt på fastighetens detaljsida under fliken *Hyresobjekt*.
-</Tip>
+</Note>
+
+<Card title="Energi" icon="zap" href="/fastigheter/energi">
+  Läs mer om mätare och förbrukningsdebitering på hyresobjektnivå.
+</Card>

@@ -1,48 +1,74 @@
 ---
 title: Hyresgästportalen
-description: Översikt över vad hyresgäster kan göra i sin portal – uppgifter, betalningar, kontrakt, förbrukning, felanmälan och kontakt.
+description: Översikt över vad hyresgäster kan göra i sin portal – uppgifter, betalningar, kontrakt, elförbrukning, felanmälan och kontakt.
 ---
 
 # Hyresgästportalen
 
-Hyresgästportalen är den del av Tenovo som dina hyresgäster använder. Här ser de sina kontrakt, hyror och betalningar, kan rapportera felanmälningar, läsa av mätare och skicka meddelanden till dig.
+Hyresgästportalen är den del av Tenovo som dina hyresgäster använder. Här ser de sina kontrakt, hyror och betalningar, kan läsa av sin elförbrukning, rapportera felanmälningar och skicka meddelanden till dig.
 
 För att en hyresgäst ska få tillgång till portalen måste du först [bjuda in dem](/hyresgaster/bjuda-in-till-portalen).
 
-## Avsnitt i portalen
+## Startsida
 
-När hyresgästen loggar in landar de på en startsida med snabbstatistik och en navigationsmeny med följande avsnitt:
+När hyresgästen loggar in landar de på en startsida med en Street View-bild av fastigheten, en personlig hälsning och snabbstatistik:
+
+- **Aviseringar** – antal aviseringar och datum för nästa förfallodatum
+- **Kontrakt** – antal kontrakt och startdatum för det senaste
+
+Dessutom visas tydliga varningar om något kräver hyresgästens uppmärksamhet, till exempel förfallna aviseringar eller avtal som väntar på signering.
+
+Navigationsmenyn visar badge med antal förfallna aviseringar (röd) och avtal att signera (gul).
+
+## Avsnitt i portalen
 
 ### Mina uppgifter
 
-Hyresgästen ser och kan uppdatera sina person- och kontaktuppgifter – namn, e-post, telefon och adress.
+Hyresgästen ser sina personuppgifter (namn, personnummer) som är skrivskyddade och hanteras av hyresvärden, samt kan uppdatera kontaktuppgifter (e-post, telefon, adress).
 
-### Betalningar
+Under **Aviseringsinställningar** kan hyresgästen välja vilka kanaler som ska användas för hyresavier och påminnelser:
 
-En lista över hyresgästens aviseringar med status (utkast, skickad, mottagen, betald, förfallen). Hyresgästen kan öppna en enskild avisering för att se specifikation, förfallodatum och betalningsuppgifter.
+- **E-post** – ta emot aviseringar via e-post
+- **Kivra** – ta emot aviseringar i Kivras digitala brevlåda
 
-### Kontrakt
+Om båda är avstängda visas en varning om att hyresgästen själv ansvarar för att logga in och kontrollera aviseringar.
+
+### Mina betalningar
+
+En lista över hyresgästens aviseringar med status. Hyresgästen kan filtrera på **Alla**, **Obetalda** eller **Förfallna**. Öppna en avisering för att se specifikation, förfallodatum, betalningsuppgifter (BankGiro, PlusGiro, Swish-nummer) och en direktlänk för att betala via Swish.
+
+Under listan finns en separat **Betalningshistorik** med datum, betalningsmetod och belopp för genomförda betalningar.
+
+### Mina kontrakt
 
 Alla aktiva och tidigare hyreskontrakt. Hyresgästen kan:
 
 - **Förhandsgranska** avtalet direkt i portalen
 - **Ladda ner PDF** av signerade avtal
-- **Säga upp** ett aktivt avtal med slutdatum och anledning
+- **Skriv ut** avtalet
+- **Säga upp** ett aktivt avtal med föreslaget slutdatum (baserat på uppsägningstid) och valfritt meddelande till hyresvärden
 - Se start- och slutdatum samt uppsägningsstatus
 
 Under kontrakten finns också avsnittet **Mina dokument** där ytterligare dokument kopplade till hyresgästen visas.
 
-### Förbrukning
+### Elförbrukning
 
-Visar mätare som är kopplade till hyresgästens hyresobjekt – till exempel el, vatten och värme. För varje mätare visas senaste avläsning, enhet och datum. Hyresgästen kan inte lägga in avläsningar själv; det gör hyresvärden, men hyresgästen ser den fakturerade förbrukningen och historik över tidigare avläsningar och debiteringar.
+Visar hyresgästens elförbrukning om hyresvärden har kopplat en mätare till hyresobjektet. Hyresgästen ser:
+
+- **Aktuell mätarställning** – senaste avläsning med värde, enhet och datum
+- **Senast fakturerad period** – period, förbrukning i kWh och belopp
+- **Faktureringshistorik** – expanderbar lista över tidigare faktureringsperioder
+- **Mätarställningar** – expanderbar lista över tidigare avläsningar
+
+Hyresgästen kan inte lägga in avläsningar själv; det gör hyresvärden.
 
 <Note>
-Förbrukning kräver att hyresvärden har registrerat mätare på hyresobjektet. Om inga mätare finns visas ett tomt tillstånd.
+Elförbrukning kräver att hyresvärden har registrerat mätare på hyresobjektet. Om inga mätare finns visas ett tomt tillstånd.
 </Note>
 
 ### Felanmälan
 
-Hyresgästen kan skapa en ny felanmälan med rubrik, beskrivning, kategori och valfritt foto. Tidigare felanmälningar listas med status, så att hyresgästen kan följa vad som händer.
+Hyresgästen kan skapa en ny felanmälan med rubrik, beskrivning, kategori och valfritt foto (JPG/PNG, max 10 MB). Tidigare felanmälningar listas med status, så att hyresgästen kan följa vad som händer.
 
 Hyresgästen kan **avbryta** en öppen felanmälan om den inte längre är aktuell.
 
@@ -50,16 +76,7 @@ Läs mer på sidan om [felanmälan](/felanmalan/oversikt) för hur det ser ut fr
 
 ### Kontakt
 
-Ett enkelt meddelandesystem där hyresgästen kan skicka ett meddelande med ämne och text till hyresvärden och se tidigare konversation. Meddelandehistoriken sparas i Tenovo.
-
-## Snabbstatistik på startsidan
-
-På startsidan visas två kort:
-
-- **Aviseringar** – antal aviseringar och datum för nästa förfallodatum
-- **Kontrakt** – antal kontrakt och startdatum för det senaste
-
-Dessutom visas tydliga varningar om något kräver hyresgästens uppmärksamhet, till exempel en försenad avisering.
+Ett meddelandesystem där hyresgästen kan skicka ett meddelande med ämne och text till hyresvärden och se tidigare konversation. Meddelandehistoriken visar riktning (inkommande/utgående), kanal, ämne och tidsstämpel.
 
 ## Åtkomst och säkerhet
 

@@ -14,13 +14,13 @@ Du kan lägga till flera debiteringsrader på samma avisering för att fakturera
 1. Gå till **Hyresaviseringar** i huvudmenyn.
 2. Klicka på **Skapa ny avisering** uppe till höger.
 3. Välj den **hyresgäst** som aviseringen ska skickas till.
-4. Fyll i **förfallodatum**.
+4. Fyll i **förfallodatum** (kan inte ligga i det förflutna för nya aviseringar).
 5. Fyll i **fakturaperiod** – ange period start och period slut.
 6. Lägg till debiteringsrader:
    - **Beskrivning** – exempelvis *Parkering maj*, *Driftsräkning*, *Avgift för skada*
    - **Belopp (exkl. moms)**
-   - **Moms (%)** – välj momssats
-   - **Debiteringsperiod start och slut** – ange vilken period raden avser
+   - **Moms (%)** – välj bland 0 % (momsfri), 6 %, 12 % eller 25 %
+   - **Debiteringsperiod** – använder som standard fakturaperioden. Kryssa i **Annan debiteringsperiod** för att ange en egen period för raden.
 7. Klicka på **Skapa avisering**.
 
 Aviseringen sparas som utkast tills du väljer att skicka den.
@@ -31,7 +31,11 @@ Om du behöver ändra ett utkast öppnar du det och klickar på **Spara ändring
 
 ## Skicka aviseringen
 
-När utkastet är klart öppnar du det och klickar på **Skicka**. Tenovo skickar då ett e-postmeddelande till hyresgästen med aviseringen och ändrar status till **Skickad** automatiskt. Du kan också använda **Skicka valda utkast** i listan för att skicka flera utkast i ett enda steg. Hyresgästen ser aviseringen i [hyresgästportalen](/hyresgastportalen/oversikt) och kan följa betalningsstatus där.
+När utkastet är klart öppnar du det och klickar på **Skicka**. Tenovo skickar då aviseringen via e-post och/eller Kivra (beroende på vad som är aktiverat) och ändrar status till **Skickad** automatiskt. Du kan också använda **Skicka valda utkast** i listan för att skicka flera utkast i ett enda steg. Hyresgästen ser aviseringen i [hyresgästportalen](/hyresgastportalen/oversikt) och kan följa betalningsstatus där.
+
+### Markera som skickad
+
+Om du skickar en avisering via post eller ett annat system kan du använda **Markera som skickad** (i rullgardinsmenyn bredvid Skicka). Du anger ett skickat datum, och status ändras till **Skickad** utan att någon e-post skickas. Detta skapar också ett bokföringsverifikat om bokföring är aktiverat. Det finns också en bulkåtgärd **Markera som skickade** för flera utkast.
 
 <Note>
 Om du har ställt in [bokföring](/installningar/bokforing) skapas ett verifikat automatiskt när aviseringen skickas. Om kontomappningen är ofullständig visas en varning med information om vilka konton som saknas.

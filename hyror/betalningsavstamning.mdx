@@ -8,18 +8,18 @@ description: Importera bankgiro-utdrag och matcha inbetalningar mot dina hyresav
 Betalningsavstämning låter dig importera bankgiro-utdrag som CSV och automatiskt matcha inbetalningar mot dina hyresaviseringar via OCR eller referens. Du får snabbt överblick över vad som har betalats och vad som fortfarande är obetalt.
 
 <Note>
-Betalningsavstämning är en funktion som måste aktiveras för din organisation. Kontakta support om du inte ser den i appen.
+Betalningsavstämning är en modul som måste aktiveras för din organisation. Aktivera den under [Inställningar → Moduler](/installningar/moduler) om du inte ser den i appen.
 </Note>
 
 ## Importera bankgiro-utdrag
 
-1. Gå till **Betalningsavstämning** under **Verktyg** i huvudmenyn.
+1. Gå till **Betalningsavstämning** (tillgängligt från Hyresaviseringar eller via modulen).
 2. Klicka på **Importera CSV** uppe till höger.
 3. Välj den CSV-fil du har laddat ner från din bank.
 4. Tenovo läser av filen och försöker matcha varje rad mot en befintlig avisering.
 
 <Tip>
-Kontrollera att din bankfil innehåller kolumner för datum, belopp och OCR eller referens. Det är vad Tenovo använder för att matcha betalningarna.
+Tenovo stödjer CSV-utfiler från SEB, Swedbank, Handelsbanken och Nordea. Filen ska innehålla kolumner för datum, belopp, OCR/referens och avsändare.
 </Tip>
 
 ## Statistik
@@ -32,7 +32,7 @@ Kontrollera att din bankfil innehåller kolumner för datum, belopp och OCR elle
 
 ## Hantera omatchade betalningar
 
-Inbetalningar som inte kunde matchas automatiskt listas i tabellen **Omatchade inbetalningar**. För varje rad ser du datum, avsändare, OCR eller referens och belopp.
+Inbetalningar som inte kunde matchas automatiskt listas i tabellen **Omatchade inbetalningar**. För varje rad ser du datum, avsändare, OCR/ref, belopp, status och en åtgärdsknapp.
 
 För att matcha en omatchad betalning manuellt:
 

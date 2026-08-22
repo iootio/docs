@@ -5,16 +5,18 @@ description: Allt du kan se och göra på en hyresavisings detaljsida.
 
 # Aviseringsdetaljer
 
-När du öppnar en avisering från hyresaviseringarna kommer du till dess detaljsida. Här ser du hela fakturan, betalningsstatus, tidslinje och bokföringsinformation.
+När du öppnar en avisering från hyresaviseringarna kommer du till dess detaljsida. Här ser du hela fakturan, betalningsstatus, Kivra-status, tidslinje och bokföringsinformation.
 
 ## Åtgärder i sidhuvudet
 
 Beroende på aviseringens status kan du:
 
 - **Redigera** – ändra utkast innan de skickas
-- **Skicka avisering** / **Skicka igen** – skicka e-post till hyresgästen och sätt status till Skickad
-- **Registrera betalning** – registrera en inbetald summa
+- **Skicka avisering** / **Skicka igen** – skicka via e-post och/eller Kivra till hyresgästen och sätt status till Skickad
+- **Markera som skickad** – sätt status till Skickad utan att skicka e-post (för post eller annat system)
+- **Registrera betalning** – registrera en inbetald summa (belopp och datum)
 - **Ta bort** – ta bort ett utkast
+- **Historik** – öppna aktivitetsloggen för aviseringen i en sidopanel
 
 ## Fakturaförhandsgranskning
 
@@ -42,7 +44,20 @@ Visar:
 
 ### Registrera betalning
 
-Klicka på **Registrera betalning** för att mata in ett betalt belopp. En modal öppnas där du anger beloppet och bekräftar.
+Klicka på **Registrera betalning** för att mata in ett betalt belopp och ett betalningsdatum. En modal öppnas där du anger båda och bekräftar. Om beloppet är lägre än det återstående registreras en delbetalning; om det täcker det återstående beloppet markeras aviseringen som betald.
+
+## Kivra-status
+
+Om aviseringen har skickats via Kivra visas ett särskilt kort med Kivra-leveransstatus:
+
+- **Skickad via Kivra** – aviseringen har skickats
+- **Levererad i Kivra** – hyresgästen har fått den i sin brevlåda
+- **Betalad via Kivra** – betalning registrerad via Kivra
+- **Betalning schemalagd** – hyresgästen har schemalagt en betalning
+- **Betalning misslyckades** – en schemalagd betalning misslyckades
+- **Betalning avbruten** – betalningen avbröts
+
+Kortet visar också när aviseringen skickades och Kivra-content-ID.
 
 ## Tidslinje
 
@@ -59,7 +74,7 @@ Om du har ställt in [bokföring](/installningar/bokforing) visas de verifikat s
 
 ### Exportera SIE
 
-Klicka på **Exportera SIE** för att ladda ner verifikaten som en SIE-fil som kan importeras i ditt bokföringssystem.
+Klicka på **Exportera SIE** för att ladda ner verifikaten som en SIE-fil som kan importeras i ditt bokföringssystem. Du kan också exportera SIE för alla aviseringar i en månad via månadsåtgärdsmenyn i listan.
 
 <Note>
 Om kontomappningen är ofullständig visas en varning med information om vilka konton som saknas. Gå till [Inställningar → Bokföring](/installningar/bokforing) för att komplettera.

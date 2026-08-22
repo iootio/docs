@@ -8,7 +8,7 @@ description: Skapa och hantera bostadsköer i Tenovo och ta emot ansökningar fr
 Bostadskö i Tenovo låter dig samla intresserade hyresgäster i en eller flera köer. Presumptiva hyresgäster ansöker via en publik länk och du hanterar ansökningarna inifrån appen.
 
 <Note>
-Bostadskö är en funktion som måste aktiveras för din organisation. Kontakta support om du inte ser den i appen.
+Bostadskö är en modul som måste aktiveras för din organisation. Aktivera den under [Inställningar → Moduler](/installningar/moduler) om du inte ser den i appen.
 </Note>
 
 ## Skapa en bostadskö
@@ -19,7 +19,7 @@ Bostadskö är en funktion som måste aktiveras för din organisation. Kontakta 
    - **Titel** – köns namn
    - **Beskrivning** – valfri beskrivning som visas för sökande
    - **Krav** – valfria krav (t.ex. inkomstkrav eller referenser) som visas tydligt för sökande
-   - **Fastighet och hyresobjekt** – valfritt, om kön är kopplad till en specifik enhet
+   - **Fastighet och hyresobjekt** – valfritt, om kön är kopplad till en specifik enhet. Hyresobjekten filtreras baserat på vald fastighet.
 4. Spara.
 
 Kön skapas med status **Öppen**, vilket innebär att ansökningar kan komma in.
@@ -30,17 +30,19 @@ Kön skapas med status **Öppen**, vilket innebär att ansökningar kan komma in
 - **Pausad** – tar inte emot nya ansökningar, men befintliga finns kvar
 - **Stängd** – kön är avslutad
 
-Du växlar mellan öppen och pausad direkt från kön. En stängd kö kan inte öppnas igen.
+Du växlar mellan öppen och pausad direkt från kön. En stängd kö kan öppnas igen med knappen **Öppna**.
 
 ## Dela ansökningslänken
 
-Varje kö har en publik ansökningslänk på formatet `app.tenovo.se/rental-queues/<id>/apply`. Dela länken på din webbplats, i sociala medier eller via e-post. Den som klickar på länken fyller i ett formulär utan att behöva logga in.
+Varje kö har en publik ansökningslänk. Dela länken på din webbplats, i sociala medier eller via e-post. Den som klickar på länken fyller i ett formulär utan att behöva logga in.
 
 Du kan kopiera länken direkt från kön med kopieringsikonen.
 
 ## Det publika ansökningsformuläret
 
-När en sökande öppnar ansökningslänken ser de köns titel, beskrivning och eventuella krav. Därefter fyller de i följande fält:
+När en sökande öppnar ansökningslänken ser de köns titel, beskrivning och eventuella krav (i en tydlig ruta). Om kön inte är öppen visas ett meddelande om att kön för närvarande är pausad eller stängd.
+
+Därefter fyller de i följande fält:
 
 - **Fullständigt namn** (obligatoriskt)
 - **E-post** (obligatoriskt)
@@ -56,19 +58,24 @@ När ansökan skickas får sökanden en bekräftelse på att ansökan är mottag
 
 ## Hantera ansökningar
 
-Klicka på en kö för att se alla ansökningar. För varje ansökning ser du:
+Klicka på en kö för att se alla ansökningar. Ansökningarna har en position i kön (visas i en kolumn). För varje ansökning ser du:
 
 - Namn, kontaktuppgifter och personnummer
 - Nuvarande adress, inkomst och arbetsgivare
 - Önskat inflyttningsdatum och meddelande
 - Ansökningsdatum
 
+### Ansökningsstatusar
+
+- **Väntelista** – ansökan finns i kön och väntar
+- **Godkänd** – sökande har godkänts
+- **Avböjd** – sökande har avböjts
+
 För varje ansökning kan du:
 
 - **Godkänn** – godkänn en sökande
 - **Avböj** – avböj en sökande
 - **Flytta upp / Flytta ner** – ändra ordningen i kön
-- **Ta bort** – ta bort ansökningen
 
 <Tip>
 Använd kravfältet på kön för att tydliggöra vilka krav som gäller, till exempel inkomstkrav eller referenser. Det hjälper sökande att skicka in rätt information från början.

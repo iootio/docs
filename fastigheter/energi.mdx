@@ -1,0 +1,76 @@
+---
+title: Energi
+description: Förbrukningsöversikt, mätare, solpanelsproduktion och elförbrukning per hyresobjekt.
+---
+
+# Energi
+
+Tenovo hämtar förbrukningsdata och solpanelsproduktion från dina integrationer och visar det direkt på fastigheten och hyresobjekten. Det gör att du kan följa förbrukning över tid, upptäcka anomalier och fakturera hyresgäster för individuell el.
+
+## Förutsättningar
+
+För att se förbrukningsdata behöver du ha [Nordic Propeye](/installningar/integrationer)-integrationen kopplad. För solpanelsproduktion behövs [FusionSolar](/installningar/integrationer).
+
+Om ingen energiintegration är kopplad visas ett tomt tillstånd på fliken **Energi** med en knapp till Inställningar → Integrationer.
+
+## Fliken Energi på fastigheten
+
+På fastighetens detaljsida finns fliken **Energi**, som visar en förbrukningsöversikt för hela fastigheten.
+
+### Granularitet
+
+Välj tidsperiod med knapparna: **Dag**, **Vecka**, **Månad** eller **År**.
+
+### KPI-kort
+
+- **Total förbrukning** – i kWh för vald period
+- **Beräknad kostnad** – uppskattad kostnad baserat på snittpris per kWh
+- **Mätare** – antal kopplade mätare
+- **Anomalier** – antal upptäckta förbrukningsanomalier
+
+### Diagram
+
+- **Tidsserie** – förbrukning över tid. Klicka på en punkt för att drill-down till en mer detaljerad period, och använd **Tillbaka** för att gå upp igen.
+- **Per hyresobjekt** – stapeldiagram som visar förbrukning per enhet.
+- **Värmekarta** – visualiserar förbrukning per dag och timme.
+
+### Anomalier
+
+En lista över förbrukningsanomalier – till exempel oväntat hög eller låg förbrukning jämfört med normalt.
+
+### Faktureringshistorik
+
+- **Faktureringshistorik** – historiska faktureringsperioder med total förbrukning och belopp
+- **Fakturerat per hyresobjekt** – nedbrytning av fakturerad förbrukning per enhet
+
+## Elförbrukning på hyresobjektet
+
+På ett hyresobjekts detaljsida finns fliken **Elförbrukning**, som visar förbrukning för just den enheten.
+
+### Koppla en mätare
+
+Om ingen mätare är kopplad visas ett tomt tillstånd med knappen **Lägg till mätare**.
+
+1. Klicka på **Lägg till mätare**.
+2. Om Nordic Propeye inte är kopplat får du en uppmaning att konfigurera integrationen först.
+3. Sök bland okopplade mätare (sök på namn, externt ID eller mätartyp).
+4. Välj en mätare och klicka på **Koppla**.
+
+När mätaren är kopplad visas:
+
+- **Aktuell mätarställning** – senaste avläsning med värde, enhet och tidsstämpel
+- **KPI-kort** – total förbrukning, beräknad kostnad och anomalier
+- **Tidsserie** och **värmekarta** med drill-down
+- **Faktureringshistorik** – senast fakturerad period markeras, med expanderbar historik
+
+## El-IMD (individuell mätning och debitering)
+
+För aktiva hyreskontrakt kan du aktivera IMD för el direkt på avtalets detaljsida. Läs mer på sidan om [avtalsdetaljer](/avtal/avtalsdetaljer).
+
+## Solpaneler
+
+På fastighetens detaljsida finns fliken **Solpaneler**, som visar produktionsdata från Huawei FusionSolar. Kräver att [FusionSolar](/installningar/integrationer)-integrationen är kopplad.
+
+<Card title="Integrationer" icon="puzzle" href="/installningar/integrationer">
+  Läs mer om hur du kopplar Nordic Propeye och FusionSolar.
+</Card>

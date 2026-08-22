@@ -31,6 +31,18 @@ Säker elektronisk signering av hyresavtal via BankID. Hyresgäster, borgensmän
 
 Läs mer i guiden om att [signera med BankID](/avtal/signera-med-bankid).
 
+### SCB
+
+Hämtar officiell hyresstatistik och benchmarkdata från Statistiska centralbyrån. Används för att jämföra dina hyresnivåer med marknadsdata i [hyresprisanalysen](/hyrespris).
+
+### Lettermint
+
+Sköter e-postutskick och leverans av inbjudningar, aviseringar och påminnelser. Säkerställer att e-post når hyresgäster och medlemmar.
+
+### SMHI
+
+Hämtar aktuell väderdata och 10-dygnsprognoser från SMHIs öppna data-API. Väderinformation visas i appen som en del av fastighetsöversikten.
+
 ## Integrationer du kopplar själv
 
 ### Fortnox
@@ -50,19 +62,45 @@ När Fortnox är kopplat kan du klicka på **Konfigurera** för att justera inst
 För att verifikaten i Fortnox ska få rätt konton måste du först ställa in [Bokföring](/installningar/bokforing) i Tenovo.
 </Tip>
 
-### Propeye
+### Nordic Propeye
 
-Hämtar förbrukningsmätare och avläsningar för el, vatten och värme från Propeye och kopplar dem till rätt hyresobjekt. Det gör att du kan fakturera förbrukning utan att manuellt föra in avläsningar.
+Hämtar förbrukningsmätare och avläsningar för el från Nordic Propeye och kopplar dem till rätt hyresobjekt. Det gör att du kan fakturera förbrukning utan att manuellt föra in avläsningar.
 
-**Koppla Propeye:**
+**Koppla Nordic Propeye:**
 
 1. Gå till **Inställningar > Integrationer**.
-2. Leta upp **Propeye** under tillgängliga integrationer.
+2. Leta upp **Nordic Propeye** under tillgängliga integrationer.
 3. Klicka på **Koppla**.
-4. Ange inloggningsuppgifterna för ditt Propeye-konto.
+4. Ange inloggningsuppgifterna för ditt Nordic Propeye-konto.
 5. Mappa dina Propeye-mätare till rätt hyresobjekt i Tenovo.
 
-När Propeye är kopplat kan du klicka på **Konfigurera** för att uppdatera mappningen eller inloggningsuppgifterna.
+När Nordic Propeye är kopplat kan du klicka på **Konfigurera** för att uppdatera mappningen eller inloggningsuppgifterna. Läs mer på sidan om [energi](/fastigheter/energi).
+
+### Kivra
+
+Skickar hyresavier digitalt till hyresgästens brevlåda i Kivra. Betalningsstatus uppdateras automatiskt via webhooks från Kivra.
+
+**Koppla Kivra:**
+
+1. Gå till **Inställningar > Integrationer**.
+2. Leta upp **Kivra** under tillgängliga integrationer.
+3. Klicka på **Koppla**.
+4. Följ instruktionerna för att godkänna åtkomst.
+
+När Kivra är kopplat kan hyresgäster välja Kivra som aviseringskanal i sina [aviseringsinställningar](/hyresgastportalen/oversikt). Läs mer om Kivra-status på sidan om [aviseringsdetaljer](/hyror/aviseringdetaljer).
+
+### FusionSolar
+
+Hämtar solpanelsproduktion från Huawei FusionSolar och visar den under fliken **Solpaneler** på fastighetens detaljsida.
+
+**Koppla FusionSolar:**
+
+1. Gå till **Inställningar > Integrationer**.
+2. Leta upp **FusionSolar** under tillgängliga integrationer.
+3. Klicka på **Koppla**.
+4. Ange inloggningsuppgifterna för ditt FusionSolar-konto.
+
+När FusionSolar är frånkopplat men historisk data finns bevarad visas statusen "Frånkopplad — historik bevarad". Läs mer på sidan om [energi](/fastigheter/energi).
 
 ## Kalendersynkronisering
 
