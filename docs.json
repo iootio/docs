@@ -49,6 +49,14 @@
         ]
       },
       {
+        "group": "Översikt",
+        "icon": "clock",
+        "expanded": true,
+        "pages": [
+          "aktivitet"
+        ]
+      },
+      {
         "group": "Fastigheter & hyresobjekt",
         "icon": "building-2",
         "expanded": true,
@@ -59,6 +67,14 @@
           "fastigheter/dokument",
           "fastigheter/besiktningar",
           "fastigheter/kostnader"
+        ]
+      },
+      {
+        "group": "Register",
+        "icon": "folder",
+        "expanded": true,
+        "pages": [
+          "dokument"
         ]
       },
       {
@@ -119,7 +135,8 @@
         "pages": [
           "ai-assistent",
           "hyrespris",
-          "bostadsko"
+          "bostadsko",
+          "bokforing"
         ]
       },
       {
@@ -141,6 +158,8 @@
           "installningar/avtalsparter",
           "installningar/medlemmar",
           "installningar/integrationer",
+          "installningar/moduler",
+          "installningar/abonnemang",
           "installningar/bokforing"
         ]
       },
