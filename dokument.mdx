@@ -1,6 +1,6 @@
 ---
 title: Dokument
-description: Hantera alla dokument i din organisation, med AI-assisterad extrahering och granskning.
+description: Hantera organisationens dokument med AI-assisterad kategorisering och extrahering.
 ---
 
 # Dokument
@@ -21,7 +21,7 @@ Detta är den organisationsövergripande dokumentvyn. För att hantera dokument 
 6. Välj fil (PDF, Word eller bilder).
 7. Klicka på **Ladda upp**.
 
-När filen har laddats upp startar Tenovo en AI-analys som försöker läsa av uppgifter i dokumentet automatiskt.
+När filen har laddats upp startar Tenovo en AI-analys som försöker läsa av uppgifter i dokumentet automatiskt. Analysen identifierar dokumenttyp, extraherar relevanta fält och räknar ut en säkerhetsscore.
 
 ## Statusar
 
@@ -49,7 +49,7 @@ Varje dokument sorteras i en kategori:
 - **Försäkring**
 - **Annat**
 
-Filtrera på kategori med rullgardinsmenyn **Kategori**.
+AI-analysen föreslår en kategori automatiskt, men du kan alltid ändra den manuellt. Filtrera på kategori med rullgardinsmenyn **Kategori**.
 
 ## Söka och filtrera
 
@@ -61,16 +61,25 @@ Filtrera på kategori med rullgardinsmenyn **Kategori**.
 
 Klicka på ett dokument för att öppna detaljsidan. Där ser du:
 
-- Filens namn, kategori, storlek och datum
-- AI-analysens status och säkerhet
-- Extraherade uppgifter, som du kan granska och korrigera
-- Vilken fastighet dokumentet är kopplat till
+- **Förhandsvisning** – inbäddad PDF-läsare eller bild
+- **AI-analysstatus** – en banner som visar om analysen är klar, behöver granskas eller har misslyckats, inklusive säkerhetsscore
+- **Klassificering** – ändra dokumenttyp, med information om AI-förslaget och dess säkerhet
+- **Kopplingar** – koppla dokumentet till en fastighet och ett hyresobjekt
+- **Extraherade uppgifter** – fält som AI:n har plockat ut, visade i en strukturerad lista som du kan granska och korrigera
+
+### Analysera om
+
+Klicka på **Analysera om** för att köra AI-analysen igen med nuvarande inställningar. Används efter att du har ändrat dokumenttyp eller kopplingar.
+
+<Note>
+Filerna lagras säkert och är endast åtkomliga för medlemmar i din organisation.
+</Note>
 
 <CardGroup>
   <Card title="Dokument per fastighet" icon="building-2" href="/fastigheter/dokument">
     Hantera dokument direkt på en fastighets detaljsida.
   </Card>
-  <Card title="Fastighetsbestånd" icon="building-office" href="/fastigheter/oversikt">
+  <Card title="Fastighetsbestånd" icon="building-2" href="/fastigheter/oversikt">
     Översikt över dina fastigheter och hyresobjekt.
   </Card>
 </CardGroup>
