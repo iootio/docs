@@ -1,0 +1,64 @@
+---
+title: Bokföring
+description: Se och exportera verifikat som Tenovo skapar från aviseringar och betalningar.
+---
+
+# Bokföring
+
+Under **Bokföring** i huvudmenyn samlas alla verifikat som Tenovo skapar automatiskt när aviseringar skickas, betalningar registreras, påminnelseavgifter debiteras och dröjsmålsränta beräknas. Sidan ger dig en samlad vy över bokföringsunderlaget och gör det enkelt att exportera till ditt bokföringssystem.
+
+<Note>
+Verifikat skapas bara om du har ställt in [bokföringsinställningar](/installningar/bokforing) med BAS-konton. Utan kontomappning skapas inga verifikat.
+</Note>
+
+## Verifikatlistan
+
+Listan visar alla verifikat i organisationen, oavsett vilken avisering eller betalning de kommer från. För varje verifikat ser du:
+
+- **Beskrivning** – vad verifikatet avser (t.ex. *Verifikat — avisering skickad*, *Verifikat — betalning mottagen*)
+- **Typ** – avisering skickad, betalning mottagen, påminnelseavgift eller dröjsmålsränta
+- **Status** – Ej bokförd, Exporterad eller Bokförd externt
+- **Datum** – verifikatets datum
+- **Belopp** – totalt belopp och antal rader
+
+Klicka på ett verifikat för att expandera det och se alla rader med konto, benämning, debet och kredit.
+
+## Filtrera och söka
+
+Ovanför listan kan du:
+
+- **Söka** – fritextsökning på beskrivning, kontonummer eller kontobenämning
+- **Filtrera på typ** – visa bara en viss typ av verifikat (avisering skickad, betalning mottagen, påminnelseavgift eller dröjsmålsränta)
+- **Sortera** – efter datum (nyast/äldst först) eller belopp (störst/minst först)
+- **Rensa filter** – återställ sökning och filter
+
+### Filtrera på en specifik avisering
+
+Du kan också visa verifikat för en enskild avisering. När du öppnar bokföringen från en avisering visas en banner som anger att listan är filtrerad. Klicka på **Visa alla verifikat** för att gå tillbaka till den fullständiga listan.
+
+## Verifikatstatus
+
+Varje verifikat har en av tre statusar:
+
+- **Ej bokförd** – verifikatet finns i Tenovo men har inte exporterats eller bokförts i ett externt system
+- **Exporterad** – verifikatet har exporterats som SIE-fil
+- **Bokförd externt** – verifikatet har bokförts i ett externt system (t.ex. Fortnox)
+
+## Exportera SIE
+
+Klicka på **Exportera SIE** uppe till höger för att ladda ner alla verifikat som en SIE-fil. SIE-filen kan importeras i ditt bokföringssystem.
+
+Du kan också exportera SIE för verifikaten kopplade till en specifik avisering från aviseringens [detaljsida](/hyror/aviseringdetaljer).
+
+## Externa referenser
+
+Om ett verifikat har bokförts i ett externt system (t.ex. Fortnox) visas det externa verifikat-ID:t och en länk för att öppna det i det externa systemet.
+
+<CardGroup>
+  <Card title="Bokföringsinställningar" icon="book" href="/installningar/bokforing">
+    Ställ in BAS-konton, verifikatserier och periodisering.
+  </Card>
+  <Card title="Aviseringsdetaljer" icon="file-text" href="/hyror/aviseringdetaljer">
+    Se verifikat för en specifik avisering på dess detaljsida.
+  </Card>
+</CardGroup>

@@ -88,6 +88,14 @@
         ]
       },
       {
+        "group": "Dokument",
+        "icon": "file",
+        "expanded": true,
+        "pages": [
+          "dokument"
+        ]
+      },
+      {
         "group": "Hyror & betalningar",
         "icon": "banknote",
         "expanded": true,
@@ -96,7 +104,8 @@
           "hyror/skapa-debitering",
           "hyror/aviseringdetaljer",
           "hyror/betalningsstatus",
-          "hyror/betalningsavstamning"
+          "hyror/betalningsavstamning",
+          "hyror/bokforing"
         ]
       },
       {
