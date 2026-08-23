@@ -3,41 +3,48 @@ title: Aktivitetslogg
 description: Se vem som har gjort vad i Tenovo med aktivitetsloggen — per objekt eller för hela organisationen.
 ---
 
-# Aktivitetslogg
+# Aktivitet
 
 Tenovo sparar en aktivitetslogg för de flesta objekt — fastigheter, hyresobjekt, byggnader, hyresgäster, hyreskontrakt och aviseringar. Loggen visar vem som har gjort vilka ändringar och när, så att du alltid kan spåra vad som har hänt.
 
-Det finns två sätt att se aktivitet:
-
-- **Aktivitetssidan** – en samlad vy över alla händelser i organisationen
-- **Historik-panelen** – aktivitet för ett enskilt objekt på dess detaljsida
+Det finns två sätt att se aktivitet: den övergripande **Aktivitet**-sidan i huvudmenyn och **Historik**-panelen på varje detaljsida.
 
 ## Aktivitetssidan
 
-Under **Aktivitet** i huvudmenyn ser du alla händelser i organisationen samlade på ett ställe. Sidan är användbar för att få en övergripande bild av vad som har hänt i förvaltningen.
+Under **Aktivitet** i huvudmenyn ser du en sammanfattande logg över alla händelser i organisationen. Det fungerar som ett revisionsspår där du kan följa upp vem som skapade, ändrade eller tog bort en hyresgäst, ett kontrakt eller en avisering — och när det hände.
 
-### Filtrera
+### Vad som loggas
 
-Du kan filtrera listan på flera sätt:
+Tenovo loggar händelser för följande typer av objekt:
 
-- **Typ** – visa händelser för en viss typ av objekt (Hyresgäster, Hyreskontrakt, Hyresavier, Fastigheter, Hyresobjekt eller Debiteringar)
-- **Användare** – visa händelser utförda av en specifik medlem
-- **Från datum** – visa händelser från och med ett visst datum
-- **Till datum** – visa händelser till och med ett visst datum
+- **Hyresgäster**
+- **Hyreskontrakt**
+- **Hyresavier**
+- **Fastigheter**
+- **Hyresobjekt**
+- **Debiteringar**
 
-Klicka på **Rensa filter** för att återställa alla filter.
-
-### Vad som visas
-
-Varje händelse i listan visar:
+För varje händelse visas:
 
 - **Vad som hände** – en kort beskrivning av händelsen (t.ex. *Hyresgäst skapad*, *Hyra ändrad*, *Avisering skickad*)
 - **Vem som gjorde det** – namn på den användare som utförde åtgärden, eller *System* om det gjordes automatiskt
 - **När det hände** – datum och klockslag
 
-## Historik-panelen på detaljsidor
+Klicka på en händelse för att gå direkt till det objekt den gäller.
 
-På en detaljsida öppnar du loggen med knappen **Historik** i sidhuvudet. Den öppnas som en sidopanel från höger sida, så att du kan se loggen samtidigt som du har kvar detaljsidan öppen.
+### Filtrera händelser
+
+Du kan filtrera loggen på flera sätt:
+
+- **Typ** – visa bara en typ av objekt (till exempel bara hyreskontrakt)
+- **Användare** – visa bara händelser från en specifik medlem
+- **Från datum / Till datum** – begränsa till ett datumintervall
+
+Klicka på **Rensa filter** för att nollställa alla filter och visa allt igen.
+
+## Historik på en detaljsida
+
+På en detaljsida öppnar du loggen för just det objektet med knappen **Historik** i sidhuvudet. Den öppnas som en sidopanel från höger sida, så att du kan se loggen samtidigt som du har kvar detaljsidan öppen.
 
 Panelen visar samma typ av händelser som aktivitetssidan, men begränsat till det objekt du har öppet.
 
@@ -54,6 +61,24 @@ Panelen visar samma typ av händelser som aktivitetssidan, men begränsat till d
 - Inbjudan skickad till hyresgäst
 - Felanmälan skapad, uppdaterad eller stängd
 
+## Användning
+
+Aktivitetsloggen är användbar för att:
+
+- Spåra vem som ändrade ett kontrakt eller en avisering
+- Se när en hyresgäst lades till eller togs bort
+- Granska ändringar i ett specifikt datumintervall
+- Följa upp arbetsfördelningen i teamet
+
 <Note>
-Aktivitetsloggen sparas löpande och kan inte redigeras manuellt. Den är till för att ge transparens och spårbarhet i din förvaltning.
+Aktivitetsloggen sparas löpande och kan inte redigeras manuellt. Den är till för att ge transparens och spårbarhet i din förvaltning. Aktivitetssidan i huvudmenyn är endast tillgänglig för användare med landlord-roll.
 </Note>
+
+<CardGroup>
+  <Card title="Medlemmar" icon="users" href="/installningar/medlemmar">
+    Hantera vem som har tillgång till organisationen.
+  </Card>
+  <Card title="Säkerhet & efterlevnad" icon="shield" href="/sakerhet/datahantering">
+    Läs mer om hur Tenovo hanterar data.
+  </Card>
+</CardGroup>

@@ -5,20 +5,34 @@ description: Hantera organisationens dokument med AI-assisterad kategorisering o
 
 # Dokument
 
-Under **Dokument** i huvudmenyn samlar du alla dokument som rör din förvaltning — oavsett om de är kopplade till en specifik fastighet eller inte. Tenovo analyserar uppladdade dokument med AI, föreslår dokumenttyp och extraherar viktiga uppgifter automatiskt.
+Under **Dokument** i huvudmenyn samlar du alla dokument i organisationen, oavsett vilken fastighet de hör till. Här laddar du upp filer, låter Tenovo extrahera uppgifter automatiskt med AI och kopplar dokument till rätt fastighet.
 
-Detta skiljer sig från [fastighetsdokument](/fastigheter/dokument), som hanteras direkt på en fastighets detaljsida.
+<Note>
+Detta är den organisationsövergripande dokumentvyn. För att hantera dokument för en specifik fastighet, använd fliken **Dokument** på fastighetens detaljsida. Se [Dokument per fastighet](/fastigheter/dokument).
+</Note>
 
 ## Ladda upp dokument
 
 1. Gå till **Dokument** i huvudmenyn.
-2. Klicka på **Ladda upp dokument** uppe till höger, eller dra och släpp en fil var som helst på sidan.
-3. Välj fil (PDF, DOC, DOCX, JPG eller PNG).
-4. Ange ett dokumentnamn och välj kategori.
-5. Välj fastighet (valfritt).
-6. Spara.
+2. Klicka på **Ladda upp dokument** uppe till höger, eller dra och släpp en fil direkt på sidan.
+3. Fyll i **Dokumentnamn**.
+4. Välj **Kategori**.
+5. Välj **Fastighet** (valfritt — du kan koppla dokumentet senare).
+6. Välj fil (PDF, Word eller bilder).
+7. Klicka på **Ladda upp**.
 
-När filen har laddats upp startar en AI-analys automatiskt. Analysen identifierar dokumenttyp, extraherar relevanta fält och räknar ut en säkerhetsscore.
+När filen har laddats upp startar Tenovo en AI-analys som försöker läsa av uppgifter i dokumentet automatiskt. Analysen identifierar dokumenttyp, extraherar relevanta fält och räknar ut en säkerhetsscore.
+
+## Statusar
+
+Varje dokument har en extraheringsstatus som visas i listan och på detaljsidan:
+
+- **Klar** — AI-analysen är klar med hög säkerhet. Granska och korrigera vid behov.
+- **Låg säkerhet** — AI-analysen är osäker. Granska och korrigera uppgifterna innan du litar på dem.
+- **Misslyckade** — AI-analysen kunde inte läsas av. Fyll i uppgifterna manuellt.
+- **Okopplade** — dokument som inte är kopplade till någon fastighet.
+
+Du filtrerar dokument efter status med flikarna högst upp i listan. En röd siffra i huvudmenyn visar hur många dokument som behöver granskas.
 
 ## Kategorier
 
@@ -35,50 +49,37 @@ Varje dokument sorteras i en kategori:
 - **Försäkring**
 - **Annat**
 
-AI-analysen föreslår en kategori automatiskt, men du kan alltid ändra den manuellt.
+AI-analysen föreslår en kategori automatiskt, men du kan alltid ändra den manuellt. Filtrera på kategori med rullgardinsmenyn **Kategori**.
 
-## Status och AI-analys
+## Söka och filtrera
 
-Varje dokument har en analysstatus som visas i listan och på detaljsidan:
+- **Sök** — sök på dokumentnamn, kategori eller den sammanfattning som AI:n har dragit ut.
+- **Status** — visa alla, eller filtrera på Låg säkerhet, Misslyckade eller Okopplade.
+- **Kategori** — visa alla kategorier eller en specifik kategori.
 
-- **Analyserar** – AI-analys pågår
-- **Klar** – analysen är färdig med hög säkerhet
-- **Låg säkerhet** – analysen är osäker och behöver granskas
-- **Misslyckad** – analysen kunde inte slutföras
+## Öppna ett dokument
 
-På listan kan du filtrera på status med flikarna **Alla**, **Låg säkerhet** och **Misslyckade** för att snabbt hitta dokument som behöver din uppmärksamhet.
-
-## Detaljsidan
-
-När du öppnar ett dokument ser du:
+Klicka på ett dokument för att öppna detaljsidan. Där ser du:
 
 - **Förhandsvisning** – inbäddad PDF-läsare eller bild
 - **AI-analysstatus** – en banner som visar om analysen är klar, behöver granskas eller har misslyckats, inklusive säkerhetsscore
 - **Klassificering** – ändra dokumenttyp, med information om AI-förslaget och dess säkerhet
 - **Kopplingar** – koppla dokumentet till en fastighet och ett hyresobjekt
-- **Extraherade uppgifter** – fält som AI:n har plockat ut, visade i en strukturerad lista
+- **Extraherade uppgifter** – fält som AI:n har plockat ut, visade i en strukturerad lista som du kan granska och korrigera
 
 ### Analysera om
 
 Klicka på **Analysera om** för att köra AI-analysen igen med nuvarande inställningar. Används efter att du har ändrat dokumenttyp eller kopplingar.
-
-## Filtrera och söka
-
-På listan kan du:
-
-- **Filtrera på status** – Alla, Låg säkerhet eller Misslyckade
-- **Filtrera på kategori** – visa dokument i en specifik kategori
-- **Söka** – fritextsökning på dokumentnamn
 
 <Note>
 Filerna lagras säkert och är endast åtkomliga för medlemmar i din organisation.
 </Note>
 
 <CardGroup>
-  <Card title="Fastighetsdokument" icon="building-2" href="/fastigheter/dokument">
-    Lär dig mer om dokument som hanteras direkt på en fastighet.
+  <Card title="Dokument per fastighet" icon="building-2" href="/fastigheter/dokument">
+    Hantera dokument direkt på en fastighets detaljsida.
   </Card>
-  <Card title="Fastigheter" icon="building-2" href="/fastigheter/oversikt">
-    Översikt över fastigheter och hyresobjekt.
+  <Card title="Fastighetsbestånd" icon="building-2" href="/fastigheter/oversikt">
+    Översikt över dina fastigheter och hyresobjekt.
   </Card>
 </CardGroup>
