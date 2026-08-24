@@ -88,6 +88,15 @@
         ]
       },
       {
+        "group": "Register",
+        "icon": "archive",
+        "expanded": true,
+        "pages": [
+          "leverantorer",
+          "dokument"
+        ]
+      },
+      {
         "group": "Hyror & betalningar",
         "icon": "banknote",
         "expanded": true,
@@ -120,6 +129,7 @@
         "icon": "sparkles",
         "expanded": true,
         "pages": [
+          "bokforing",
           "ai-assistent",
           "hyrespris",
           "bostadsko"
