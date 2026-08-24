@@ -72,14 +72,6 @@
         ]
       },
       {
-        "group": "Register",
-        "icon": "folder",
-        "expanded": true,
-        "pages": [
-          "dokument"
-        ]
-      },
-      {
         "group": "Hyresgäster",
         "icon": "users",
         "expanded": true,
@@ -100,6 +92,15 @@
           "avtal/avtalsdetaljer",
           "avtal/signera-med-bankid",
           "avtal/avtalsmallar"
+        ]
+      },
+      {
+        "group": "Register",
+        "icon": "archive",
+        "expanded": true,
+        "pages": [
+          "leverantorer",
+          "dokument"
         ]
       },
       {
@@ -135,6 +136,7 @@
         "icon": "sparkles",
         "expanded": true,
         "pages": [
+          "bokforing",
           "ai-assistent",
           "hyrespris",
           "bostadsko",

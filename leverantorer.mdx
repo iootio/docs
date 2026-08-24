@@ -1,0 +1,97 @@
+---
+title: Leverantörer
+description: Leverantörsregistret i Tenovo byggs upp automatiskt från uppladdade dokument och samlar kontaktuppgifter, serviceavtal och kopplade dokument på ett ställe.
+---
+
+# Leverantörer
+
+Leverantörsregistret samlar alla leverantörer som organisationen har att göra med — från fastighetsservice och energi till städning och hiss. Registret byggs upp automatiskt när dokument analyseras, men du kan också lägga till leverantörer manuellt.
+
+## Så här byggs registret upp
+
+När du laddar upp ett dokument (faktura, offert, energiavtal eller försäkringsbrev) analyserar Tenovo det automatiskt och identifierar säljaren. Leverantören skapas då med uppgifter från dokumentet och märks som **AI-extraherad**.
+
+Du hittar registret under **Leverantörer** i huvudmenyn (avsnittet Register).
+
+## Lista och filtrera
+
+På listsidan kan du:
+
+- **Söka** på namn, organisationsnummer, e-post, telefon, bankgiro eller plusgiro
+- **Filtrera på källa** – *Alla källor*, *AI-extraherade* eller *Manuellt tillagda*
+- **Se antal resultat** – filtreringen uppdateras löpande
+
+Varje rad visar leverantörens namn, organisationsnummer, tjänstekategorier och kontaktuppgifter, samt en badge som anger källan (AI-extraherad, importerad eller manuell).
+
+## Lägga till en leverantör manuellt
+
+1. Klicka på **Lägg till leverantör** uppe till höger.
+2. Fyll i namn, organisationsnummer och kontaktuppgifter.
+3. Välj tjänstekategorier som leverantören erbjuder.
+4. Spara.
+
+Manuellt tillagda leverantörer märks som **Manuell** i listan.
+
+## Leverantörsdetaljer
+
+Klicka på en leverantör för att se detaljsidan, som är uppdelad i tre delar:
+
+### Kontaktuppgifter
+
+Organisationsnummer, momsregistreringsnummer, adress, e-post, telefon, bankgiro och plusgiro. Här finns också eventuella anteckningar och leverantörens tjänstekategorier.
+
+### Serviceavtal
+
+Serviceavtal som är kopplade till leverantören, med typ, period, årlig kostnad och status. Status visas som en badge:
+
+- **Aktiv** – avtalet gäller
+- **Löper snart ut** – avtalet förfaller inom kort
+- **Löpt ut** – avtalet har passerat slutdatum
+- **Sagt upp** – avtalet är sagt upp
+- **Utkast** – avtalet är inte aktivt än
+
+Klicka på ett serviceavtal för att komma till motsvarande fastighet.
+
+### Dokument
+
+Dokument som är kopplade till leverantören — automatiskt länkade när AI-analysen hittar leverantören på en faktura, offert eller försäkring. Klicka på ett dokument för att öppna det.
+
+<Note>
+Dokument kopplas till leverantören automatiskt vid analys. Du behöver inte länka dem manuellt.
+</Note>
+
+## Redigera och ta bort
+
+På detaljsidan kan du **redigera** leverantörens uppgifter eller **ta bort** leverantören.
+
+När du tar bort en leverantör bevaras kopplingar till serviceavtal och dokument, men de visas utan leverantörslänk. Borttagningen går inte att ångra.
+
+## Tjänstekategorier
+
+En leverantör kan märkas med en eller flera tjänstekategorier så att du snabbt hittar rätt leverantör för en viss typ av arbete:
+
+- Ventilation
+- Värme/Kyla
+- Hiss
+- Städning
+- Snöröjning
+- Avfall
+- El
+- Vatten
+- Internet
+- Säkerhet
+- Brandskydd
+- Skadedjursbekämpning
+- Tvätt
+- Övrigt
+
+## Snabbstart
+
+<CardGroup>
+  <Card title="Dokument" icon="document" href="/dokument">
+    Ladda upp fakturor och offerter som bygger leverantörsregistret automatiskt.
+  </Card>
+  <Card title="Fastigheter" icon="building-2" href="/fastigheter/oversikt">
+    Serviceavtal hanteras på fastighetens detaljsida.
+  </Card>
+</CardGroup>

@@ -1,11 +1,13 @@
 ---
 title: Bokföring
-description: Se verifikat skapade från aviseringar och betalningar, och exportera till SIE.
+description: Se alla verifikat som Tenovo skapar från aviseringar och betalningar, sök bland dem och exportera till SIE.
 ---
 
 # Bokföring
 
-Under **Bokföring** i huvudmenyn ser du alla verifikat som Tenovo skapar automatiskt när aviseringar skickas och betalningar registreras. Här kan du granska verifikaten, följa upp dem mot sina källor och exportera allt till en SIE-fil för ditt bokföringssystem.
+Under **Bokföring** i huvudmenyn (avsnittet Verktyg) ser du alla verifikat som Tenovo skapar automatiskt när aviseringar skickas och betalningar registreras. Här kan du granska verifikaten, följa upp dem mot sina källor och exportera allt till en SIE-fil för ditt bokföringssystem.
+
+Detta är den operativa vyn över verifikat. Själva inställningarna — vilka BAS-konton som ska användas, verifikatserier och periodisering — görs under [Inställningar → Bokföring](/installningar/bokforing).
 
 <Note>
 För att verifikaten ska få rätt konton måste du först ställa in [Bokföringsinställningar](/installningar/bokforing) med dina BAS-konton.
@@ -25,14 +27,14 @@ Klicka på en rad för att fälla ut detaljerna och se konteringsraderna: konto,
 
 ## Typer av verifikat
 
-Tenovo skapar verifikat från följande händelser:
+Tenovo skapar ett verifikat automatiskt när något av följande händer:
 
 - **Avisering skickad** — när en hyresavisering skickas till en hyresgäst
 - **Betalning mottagen** — när en betalning registreras på en avisering
 - **Påminnelseavgift** — när en påminnelseavgift läggs på en avisering
 - **Dröjsmålsränta** — när dröjsmålsränta läggs på en avisering
 
-Filtrera på typ med rullgardinsmenyn **Alla typer**.
+Verifikatet får en verifikatsserie enligt inställningarna och raderna bokförs mot de BAS-konton du har mappat. Filtrera på typ med rullgardinsmenyn **Alla typer**.
 
 ## Spåra ett verifikat till källan
 
@@ -42,9 +44,15 @@ Om verifikatet har skickats vidare till ett externt system (till exempel Fortnox
 
 ## Filtrera och sortera
 
-- **Sök** — sök på beskrivning eller konto.
-- **Typ** — visa alla typer eller en specifik typ.
-- **Sortering** — datum (nyast eller äldst först).
+Längst upp på sidan finns ett filterfält med:
+
+- **Sök** — sök på beskrivning, kontonummer eller kontobenämning
+- **Typ** — visa alla typer eller en specifik typ (Avisering skickad, Betalning mottagen, Påminnelseavgift, Dröjsmålsränta)
+- **Sortering** — datum (nyast eller äldst först) eller belopp (störst eller minst först)
+
+## Verifikat för en specifik avisering
+
+Från en avisering kan du gå direkt till dess verifikat filtrerat. En banner högst upp visar att du ser verifikat för en specifik avisering — klicka på **Visa alla verifikat** för att ta bort filtret.
 
 ## Exportera SIE
 
@@ -59,13 +67,11 @@ Klicka på **Exportera SIE** uppe till höger för att ladda ner alla verifikat 
 Om du använder [Fortnox](/installningar/integrationer) skickas verifikaten dit automatiskt och SIE-exporten behövs inte.
 </Tip>
 
-## Verifikat för en specifik avisering
-
-Från en avisering kan du gå direkt till dess verifikat filtrerat. En banner högst upp visar att du ser verifikat för en specifik avisering — klicka på **Visa alla verifikat** för att ta bort filtret.
+## Snabbstart
 
 <CardGroup>
   <Card title="Bokföringsinställningar" icon="book" href="/installningar/bokforing">
-    Ställ in BAS-konton så att verifikat skapas med rätt konton.
+    Ställ in BAS-konton, verifikatserier och periodisering.
   </Card>
   <Card title="Hyresaviseringar" icon="banknote" href="/hyror/oversikt">
     Se aviseringar och betalningsstatus.

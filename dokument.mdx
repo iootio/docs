@@ -1,11 +1,11 @@
 ---
 title: Dokument
-description: Hantera organisationens dokument med AI-assisterad kategorisering och extrahering.
+description: Samla och analysera alla dokument i organisationen — fakturor, offerter, energiavtal, försäkringar och mer. Tenovo identifierar automatiskt leverantörer och kopplar dokument till rätt fastighet.
 ---
 
 # Dokument
 
-Under **Dokument** i huvudmenyn samlar du alla dokument i organisationen, oavsett vilken fastighet de hör till. Här laddar du upp filer, låter Tenovo extrahera uppgifter automatiskt med AI och kopplar dokument till rätt fastighet.
+Under **Dokument** i huvudmenyn (avsnittet Register) samlar du alla dokument i organisationen, oavsett vilken fastighet de hör till eller vilken status de har. Det är den centrala platsen för att ladda upp, analysera och granska dokument.
 
 <Note>
 Detta är den organisationsövergripande dokumentvyn. För att hantera dokument för en specifik fastighet, använd fliken **Dokument** på fastighetens detaljsida. Se [Dokument per fastighet](/fastigheter/dokument).
@@ -13,69 +13,86 @@ Detta är den organisationsövergripande dokumentvyn. För att hantera dokument 
 
 ## Ladda upp dokument
 
-1. Gå till **Dokument** i huvudmenyn.
-2. Klicka på **Ladda upp dokument** uppe till höger, eller dra och släpp en fil direkt på sidan.
-3. Fyll i **Dokumentnamn**.
-4. Välj **Kategori**.
-5. Välj **Fastighet** (valfritt — du kan koppla dokumentet senare).
-6. Välj fil (PDF, Word eller bilder).
-7. Klicka på **Ladda upp**.
+1. Klicka på **Ladda upp dokument** uppe till höger, eller dra och släpp en fil direkt på sidan.
+2. Fyll i **Dokumentnamn**.
+3. Välj **Kategori**.
+4. Välj **Fastighet** (valfritt — du kan koppla dokumentet senare).
+5. Välj fil (PDF, Word eller bild).
+6. Spara.
 
-När filen har laddats upp startar Tenovo en AI-analys som försöker läsa av uppgifter i dokumentet automatiskt. Analysen identifierar dokumenttyp, extraherar relevanta fält och räknar ut en säkerhetsscore.
+När filen har laddats upp startar en AI-analys automatiskt. Analysen identifierar dokumenttyp, säljare och nyckeluppgifter, räknar ut en säkerhetsscore och skapar eller länkar en [leverantör](/leverantorer) om möjligt.
 
-## Statusar
+<Note>
+Stora eller skannade dokument kan ta en stund att analysera. Status uppdateras löpande på detaljsidan.
+</Note>
 
-Varje dokument har en extraheringsstatus som visas i listan och på detaljsidan:
+## Filtrera och söka
 
-- **Klar** — AI-analysen är klar med hög säkerhet. Granska och korrigera vid behov.
-- **Låg säkerhet** — AI-analysen är osäker. Granska och korrigera uppgifterna innan du litar på dem.
-- **Misslyckade** — AI-analysen kunde inte läsas av. Fyll i uppgifterna manuellt.
-- **Okopplade** — dokument som inte är kopplade till någon fastighet.
+Längst upp på listsidan finns flera sätt att hitta rätt dokument:
 
-Du filtrerar dokument efter status med flikarna högst upp i listan. En röd siffra i huvudmenyn visar hur många dokument som behöver granskas.
+- **Statusflikar** – *Alla*, *Låg säkerhet*, *Misslyckade* och *Okopplade*. Varje flik visar antal träffar.
+- **Kategorifilter** – filtrera på en specifik dokumenttyp.
+- **Fritextsökning** – söker på namn, kategori, sammanfattning och fastighetsbeteckning.
+- **Växla vy** – visa som rutnät (grid) eller lista.
+
+I listvyn kan du sortera på namn, kategori, storlek, fastighet, status eller uppladdningsdatum genom att klicka på kolumnrubrikerna. En röd siffra i huvudmenyn visar hur många dokument som behöver granskas.
+
+### Statusar
+
+Ett dokuments AI-analys kan ha följande status:
+
+- **Klar** – analysen är färdig med hög säkerhet. Granska och korrigera vid behov.
+- **Låg säkerhet** – analysen är osäker. Granska och korrigera uppgifterna innan du litar på dem.
+- **Misslyckade** – analysen gick inte att genomföra. Försök igen eller fyll i manuellt.
+- **Okopplade** – dokumentet är inte kopplat till någon fastighet.
 
 ## Kategorier
 
 Varje dokument sorteras i en kategori:
 
-- **Kontrakt**
-- **Faktura**
-- **Besiktning**
-- **Offert**
-- **Energiavtal**
-- **Kvalitetsdokument**
-- **Ritning**
-- **Fastighetsfoto**
-- **Försäkring**
-- **Annat**
+- Kontrakt
+- Faktura
+- Besiktning
+- Offert
+- Energiavtal
+- Kvalitetsdokument
+- Ritning
+- Fastighetsfoto
+- Försäkring
+- Annat
 
-AI-analysen föreslår en kategori automatiskt, men du kan alltid ändra den manuellt. Filtrera på kategori med rullgardinsmenyn **Kategori**.
+AI-analysen föreslår en kategori automatiskt, men du kan alltid ändra den manuellt.
 
-## Söka och filtrera
+## Dokumentdetaljer
 
-- **Sök** — sök på dokumentnamn, kategori eller den sammanfattning som AI:n har dragit ut.
-- **Status** — visa alla, eller filtrera på Låg säkerhet, Misslyckade eller Okopplade.
-- **Kategori** — visa alla kategorier eller en specifik kategori.
-
-## Öppna ett dokument
-
-Klicka på ett dokument för att öppna detaljsidan. Där ser du:
+Klicka på ett dokument för att öppna detaljsidan. Här ser du:
 
 - **Förhandsvisning** – inbäddad PDF-läsare eller bild
-- **AI-analysstatus** – en banner som visar om analysen är klar, behöver granskas eller har misslyckats, inklusive säkerhetsscore
+- **AI-analysstatus** – en banner som visar om analysen pågår, är klar, behöver granskas eller har misslyckats, inklusive säkerhetsscore
 - **Klassificering** – ändra dokumenttyp, med information om AI-förslaget och dess säkerhet
-- **Kopplingar** – koppla dokumentet till en fastighet och ett hyresobjekt
-- **Extraherade uppgifter** – fält som AI:n har plockat ut, visade i en strukturerad lista som du kan granska och korrigera
+- **Kopplingar** – länka dokumentet till en fastighet, ett hyresobjekt och en leverantör
+- **Extraherade uppgifter** – de fält som AI-analysen har plockat ut (t.ex. belopp, datum, motpart), visade i en strukturerad lista som du kan granska och korrigera
 
 ### Analysera om
 
-Klicka på **Analysera om** för att köra AI-analysen igen med nuvarande inställningar. Används efter att du har ändrat dokumenttyp eller kopplingar.
+Om du har ändrat dokumenttyp eller kopplingar kan du klicka på **Analysera om** för att köra AI-analysen igen med de nya inställningarna.
+
+## Hantera flera dokument
+
+Markera flera dokument med kryssrutorna i listvyn för att utföra bulkåtgärder, till exempel ta bort flera dokument på en gång.
+
+## Ta bort dokument
+
+Klicka på papperskorgsikonen på en rad för att ta bort ett enskilt dokument. Borttagningen går inte att ångra.
 
 <Note>
 Filerna lagras säkert och är endast åtkomliga för medlemmar i din organisation.
 </Note>
 
 <CardGroup>
+  <Card title="Leverantörer" icon="truck" href="/leverantorer">
+    Leverantörsregistret byggs upp automatiskt från analyserade dokument.
+  </Card>
   <Card title="Dokument per fastighet" icon="building-2" href="/fastigheter/dokument">
     Hantera dokument direkt på en fastighets detaljsida.
   </Card>
