@@ -7,16 +7,20 @@ description: Samla och analysera alla dokument i organisationen — fakturor, of
 
 Under **Dokument** i huvudmenyn (avsnittet Register) samlar du alla dokument i organisationen, oavsett vilken fastighet de hör till eller vilken status de har. Det är den centrala platsen för att ladda upp, analysera och granska dokument.
 
-Detta skiljer sig från fliken **Dokument** på en enskild fastighets detaljsida, som endast visar dokument kopplade till den fastigheten. Se [Dokument per fastighet](/fastigheter/dokument) för den vyn.
+<Note>
+Detta är den organisationsövergripande dokumentvyn. För att hantera dokument för en specifik fastighet, använd fliken **Dokument** på fastighetens detaljsida. Se [Dokument per fastighet](/fastigheter/dokument).
+</Note>
 
 ## Ladda upp dokument
 
 1. Klicka på **Ladda upp dokument** uppe till höger, eller dra och släpp en fil direkt på sidan.
-2. Välj fil (PDF, Word eller bild) och kategori.
-3. Välj fastighet om du redan vet vilken dokumentet hör till — annars kan du koppla det i efterhand.
-4. Spara.
+2. Fyll i **Dokumentnamn**.
+3. Välj **Kategori**.
+4. Välj **Fastighet** (valfritt — du kan koppla dokumentet senare).
+5. Välj fil (PDF, Word eller bild).
+6. Spara.
 
-När filen har laddats upp startar en AI-analys automatiskt. Analysen identifierar dokumenttyp, säljare och nyckeluppgifter, och skapar eller länkar en [leverantör](/leverantorer) om möjligt.
+När filen har laddats upp startar en AI-analys automatiskt. Analysen identifierar dokumenttyp, säljare och nyckeluppgifter, räknar ut en säkerhetsscore och skapar eller länkar en [leverantör](/leverantorer) om möjligt.
 
 <Note>
 Stora eller skannade dokument kan ta en stund att analysera. Status uppdateras löpande på detaljsidan.
@@ -31,16 +35,16 @@ Längst upp på listsidan finns flera sätt att hitta rätt dokument:
 - **Fritextsökning** – söker på namn, kategori, sammanfattning och fastighetsbeteckning.
 - **Växla vy** – visa som rutnät (grid) eller lista.
 
-I listvyn kan du sortera på namn, kategori, storlek, fastighet, status eller uppladdningsdatum genom att klicka på kolumnrubrikerna.
+I listvyn kan du sortera på namn, kategori, storlek, fastighet, status eller uppladdningsdatum genom att klicka på kolumnrubrikerna. En röd siffra i huvudmenyn visar hur många dokument som behöver granskas.
 
 ### Statusar
 
 Ett dokuments AI-analys kan ha följande status:
 
-- **Klar** – analysen är färdig och uppgifterna kan granskas
-- **Låg säkerhet** – analysen är osäker och bör granskas manuellt
-- **Misslyckade** – analysen gick inte att genomföra, försök igen eller fyll i manuellt
-- **Okopplade** – dokumentet är inte kopplat till någon fastighet
+- **Klar** – analysen är färdig med hög säkerhet. Granska och korrigera vid behov.
+- **Låg säkerhet** – analysen är osäker. Granska och korrigera uppgifterna innan du litar på dem.
+- **Misslyckade** – analysen gick inte att genomföra. Försök igen eller fyll i manuellt.
+- **Okopplade** – dokumentet är inte kopplat till någon fastighet.
 
 ## Kategorier
 
@@ -57,15 +61,17 @@ Varje dokument sorteras i en kategori:
 - Försäkring
 - Annat
 
+AI-analysen föreslår en kategori automatiskt, men du kan alltid ändra den manuellt.
+
 ## Dokumentdetaljer
 
 Klicka på ett dokument för att öppna detaljsidan. Här ser du:
 
-- **Förhandsvisning** – PDF eller bild visas direkt på sidan
-- **AI-analysstatus** – en banner som visar om analysen pågår, är klar, behöver granskas eller har misslyckats
-- **Klassificering** – ändra dokumenttyp om AI-förslaget inte stämmer
+- **Förhandsvisning** – inbäddad PDF-läsare eller bild
+- **AI-analysstatus** – en banner som visar om analysen pågår, är klar, behöver granskas eller har misslyckats, inklusive säkerhetsscore
+- **Klassificering** – ändra dokumenttyp, med information om AI-förslaget och dess säkerhet
 - **Kopplingar** – länka dokumentet till en fastighet, ett hyresobjekt och en leverantör
-- **Extraherade uppgifter** – de fält som AI-analysen har plockat ut (t.ex. belopp, datum, motpart)
+- **Extraherade uppgifter** – de fält som AI-analysen har plockat ut (t.ex. belopp, datum, motpart), visade i en strukturerad lista som du kan granska och korrigera
 
 ### Analysera om
 
@@ -79,11 +85,18 @@ Markera flera dokument med kryssrutorna i listvyn för att utföra bulkåtgärde
 
 Klicka på papperskorgsikonen på en rad för att ta bort ett enskilt dokument. Borttagningen går inte att ångra.
 
+<Note>
+Filerna lagras säkert och är endast åtkomliga för medlemmar i din organisation.
+</Note>
+
 <CardGroup>
   <Card title="Leverantörer" icon="truck" href="/leverantorer">
     Leverantörsregistret byggs upp automatiskt från analyserade dokument.
   </Card>
   <Card title="Dokument per fastighet" icon="building-2" href="/fastigheter/dokument">
-    Så här hanterar du dokument kopplade till en specifik fastighet.
+    Hantera dokument direkt på en fastighets detaljsida.
+  </Card>
+  <Card title="Fastighetsbestånd" icon="building-2" href="/fastigheter/oversikt">
+    Översikt över dina fastigheter och hyresobjekt.
   </Card>
 </CardGroup>

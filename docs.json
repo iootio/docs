@@ -45,7 +45,14 @@
         "pages": [
           "kom-igang",
           "organisationer",
-          "profil",
+          "profil"
+        ]
+      },
+      {
+        "group": "Översikt",
+        "icon": "clock",
+        "expanded": true,
+        "pages": [
           "aktivitet"
         ]
       },
@@ -132,7 +139,8 @@
           "bokforing",
           "ai-assistent",
           "hyrespris",
-          "bostadsko"
+          "bostadsko",
+          "bokforing"
         ]
       },
       {
@@ -153,10 +161,10 @@
           "installningar/betalning",
           "installningar/avtalsparter",
           "installningar/medlemmar",
-          "installningar/moduler",
           "installningar/integrationer",
-          "installningar/bokforing",
-          "installningar/abonnemang"
+          "installningar/moduler",
+          "installningar/abonnemang",
+          "installningar/bokforing"
         ]
       },
       {
