@@ -10,15 +10,20 @@ Tenovo stödjer elektronisk signering av hyreskontrakt med BankID. Det innebär 
 ## Så fungerar det
 
 1. Du skapar ett hyreskontrakt och sparar det som utkast.
-2. När du är redo klickar du på signera-knappen för att initiera signering.
-3. Beroende på vem som ska signera först väljer du antingen:
-   - **Signera som hyresvärd** – du signerar först
-   - **Skicka för signering till hyresgäst** – hyresgästen signerar först
-4. Den andra parten signeras därefter, och kontraktet markeras som **Aktivt**.
+2. När du är redo skickar du kontraktet för signering.
+3. Signeringen sker alltid i en fast ordning: **borgensmän → hyresgäst → hyresvärd**.
+   - Om kontraktet har borgensmän skickar du till dem först med **Skicka till borgensmän**.
+   - Därefter skickar du till hyresgästen med **Skicka för signering**.
+   - När hyresgästen har signerat blir kontraktet **Att signera** och du kan teckna som hyresvärd.
+4. När alla parter har signerat markeras kontraktet som **Aktivt** (eller **Kommande** om startdatum ligger i framtiden).
 
-Om kontraktet har borgensmän kan du skicka till borgensmännen först med **Skicka till borgensmän**. Borgensmännen signerar innan hyresgästen och hyresvärden.
+<Note>
+Hyresvärden kan inte signera innan hyresgästen. Knappen **Signera som hyresvärd** visas först när hyresgästen (och eventuella borgensmän) har signerat.
+</Note>
 
 ## Signera som hyresvärd
+
+När hyresgästen (och eventuella borgensmän) har signerat blir kontraktet **Att signera** och knappen **Signera som hyresvärd** visas.
 
 1. Öppna kontraktet från listan eller Kanban-vyn.
 2. Klicka på **Signera som hyresvärd** (pennikonen).
@@ -51,7 +56,7 @@ Under signeringen visas en förloppsindikator som visar vilka parter som har sig
 
 När alla parter har signerat:
 
-- Kontraktets status ändras till **Aktivt**
+- Kontraktets status ändras till **Aktiv** (eller **Kommande** om startdatum ligger i framtiden)
 - En signerad PDF genereras
 - Både du och hyresgästen kan ladda ner avtalet från respektive portal
 - Ett signaturbevis blir tillgängligt på avtalets detaljsida
