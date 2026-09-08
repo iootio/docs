@@ -116,6 +116,15 @@
         ]
       },
       {
+        "group": "Ekonomi",
+        "icon": "landmark",
+        "expanded": true,
+        "pages": [
+          "ekonomi/depositioner",
+          "bokforing"
+        ]
+      },
+      {
         "group": "Felanmälan",
         "icon": "wrench",
         "expanded": true,
@@ -136,7 +145,6 @@
         "icon": "sparkles",
         "expanded": true,
         "pages": [
-          "bokforing",
           "ai-assistent",
           "hyrespris",
           "bostadsko"
