@@ -68,6 +68,10 @@
           "fastigheter/energi",
           "fastigheter/dokument",
           "fastigheter/besiktningar",
+          "fastigheter/bygglov",
+          "fastigheter/efterlevnad",
+          "fastigheter/forsakringar",
+          "fastigheter/serviceavtal",
           "fastigheter/kostnader"
         ]
       },
@@ -121,7 +125,8 @@
         "expanded": true,
         "pages": [
           "ekonomi/depositioner",
-          "bokforing"
+          "bokforing",
+          "hyrespris"
         ]
       },
       {
@@ -146,7 +151,6 @@
         "expanded": true,
         "pages": [
           "ai-assistent",
-          "hyrespris",
           "bostadsko"
         ]
       },
