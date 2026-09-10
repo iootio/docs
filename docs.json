@@ -70,7 +70,6 @@
           "fastigheter/besiktningar",
           "fastigheter/bygglov",
           "fastigheter/efterlevnad",
-          "fastigheter/forsakringar",
           "fastigheter/serviceavtal",
           "fastigheter/kostnader"
         ]
@@ -104,6 +103,7 @@
         "expanded": true,
         "pages": [
           "leverantorer",
+          "forsakringar",
           "dokument"
         ]
       },
