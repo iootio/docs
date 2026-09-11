@@ -1,6 +1,6 @@
 ---
 title: Hyresprisanalys
-description: Analysera och optimera dina hyrespriser med hjälp av intern snittdata och uthyrningsgrad.
+description: Analysera och optimera dina hyrespriser med hjälp av intern snittdata, uthyrningsgrad och SCB-hyresstatistik.
 ---
 
 # Hyresprisanalys
@@ -8,7 +8,7 @@ description: Analysera och optimera dina hyrespriser med hjälp av intern snittd
 Hyresprisanalysen ger dig en överblick över dina hyresintäkter och uthyrningsgrad per fastighet, samt förslag på hyresjusteringar baserade på jämförelse med din genomsnittshyra.
 
 <Note>
-Hyresprisanalys är en modul som måste aktiveras för din organisation. Aktivera den under [Inställningar → Moduler](/installningar/moduler) om du inte ser den i appen.
+Hyresprisanalys är en modul som måste aktiveras för din organisation. Aktivera den under [Inställningar → Moduler](/installningar/moduler) om du inte ser den i appen. Du hittar Hyresprisanalys under avsnittet **Ekonomi** i huvudmenyn.
 </Note>
 
 ## Sammanfattning
@@ -49,3 +49,18 @@ Använd förslagen som ett underlag när du tar beslut om nya hyror eller juster
 <Tip>
 Förslagen är riktmärken. Beakta alltid individuella omständigheter som skick, kontraktstyp och hyresgästens situation innan du genomför en justering.
 </Tip>
+
+## Hyresjämförelse med SCB-statistik
+
+På varje hyresobjekts detaljsida visas en **Hyresjämförelse**-panel som hämtar officiell hyresstatistik från Statistiska centralbyrån (SCB). Panelen visar:
+
+- **Egen årshyra/kvm** – objektets egna årliga hyra per kvadratmeter
+- **Median SCB** – medianhyran per kvm och år för kommunen
+- **Medel SCB** – snitthyran per kvm och år för kommunen
+- **Jämförelse** – om objektets hyresnivå ligger över eller under SCB-medianen, med procentuell avvikelse
+
+Du kan också visa en trendgraf som jämför hyresutvecklingen för kommunen, länet och riket över tid.
+
+<Note>
+SCB-statistiken hämtas via en integration som måste vara aktiverad. Aktivera den under [Inställningar → Integrationer](/installningar/integrationer) om panelen inte visas.
+</Note>
