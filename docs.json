@@ -160,6 +160,7 @@
         "expanded": true,
         "pages": [
           "kalender/oversikt",
+          "kalender/handelsedetaljer",
           "kalender/synkronisering"
         ]
       },
@@ -192,7 +193,8 @@
         "expanded": true,
         "pages": [
           "support",
-          "e-postmeddelanden"
+          "e-postmeddelanden",
+          "mer"
         ]
       }
     ]
