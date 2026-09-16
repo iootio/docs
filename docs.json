@@ -50,9 +50,10 @@
       },
       {
         "group": "Översikt",
-        "icon": "clock",
+        "icon": "house",
         "expanded": true,
         "pages": [
+          "oversikt",
           "aktivitet"
         ]
       },
