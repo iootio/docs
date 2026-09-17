@@ -14,11 +14,11 @@ Medlemmar har olika roller som styr vad de kan göra i organisationen:
 | Roll | Vad det innebär |
 |---|---|
 | **Ägare** | Full åtkomst, kan hantera andra medlemmars roller och ta bort ägare |
-| **Admin** | Full åtkomst, kan hantera andra medlemmars roller (inte ta bort ägare) |
-| **Manager** | Hanterar fastigheter, kontrakt och hyror |
+| **Admin** | Full åtkomst, kan hantera andra medlemmars roller (inte ta bort eller tilldela ägare) |
+| **Manager** | Kan se och hantera organisationens data, men inte känsliga åtgärder som att skicka aviseringar eller signera avtal |
 | **Medlem** | Grundläggande åtkomst till organisationens data |
 
-Endast ägare och admin kan ändra andra medlemmars roller och bjuda in nya medlemmar.
+Endast ägare och admin kan ändra andra medlemmars roller och bjuda in nya medlemmar. Rollen **Ägare** kan bara tilldelas av en befintlig ägare.
 
 ## Bjud in en medlem
 
@@ -47,10 +47,16 @@ Du kan inte ta bort dig själv, och endast ägare kan ta bort andra ägare.
 
 ## Vad medlemmar kan göra
 
-Medlemmar kan:
+Alla medlemmar kan se organisationens fastigheter, hyresobjekt, hyresgäster, kontrakt och aviseringar. Känsliga och ekonomiska åtgärder kräver rollen **ägare** eller **admin**:
 
-- Se och hantera alla fastigheter och hyresobjekt
-- Skapa och signera hyreskontrakt
-- Skapa och skicka hyresaviseringar
-- Hantera hyresgäster och hyresvärdar
-- Ändra organisationens inställningar (ägar- och admin-roll)
+- Generera, skicka och påminna om hyresaviseringar
+- Signera hyreskontrakt som hyresvärd med BankID
+- Säga upp eller makulera hyreskontrakt
+- Signera besiktningsrapporter
+- Skapa bokföringsverifikat och exportera SIE-filer
+- Justera hyror för flera avtal samtidigt
+- Byta abonnemangspaket och faktureringsperiod
+- Koppla och konfigurera integrationer
+- Ändra organisationens inställningar
+
+Manager och medlem har alltså arbetsåtkomst till registren, men kan inte utföra åtgärder som skickar e-post, påverkar ekonomi eller är juridiskt bindande.
