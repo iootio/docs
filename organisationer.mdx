@@ -17,6 +17,15 @@ När du loggar in väljer du vilken organisation du vill arbeta i via sidan **V�
 2. Klicka på den organisation du vill arbeta i.
 3. Du skickas till startsidan med den valda organisationen aktiv.
 
+## Väntande inbjudningar
+
+Om någon har bjudit in dig till en organisation eller till en hyresgästportal visas avsnittet **Väntande inbjudningar** högst upp på sidan **Organisationer**. Två typer av inbjudningar kan visas:
+
+- **Medlemsinbjudan** – en inbjudan att bli medlem i en organisation, med den roll som erbjuds
+- **Hyresgästkoppling** – en organisation vill koppla ditt konto till en hyresgäst i deras register
+
+Klicka på **Godkänn** för att acceptera inbjudan eller **Avvisa** för att tacka nej. Ingen data delas förrän du själv har godkänt kopplingen.
+
 ## Skapa en ny organisation
 
 1. Gå till sidan **Organisationer**.
@@ -28,12 +37,23 @@ Den nya organisationen blir aktiv direkt och du kan börja lägga till fastighet
 
 ## Ta bort en organisation
 
+Organisationer tas inte bort direkt — borttagningen **schemaläggs** med en 30-dagars dröjsmålsperiod.
+
 1. Gå till **Inställningar → Allmänt**.
 2. Längst ner under **Farozon** klickar du på **Ta bort organisation**.
-3. Skriv organisationens namn för att bekräfta.
+3. Dialogen visar vad som kommer att raderas — antal fastigheter, hyresobjekt, hyresgäster, avtal med mera.
+4. Ladda ner organisationens data innan du fortsätter. Dialogen erbjuder export av fastigheter, hyresobjekt, hyresgäster, hyresavtal, aviseringar och betalningar som CSV-filer, samt bokföringen som en SIE-fil.
+5. Skriv organisationens namn för att bekräfta och klicka på **Schemalägg borttagning**.
+
+När borttagningen är schemalagd:
+
+- Organisationen blir **skrivskyddad** direkt — du kan se datan men inte ändra den.
+- Ett e-postmeddelande skickas med datumet för den slutliga raderingen.
+- Under **Inställningar → Allmänt** visas när raderingen sker. Där kan du klicka på **Avbryt borttagning** för att ångra fram till att perioden löper ut.
+- Efter 30 dagar raderas organisationen och all dess data permanent.
 
 <Warning>
-Att ta bort en organisation är permanent och kan inte ångras. Alla fastigheter, hyresobjekt, hyresgäster, hyreskontrakt och fakturor kopplade till organisationen raderas.
+Om organisationen har bokförda verifikationer, skickade aviseringar eller betalningar visas en varning om att datan omfattas av lagringskrav enligt bokföringslagen. Ladda ner SIE-filen innan du schemalägger borttagningen — datan kan inte återskapas efter radering.
 </Warning>
 
 <Note>

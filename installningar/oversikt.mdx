@@ -11,13 +11,13 @@ Under **Inställningar** konfigurerar du din organisations uppgifter, betalnings
 
 ### Allmänt
 
-Här anger du organisationens namn. Under Allmänt finns också en **Farozon** där du kan ta bort organisationen permanent.
+Här anger du organisationens namn. Under Allmänt finns också en **Farozon** där du kan schemalägga borttagning av organisationen.
 
-Att ta bort en organisation är permanent och kan inte ångras. Alla data kopplad till organisationen raderas — fastigheter, hyresobjekt, hyresgäster, hyreskontrakt och fakturor.
+När du schemalägger en borttagning blir organisationen skrivskyddad direkt och raderas permanent efter 30 dagar. Fram till dess kan borttagningen avbrytas med **Avbryt borttagning** på samma sida. Innan du bekräftar kan du ladda ner organisationens data som CSV-filer och bokföringen som SIE-fil.
 
 Du kan inte ta bort din sista organisation. Om du bara har en organisation visas en uppmaning att skapa en ny organisation först under **Organisationer**.
 
-När du kan ta bort organisationen klickar du på **Ta bort organisation** och bekräftar genom att skriva in organisationens namn i dialogen.
+När du kan schemalägga borttagningen klickar du på **Ta bort organisation** och bekräftar genom att skriva in organisationens namn i dialogen.
 
 ### Betalning
 
@@ -55,7 +55,7 @@ Anslut Tenovo till externa tjänster:
 - **SCB** – hyresstatistik och benchmarkdata (förkonfigurerat)
 - **Lettermint** – e-postutskick och leverans (förkonfigurerat)
 - **SMHI** – väderdata och prognoser (förkonfigurerat)
-- **Fortnox** – synk av fakturor och betalningar (kommer snart, aktiveras per organisation)
+- **Fortnox** – synk av fakturor och betalningar (aktiveras per organisation via en funktionsflagga)
 - **Nordic Propeye** – mätare och avläsningar för el, vatten och värme (kopplas på)
 - **Kivra** – digital brevlåda för hyresavier (kopplas på)
 - **FusionSolar** – solpanelsproduktion från Huawei (kopplas på)
@@ -99,6 +99,12 @@ Bokföring är en modul som måste aktiveras under [Inställningar → Moduler](
 </Note>
 
 Läs mer på sidan om [bokföringsinställningar](/installningar/bokforing).
+
+### Papperskorg
+
+Poster som tas bort hamnar i papperskorgen och kan återställas i 30 dagar av ägare och administratörer. Där kan du också radera poster permanent i förtid. Aviseringar, betalningar och bokföringsposter är bokföringsmaterial och tas aldrig bort.
+
+Läs mer på sidan om [papperskorgen](/installningar/papperskorg).
 
 <Note>
 Endast användare med tillgång till organisationen kan se och ändra inställningar. Se till att endast betrodda personer har tillgång.
