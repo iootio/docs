@@ -17,10 +17,25 @@ I Tenovo samlar du all information om dina hyresgäster på ett ställe. Du kan 
 - **Återställ lösenord** – skicka en återställningslänk till hyresgäster med aktivt konto
 - **Filtrera på typ** – visa endast privatpersoner eller företag
 - **Söka** – sök på namn, e-post eller personnummer/organisationsnummer
+- **Massåtgärder** – markera flera hyresgäster för att exportera, bjuda in eller ta bort dem i ett steg
 - **Exportera** – ladda ner hyresgästlistan som CSV
 - **Arkivera** – arkivera hyresgäster som inte längre är aktuella utan att ta bort dem
 - **Ta bort** – ta bort hyresgäster som saknar kopplade poster (kontrakt, aviseringar, betalningar)
 - **Anonymisera personuppgifter** – pseudonymisera en hyresgästs personuppgifter enligt GDPR när kopplade poster måste bevaras (se [hyresgästdetaljer](/hyresgaster/hyresgastdetaljer))
+
+<Tip>
+Sökningen och det aktiva typfiltret speglas i adressfältet. Du kan därför bokmärka eller dela en länk till en filtrerad vy, till exempel alla företagshyresgäster.
+</Tip>
+
+## Markera flera hyresgäster
+
+I listan kan du markera enskilda hyresgäster med kryssrutan på varje rad, eller markera alla synliga rader med kryssrutan i listhuvudet. En räknare visar hur många som är valda och med poster markerade kan du:
+
+- **Exportera N valda** – ladda ner de markerade hyresgästerna som en CSV-fil
+- **Bjud in N** – skicka en portalinbjudan till alla markerade hyresgäster som kan bjudas in (har e-postadress men inget aktiverat konto). Knappen visas bara när minst en vald hyresgäst kan bjudas in.
+- **Ta bort N valda** – ta bort de markerade hyresgästerna (kräver rollen ägare eller administratör). Endast hyresgäster utan kopplade poster kan tas bort – hyresgäster med kopplad data hoppas över, och för dem är [anonymisering](/hyresgaster/hyresgastdetaljer) rätt väg.
+
+Borttagna hyresgäster hamnar i [papperskorgen](/installningar/papperskorg) där de kan återställas i 30 dagar.
 
 ## Arkivera hyresgäster
 
