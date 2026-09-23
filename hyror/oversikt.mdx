@@ -30,7 +30,7 @@ Om både e-post och Kivra är aktiverade skickas aviseringen via båda kanalerna
 ## Vad du kan göra
 
 - **Skapa aviseringar** – skapa enstaka aviseringar manuellt med en eller flera debiteringsrader
-- **Generera hyror** – skapa aviseringar i bulk för alla aktiva hyreskontrakt för en viss månad
+- **Generera hyror** – skapa aviseringar i bulk för alla aktiva hyreskontrakt för en viss månad (se nedan)
 - **Skicka utkast** – markera valda utkast som skickade i ett enda steg
 - **Markera som skickad** – för aviseringar som skickats via post eller annat sätt, utan att skicka e-post
 - **Skicka påminnelser** – skicka påminnelser till hyresgäster med förfallna aviseringar
@@ -43,6 +43,16 @@ Om både e-post och Kivra är aktiverade skickas aviseringen via båda kanalerna
 - **Exportera verifikat** – ladda ner SIE-fil för alla aviseringar i en månad (kräver att [bokföringsmodulen](/installningar/moduler) är aktiverad)
 - **Exportera CSV** – ladda ner aviseringarna som en CSV-fil
 - **Stämma av betalningar** – importera bankgiro-utdrag och matcha mot aviseringar via [betalningsavstämning](/hyror/betalningsavstamning)
+
+## Generera månadens hyror
+
+Välj en månad i månadsrailen och klicka på **Generera hyror** – via månadsgruppens åtgärdsmeny, eller via knappen i tomma månadsvyn när månaden saknar aviseringar. Tenovo skapar då utkast för alla aktiva hyreskontrakt som tillåter fakturering för den valda månaden.
+
+- Kontrakt som redan har en avisering för månaden hoppas över.
+- Aviseringar genereras inte längre fram i tiden än vad respektive avtal tillåter. Om inget kan genereras av den anledningen får du ett meddelande som förklarar varför.
+- IMD-debitering (individuell elmätning) räknas ut och läggs till automatiskt för avtal där IMD är aktiverat och en mätare finns kopplad.
+
+Aviseringarna sparas som **utkast** – granska dem och skicka dem sedan med **Skicka valda utkast** eller en i taget.
 
 <Note>
 Hyresgästen kan se sina aviseringar och betalningsstatus i [hyresgästportalen](/hyresgastportalen/oversikt) när de har bjudits in.
