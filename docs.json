@@ -173,7 +173,7 @@
         "pages": [
           "installningar/oversikt",
           "installningar/betalning",
-          "installningar/avtalsparter",
+          "installningar/juridiska-personer",
           "installningar/medlemmar",
           "installningar/integrationer",
           "installningar/moduler",
@@ -218,5 +218,11 @@
     "socials": {
       "linkedin": "https://linkedin.com/company/tenovo"
     }
-  }
+  },
+  "redirects": [
+    {
+      "source": "/installningar/avtalsparter",
+      "destination": "/installningar/juridiska-personer"
+    }
+  ]
 }

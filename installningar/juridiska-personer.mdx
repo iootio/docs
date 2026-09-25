@@ -1,0 +1,53 @@
+---
+title: Juridiska personer
+description: Så här hanterar du juridiska personer — de bolag som äger fastigheter, står som hyresvärd och utfärdar avier.
+---
+
+# Juridiska personer
+
+**Juridiska personer** är de bolag och föreningar i organisationen som äger fastigheter, står som hyresvärd i hyreskontrakt och utfärdar aviseringar. Varje organisation har minst en juridisk person — en standardpost skapas automatiskt när organisationen skapas och speglar organisationens namn och betalningsuppgifter.
+
+Om organisationen bara har en juridisk person märks den knappt i appen. När du lägger till fler visas val för juridisk person på fler ställen, till exempel **Fastighetsägande bolag** när du registrerar en fastighet och **Utfärdande bolag** när du skapar en avisering.
+
+## Lägga till en juridisk person
+
+1. Gå till **Inställningar**.
+2. Klicka på **Juridiska personer** i menyn till vänster.
+3. Klicka på **Lägg till juridisk person**.
+4. Fyll i uppgifterna:
+   - **Bolagsform** – Aktiebolag, Handelsbolag, Kommanditbolag, Bostadsrättsförening, Samfällighetsförening, Enskild firma eller Övrigt
+   - **Namn**
+   - **Organisationsnummer** – eller **personnummer** om bolagsformen är enskild firma
+   - **Momsregistreringsnummer** – visas inte för enskild firma
+   - **Adress**, **postnummer** och **ort** – sök adress med autosök
+   - **E-post** och **telefon**
+   - **Betalningsuppgifter** – bankgiro, PlusGiro, Swish, bankkonto och internationella betalningar
+   - **Faktureringsstandarder** – standardbetalningsmetod (bankgiro, PlusGiro, Swish, autogiro eller annan), påminnelseavgift i kronor och dröjsmålsränta i procent
+5. Klicka på **Lägg till**.
+
+<Note>
+Organisationsnummer, personnummer, e-post, postnummer och betalningsnummer valideras automatiskt när du sparar. Påminnelseavgiften (60 kr som standard) och dröjsmålsräntan (8 % som standard) används när påminnelser skickas på förfallna aviseringar.
+</Note>
+
+## Standardvalet
+
+En juridisk person kan markeras som **standard** med stjärnikonen på kortet. Standarden väljs automatiskt i nya fastigheter, kontrakt och aviseringar. Standardposten kan inte arkiveras — sätt en annan juridisk person som standard först.
+
+## Använda juridiska personer
+
+- **I hyreskontrakt** – avsnittet **Hyresvärd (juridisk person)** i avsnittsredigeraren väljer vilken juridisk person som står som hyresvärd i avtalet och i den genererade PDF:en.
+- **På fastigheter** – när organisationen har fler än en juridisk person väljer du **Fastighetsägande bolag** i fastighetsformuläret.
+- **På aviseringar** – med flera juridiska personer väljer du **Utfärdande bolag** i aviseringsformuläret. Bolaget står som avsändare och tar emot betalningen, och dess faktureringsstandarder styr påminnelseavgift och dröjsmålsränta.
+- **I bokföringen** – verifikatserier och periodisering ställs in per juridisk person under [Inställningar → Bokföring](/installningar/bokforing).
+
+## Redigera och arkivera
+
+Du kan redigera en juridisk persons uppgifter när som helst med pennikonen på kortet. Ändringarna påverkar alla kontrakt där personen är kopplad.
+
+Juridiska personer tas inte bort — de **arkiveras** i stället. Klicka på arkiveringsikonen på kortet och bekräfta. En arkiverad juridisk person kan inte längre väljas för nya fastigheter, avtal eller avier, men befintliga avier och verifikat påverkas inte.
+
+Växla mellan **Aktiva** och **Arkiverade** med växeln högst upp på sidan. I den arkiverade vyn återställer du en juridisk person med **Återställ**.
+
+<Warning>
+Standarden kan inte arkiveras. Om du vill arkivera den juridiska person som är standard måste du först sätta en annan som standard.
+</Warning>
