@@ -28,11 +28,16 @@ Ovanför listan kan du:
 
 - **Söka** på hyresgäst eller period
 - **Filtrera på status** – klicka på ett statuskort för att visa endast aviseringar med den statusen
+- **Filtrera på juridisk person** – om organisationen har flera [juridiska personer](/installningar/juridiska-personer) kan du begränsa listan till aviseringar från ett visst utfärdande bolag
 - **Rensa filter** – klicka på rensa-knappen för att återställa sökning och statusfilter
 
 ## Förfallna hyror
 
 Klicka på statuskortet **Förfallen** för att snabbt se alla hyror där förfallodatumet har passerats. Dessa markeras tydligt i listan och är prioriterade i uppföljningen.
+
+<Note>
+På aviseringsraden visas texten *Förföll [datum]* i rött redan dagen efter förfallodatum, men själva statusen ändras först till **Förfallen** efter en kort respit på tre dagar. En avisering kan alltså visa *Förföll* medan statusen fortfarande är **Skickad**.
+</Note>
 
 ## Skicka påminnelser
 
@@ -61,7 +66,12 @@ Markeringen visas på aviseringar med status **Skickad**, **Mottagen** eller **F
 
 ## Registrera betalning
 
-Öppna en avisering och klicka på **Registrera betalning** när inbetalningen har kommit in på kontot. Ange belopp och betalningsdatum. Om beloppet täcker det återstående beloppet markeras aviseringen som **Betald**; annars registreras en delbetalning och förloppsindikatorn uppdateras.
+När inbetalningen har kommit in på kontot kan du registrera den på två sätt:
+
+- **Direkt i listan** – klicka på **Registrera betalning** på aviseringens rad (knappen visas för skickade, mottagna och förfallna aviseringar).
+- **På detaljsidan** – öppna aviseringen och klicka på **Registrera betalning** i sidhuvudet.
+
+Ange belopp och betalningsdatum i dialogen. Om beloppet täcker det återstående beloppet markeras aviseringen som **Betald**; annars registreras en delbetalning och förloppsindikatorn uppdateras.
 
 <Note>
 Du kan också stämma av betalningar i bulk genom att importera bankgiro-utdrag via [betalningsavstämning](/hyror/betalningsavstamning).

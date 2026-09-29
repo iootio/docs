@@ -41,6 +41,8 @@ Längst upp på listsidan finns flera sätt att hitta rätt dokument:
 - **Fritextsökning** – söker på namn, kategori, sammanfattning och fastighetsbeteckning.
 - **Växla vy** – visa som rutnät (grid) eller lista.
 
+I rutnätsvyn grupperas dokumenten per uppladdningsår med året som rubrik – nyaste året överst. Dokument utan uppladdningsdatum hamnar i gruppen *Okänt år* sist. Om det finns fler dokument än som visas klickar du på **Visa fler** för att ladda fler.
+
 I listvyn kan du sortera på namn, kategori, storlek, fastighet, status eller uppladdningsdatum genom att klicka på kolumnrubrikerna. En röd siffra i huvudmenyn visar hur många dokument som behöver granskas eller vars analys har misslyckats.
 
 <Tip>
@@ -85,7 +87,8 @@ Klicka på ett dokument för att öppna detaljsidan. Här ser du:
 - **Förhandsvisning** – inbäddad PDF-läsare eller bild
 - **AI-analysstatus** – en banner som visar om analysen pågår, är klar, behöver granskas eller har misslyckats, inklusive säkerhetsscore
 - **Klassificering** – ändra dokumenttyp, med information om AI-förslaget och dess säkerhet
-- **Kopplingar** – länka dokumentet till en fastighet, ett hyresobjekt och en leverantör
+- **Kopplingar** – länka dokumentet till fastigheter, hyresobjekt, en leverantör, avtalsparter (hyresvärd och hyresgäster) och avtal. Varje kopplingskort visar en markering för hur kopplingen kom till: **AI-matchad** (analysen fann en befintlig post), **AI-skapad** (analysen skapade en ny post), **Manuell** (du kopplade själv) eller **Ej kopplad**
+- **Härledda poster** – poster som analysen skapade utifrån dokumentet visas skrivskyddat under respektive rubrik: **Försäkringar**, **Kostnader**, **Krav**, **Bygglov** och **Mätare**. Varje post länkar vidare till rätt undervy på fastighetens detaljsida
 - **Extraherade uppgifter** – de fält som AI-analysen har plockat ut (t.ex. belopp, datum, motpart), visade i en strukturerad lista som du kan granska och korrigera
 
 ### Analysera om
@@ -94,7 +97,7 @@ Om du har ändrat dokumenttyp eller kopplingar kan du klicka på **Analysera om*
 
 ## Hantera flera dokument
 
-Markera flera dokument med kryssrutorna i listvyn för att utföra bulkåtgärder, till exempel ta bort flera dokument på en gång. Val av flera dokument är tillgängligt för användare med rollen **ägare** eller **administratör**.
+Markera flera dokument med kryssrutorna i listvyn för att utföra bulkåtgärder, till exempel ta bort flera dokument på en gång. Val av flera dokument är tillgängligt för användare med rollen **administratör**.
 
 ## Arkivera dokument
 
@@ -117,7 +120,7 @@ Filerna lagras säkert och är endast åtkomliga för medlemmar i din organisati
   <Card title="Dokument per fastighet" icon="building-2" href="/fastigheter/dokument">
     Hantera dokument direkt på en fastighets detaljsida.
   </Card>
-  <Card title="Fastighetsbestånd" icon="building-2" href="/fastigheter/oversikt">
+  <Card title="Fastighetsportfölj" icon="building-2" href="/fastigheter/oversikt">
     Översikt över dina fastigheter och hyresobjekt.
   </Card>
 </CardGroup>

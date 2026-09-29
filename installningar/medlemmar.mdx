@@ -9,24 +9,48 @@ Du kan bjuda in kollegor till din organisation i Tenovo så att flera personer k
 
 ## Roller
 
-Medlemmar har olika roller som styr vad de kan göra i organisationen:
+Varje medlem har en roll som styr vad personen kan göra i organisationen:
 
 | Roll | Vad det innebär |
 |---|---|
-| **Ägare** | Full åtkomst, kan hantera andra medlemmars roller och ta bort ägare |
-| **Admin** | Full åtkomst, kan hantera andra medlemmars roller (inte ta bort eller tilldela ägare) |
-| **Medlem** | Kan se och hantera organisationens data, men inte känsliga åtgärder som att skicka aviseringar eller signera avtal |
+| **Administratör** | Full åtkomst till hela organisationen – kan hantera medlemmar, integrationer, abonnemang och inställningar samt utföra alla åtgärder i appen |
+| **Förvaltare** | Kan skapa och ändra fastigheter, hyresobjekt, hyresgäster, kontrakt, felanmälningar, besiktningar, leverantörer, dokument och kalenderhändelser. Ser ekonomi men kan inte skicka eller makulera aviseringar eller hantera bokföring. Kan inte hantera medlemmar, integrationer eller inställningar |
+| **Ekonomi** | Hanterar aviseringar, betalningar, verifikat och SIE-export – inklusive känsliga åtgärder som att skicka och makulera aviseringar. Ser övriga register men kan inte ändra dem |
+| **Fastighetstekniker** | Hanterar felanmälningar, besiktningar (inklusive signering), tekniska dokument, mätare och nycklar. Ser fastigheter, avtal och hyresgästernas kontaktuppgifter men inte ekonomi |
+| **Läsbehörig** | Skrivskyddad åtkomst – kan se register, ekonomi, kalender och dokument men inte ändra något |
 
-Endast ägare och admin kan ändra andra medlemmars roller och bjuda in nya medlemmar. Rollen **Ägare** kan bara tilldelas av en befintlig ägare.
+<Note>
+Äldre roller – **Ägare** och **Medlem** – kan finnas kvar på befintliga medlemmar och visas då med tillägget *(äldre)* i rollvalet. De kan inte tilldelas nya medlemmar. En medlem med rollen Ägare kan inte redigeras eller tas bort i appen.
+</Note>
+
+## Åtkomst per juridisk person och fastighet
+
+Administratörer har alltid tillgång till hela organisationen. För övriga roller kan du välja åtkomstnivå i fältet **Åtkomst**:
+
+- **Hela organisationen** – medlemmen ser och arbetar med allt som rollen tillåter
+- **Begränsad åtkomst** – medlemmen får bara tillgång till valda **juridiska personer** och/eller **fastigheter**
+
+Vid begränsad åtkomst gäller:
+
+- En tilldelning på en **juridisk person** ger åtkomst till allt under bolaget – dess fastigheter, hyresobjekt och avtal – samt ekonomin för det bolaget.
+- En tilldelning på en **fastighet** ger driftåtkomst till fastigheten – hyresobjekt, avtal, felanmälningar och tekniska dokument – men inte till ekonomi eller juridiska personer.
+- **Ekonomi** kräver minst en juridisk person.
+- **Fastighetstekniker** kräver minst en fastighet – en juridisk person räcker inte. Rollen föreslår begränsad åtkomst som standard.
+- **Förvaltare** och **Läsbehörig** kräver minst en juridisk person eller en fastighet.
+
+I medlemslistan visar kolumnen **Åtkomst** om medlemmen har tillgång till *Hela organisationen* eller en sammanfattning av tilldelningarna, till exempel *2 juridiska personer, 3 fastigheter*.
 
 ## Bjud in en medlem
+
+Endast administratörer kan bjuda in, redigera eller ta bort medlemmar.
 
 1. Gå till **Inställningar**.
 2. Klicka på **Medlemmar** i menyn till vänster.
 3. Klicka på **Bjud in medlem**.
 4. I modalen som öppnas, ange personens **e-postadress**.
-5. Välj **roll** (Ägare, Admin eller Medlem).
-6. Klicka på **Skicka inbjudan**.
+5. Välj **roll** (Administratör, Förvaltare, Ekonomi, Fastighetstekniker eller Läsbehörig).
+6. Välj **Åtkomst** – *Hela organisationen* eller *Begränsad åtkomst*. Vid begränsad åtkomst markerar du de juridiska personer och/eller fastigheter som medlemmen ska ha tillgång till.
+7. Klicka på **Skicka inbjudan** och bekräfta i dialogen.
 
 Om något går fel visas felmeddelandet inline i modalen. När inbjudan har skickats stängs modalen och en bekräftelse visas. Den inbjudna personen visas med status **Inbjuden** tills de har accepterat inbjudan.
 
@@ -41,25 +65,10 @@ Om e-postadressen redan är kopplad till ett Tenovo-konto skapas ett väntande m
 På sidan **Medlemmar** ser du en lista över alla personer som har tillgång till organisationen. För varje medlem kan du:
 
 - **Se status** – inbjuden eller aktiv
-- **Ändra roll** – välj en ny roll i rullgardinsmenyn (kräver ägare- eller admin-roll)
+- **Se åtkomst** – hela organisationen eller de tilldelade juridiska personerna och fastigheterna
+- **Redigera** – öppna samma modal som vid inbjudan och ändra roll eller åtkomst (kräver administratör)
 - **Ta bort** – ta bort åtkomsten för en medlem
 
 <Note>
-Du kan inte ta bort dig själv, och endast ägare kan ta bort andra ägare.
+Du kan inte redigera eller ta bort dig själv. Den sista administratören i organisationen kan inte tas bort eller byta roll — utse en till administratör först.
 </Note>
-
-## Vad medlemmar kan göra
-
-Alla medlemmar kan se organisationens fastigheter, hyresobjekt, hyresgäster, kontrakt och aviseringar. Känsliga och ekonomiska åtgärder kräver rollen **ägare** eller **admin**:
-
-- Generera, skicka och påminna om hyresaviseringar
-- Signera hyreskontrakt som hyresvärd med BankID
-- Säga upp eller makulera hyreskontrakt
-- Signera besiktningsrapporter
-- Skapa bokföringsverifikat och exportera SIE-filer
-- Justera hyror för flera avtal samtidigt
-- Byta abonnemangspaket och faktureringsperiod
-- Koppla och konfigurera integrationer
-- Ändra organisationens inställningar
-
-Medlemmar har alltså arbetsåtkomst till registren, men kan inte utföra åtgärder som skickar e-post, påverkar ekonomi eller är juridiskt bindande.
