@@ -94,6 +94,7 @@
           "avtal/oversikt",
           "avtal/skapa-hyreskontrakt",
           "avtal/avtalsdetaljer",
+          "avtal/hyresjustering",
           "avtal/signera-med-bankid",
           "avtal/avtalsmallar"
         ]
@@ -135,7 +136,8 @@
         "icon": "wrench",
         "expanded": true,
         "pages": [
-          "felanmalan/oversikt"
+          "felanmalan/oversikt",
+          "felanmalan/arendedetaljer"
         ]
       },
       {
@@ -143,6 +145,7 @@
         "icon": "door-open",
         "expanded": true,
         "pages": [
+          "hyresgastportalen/kom-igang",
           "hyresgastportalen/oversikt"
         ]
       },
@@ -187,6 +190,7 @@
         "icon": "shield",
         "expanded": true,
         "pages": [
+          "sakerhet/konto-och-inloggning",
           "sakerhet/datahantering"
         ]
       },
