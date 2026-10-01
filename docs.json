@@ -176,6 +176,7 @@
         "pages": [
           "installningar/oversikt",
           "installningar/betalning",
+          "installningar/aviseringar",
           "installningar/juridiska-personer",
           "installningar/medlemmar",
           "installningar/integrationer",

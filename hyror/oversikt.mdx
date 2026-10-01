@@ -18,6 +18,8 @@ En avisering kan ha följande statusar:
 - **Förfallen** – förfallodatum har passerat utan betalning
 - **Makulerad** – aviseringen har annullerats och en kreditavisering har skapats
 
+Utöver statusarna kan en avisering vara **delbetald** — när en registrerad inbetalning inte täcker hela beloppet. Delbetalda aviseringar behåller sin status (till exempel Skickad eller Förfallen) men visas i egna steg i betalningsflödet och med inbetalt belopp på raden.
+
 ## Leveranskanaler
 
 Aviseringar kan skickas via två kanaler:
@@ -35,8 +37,8 @@ Om både e-post och Kivra är aktiverade skickas aviseringen via båda kanalerna
 - **Markera som skickade** – för aviseringar som skickats via post eller annat sätt, utan att skicka e-post (alternativ i samma knapp)
 - **Skicka påminnelser** – skicka påminnelser till hyresgäster med förfallna aviseringar
 - **Registrera betalning** – registrera en inbetalning direkt på aviseringens rad eller från aviseringens detaljsida
-- **Följa status** – se alla aviseringar i en lista, filtrerad per månad och status via statuskorten
-- **Filtrera** – se förfallna eller aviseringar med en viss status genom att klicka på statuskorten
+- **Följa status** – se alla aviseringar i en lista, filtrerad per månad och status via flödesstapeln
+- **Filtrera** – se förfallna eller aviseringar med en viss status genom att klicka på ett steg i flödesstapeln
 - **Söka** – hitta aviseringar baserat på hyresgäst eller period
 - **Hantera rader** – lägg till flera debiteringar på samma avisering (hyra, parkering, etc.), med valbar debiteringsperiod per rad
 - **Ta bort i bulk** – markera och ta bort flera utkast samtidigt (endast utkast kan tas bort — skickade aviseringar är bokföringsmaterial)
@@ -44,6 +46,17 @@ Om både e-post och Kivra är aktiverade skickas aviseringen via båda kanalerna
 - **Exportera verifikat** – ladda ner SIE-fil för alla aviseringar i en månad (kräver att [bokföringsmodulen](/installningar/moduler) är aktiverad)
 - **Exportera CSV** – ladda ner månadens aviseringar som en CSV-fil via månadsgruppens åtgärdsmeny, eller välj **Exportera valda** för att bara exportera de markerade aviseringarna
 - **Stämma av betalningar** – importera bankgiro-utdrag och matcha mot aviseringar via [betalningsavstämning](/hyror/betalningsavstamning)
+
+## Betalningsflödet
+
+Överst på sidan visar en flödesstapel alla öppna aviseringar grupperade efter betalningsläge:
+
+- **Utkast** – utkast som väntar på att skickas, med beloppet som återstår att skicka
+- **Skickade** – skickade aviseringar där ingenting har betalats ännu
+- **Delbetalda** – aviseringar med en inbetalning som inte täcker hela beloppet och ännu inte är förfallna (visar det inbetalda beloppet)
+- **Förfallna** – alla förfallna aviseringar, med undervyn **Varav delbetalda förfallna** för förfallna aviseringar som delbetalats
+
+Varje steg visar antal aviseringar och belopp, och stegets bredd speglar andelen av det totala utestående beloppet. Klicka på ett steg för att filtrera listan på det läget — klicka igen för att ta bort filtret. Betalda och makulerade aviseringar ingår inte i flödesstapeln.
 
 ## Generera månadens hyror
 
@@ -54,6 +67,10 @@ Välj en månad i månadsrailen och klicka på **Generera hyror** – via månad
 - IMD-debitering (individuell elmätning) räknas ut och läggs till automatiskt för avtal där IMD är aktiverat och en mätare finns kopplad.
 
 Aviseringarna sparas som **utkast** – granska dem och skicka dem sedan med **Skicka valda utkast** eller en i taget.
+
+<Tip>
+Vill du att utkasten skapas automatiskt varje månad? Aktivera **Skapa utkast automatiskt** under [Inställningar → Aviseringar](/installningar/aviseringar).
+</Tip>
 
 <Note>
 Hyresgästen kan se sina aviseringar och betalningsstatus i [hyresgästportalen](/hyresgastportalen/oversikt) när de har bjudits in.

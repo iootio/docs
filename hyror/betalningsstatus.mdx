@@ -7,33 +7,35 @@ description: Så håller du koll på hyror och betalningsstatus i Tenovo.
 
 Att ha koll på vilka hyror som är betalda, pågående eller förfallna är centralt i fastighetsförvaltningen. Tenovo ger dig flera sätt att få överblick.
 
-## Statuskort
+## Betalningsflödet
 
-Längst upp på sidan **Hyresaviseringar** visas statuskort som visar antal och belopp per status. Klicka på ett kort för att filtrera listan på den statusen. Statuskorten är:
+Längst upp på sidan **Hyresaviseringar** visas en flödesstapel som grupperar alla öppna aviseringar efter betalningsläge och visar antal och belopp per steg:
 
-- **Utkast**
-- **Skickade**
-- **Förfallna**
-- **Betalda**
+- **Utkast** – utkast som väntar på att skickas
+- **Skickade** – skickade aviseringar där ingenting har betalats ännu
+- **Delbetalda** – aviseringar där en inbetalning har registrerats men inte täcker hela beloppet, och som ännu inte är förfallna
+- **Förfallna** – alla förfallna aviseringar, med undervyn **Varav delbetalda förfallna** för de förfallna som delbetalats
 
-Utöver dessa fyra kort kan en avisering också ha statusen **Mottagen**, vilket betyder att aviseringen har levererats till hyresgästen (till exempel via Kivra). Denna status har inget eget kort men visas i listan och kan filtreras via statusfiltret.
+Stegets bredd speglar andelen av det totala utestående beloppet. Klicka på ett steg för att filtrera listan på det läget — klicka igen för att ta bort filtret. Betalda och makulerade aviseringar ingår inte i flödesstapeln.
+
+En avisering kan också ha statusen **Mottagen**, vilket betyder att aviseringen har levererats till hyresgästen (till exempel via Kivra), eller **Betald** när den är fullt betald. Dessa statusar har inget eget steg i flödesstapeln men visas i listan.
 
 ## Månadsnavigering
 
-Under statuskorten finns en månadsrail med rubriken **Välj månad** där du väljer en specifik månad för att visa aviseringar för den perioden. Växla mellan månader med pilknapparna.
+Under flödesstapeln finns en månadsrail med rubriken **Välj månad** där du väljer en specifik månad för att visa aviseringar för den perioden. Växla mellan månader med pilknapparna.
 
 ## Filter och sökning
 
 Ovanför listan kan du:
 
 - **Söka** på hyresgäst eller period
-- **Filtrera på status** – klicka på ett statuskort för att visa endast aviseringar med den statusen
+- **Filtrera på status** – klicka på ett steg i flödesstapeln för att visa endast aviseringar i det läget
 - **Filtrera på juridisk person** – om organisationen har flera [juridiska personer](/installningar/juridiska-personer) kan du begränsa listan till aviseringar från ett visst utfärdande bolag
 - **Rensa filter** – klicka på rensa-knappen för att återställa sökning och statusfilter
 
 ## Förfallna hyror
 
-Klicka på statuskortet **Förfallen** för att snabbt se alla hyror där förfallodatumet har passerats. Dessa markeras tydligt i listan och är prioriterade i uppföljningen.
+Klicka på steget **Förfallna** i flödesstapeln för att snabbt se alla hyror där förfallodatumet har passerats. Dessa markeras tydligt i listan och är prioriterade i uppföljningen.
 
 <Note>
 På aviseringsraden visas texten *Förföll [datum]* i rött redan dagen efter förfallodatum, men själva statusen ändras först till **Förfallen** efter en kort respit på tre dagar. En avisering kan alltså visa *Förföll* medan statusen fortfarande är **Skickad**.
@@ -72,6 +74,12 @@ När inbetalningen har kommit in på kontot kan du registrera den på två sätt
 - **På detaljsidan** – öppna aviseringen och klicka på **Registrera betalning** i sidhuvudet.
 
 Ange belopp och betalningsdatum i dialogen. Om beloppet täcker det återstående beloppet markeras aviseringen som **Betald**; annars registreras en delbetalning och förloppsindikatorn uppdateras.
+
+## Delbetalningar
+
+En avisering som delbetalats behåller sin status (**Skickad**, **Mottagen** eller **Förfallen**) men grupperas i steget **Delbetalda** — eller **Varav delbetalda förfallna** — i flödesstapeln, så att du kan skilja hyresgäster som betalar delar från dem som inte betalat alls. På raden visas det inbetalda beloppet mot totalsumman.
+
+När du registrerar en delbetalning kan du direkt välja att skicka ett **besked om restbelopp** till hyresgästen via e-post — en serviceinformation utan påminnelseavgifter som talar om hur mycket som återstår. Samma åtgärd finns senare under **Skicka besked om restbelopp** i överflödesmenyn på aviseringens detaljsida, så länge det finns en delbetalning som hyresgästen inte har informerats om.
 
 <Note>
 Du kan också stämma av betalningar i bulk genom att importera bankgiro-utdrag via [betalningsavstämning](/hyror/betalningsavstamning).
