@@ -175,7 +175,6 @@
         "expanded": true,
         "pages": [
           "installningar/oversikt",
-          "installningar/betalning",
           "installningar/aviseringar",
           "installningar/juridiska-personer",
           "installningar/medlemmar",
@@ -227,6 +226,10 @@
   "redirects": [
     {
       "source": "/installningar/avtalsparter",
+      "destination": "/installningar/juridiska-personer"
+    },
+    {
+      "source": "/installningar/betalning",
       "destination": "/installningar/juridiska-personer"
     }
   ]
