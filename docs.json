@@ -127,6 +127,7 @@
         "expanded": true,
         "pages": [
           "ekonomi/depositioner",
+          "ekonomi/kostnader",
           "bokforing",
           "hyrespris"
         ]
