@@ -58,7 +58,18 @@ Längst upp på sidan finns ett filterfält med:
 
 - **Sök** — sök på beskrivning, kontonummer eller kontobenämning
 - **Typ** — visa alla typer eller en specifik typ (Avisering skickad, Betalning mottagen, Påminnelseavgift, Dröjsmålsränta)
+- **Status** — visa **Ej bokförda** eller **Visa bokförda** (verifikat markerade som bokförda externt)
 - **Sortering** — datum (nyast eller äldst först) eller belopp (störst eller minst först)
+
+## Markera som bokförd externt
+
+Om du för över verifikaten till ditt bokföringssystem manuellt — till exempel via [SIE-export](#exportera-sie) — kan du markera dem som bokförda för att hålla ordning på vad som är överfört. Administratörer kan markera verifikat på flera sätt:
+
+- **Per verifikat** — knappen på den utfällda verifikatsraden
+- **Per avisering eller grupp** — **Markera alla som bokförda** under respektive avisering eller **Övriga verifikat**
+- **I bulk** — markera flera verifikat med kryssrutorna och välj **Markera N som bokförda**
+
+Ett markerat verifikat får statusen **Bokförd externt** tillsammans med datumet det markerades, och filtreras bort när du visar **Ej bokförda**. Du kan alltid backa med **Markera som ej bokförd** om ett verifikat markerats av misstag. När alla verifikat i listan är markerade visas ett tomt tillstånd som berättar att allt är bokfört externt.
 
 ## Verifikat för en specifik avisering
 
