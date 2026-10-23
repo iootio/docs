@@ -8,7 +8,7 @@ description: Skapa och hantera besiktningsrapporter kopplade till en fastighet e
 På fastighetens detaljsida finns fliken **Drift** med undervyn **Besiktningar**, där du ser och skapar besiktningsrapporter kopplade till fastigheten och dess hyresobjekt. Varje hyresobjekt har dessutom en egen flik **Besiktningar** på sin detaljsida, där du ser och hanterar just det objektets rapporter.
 
 <Note>
-Besiktningar är en modul som måste aktiveras för din organisation. Aktivera den under [Inställningar → Moduler](/installningar/moduler) om du inte ser fliken i appen.
+Besiktningar är en modul som måste vara aktiverad för din organisation. Läs mer på sidan om [moduler](/installningar/moduler) om du inte ser fliken i appen.
 </Note>
 
 ## Skapa en besiktning
@@ -33,6 +33,24 @@ Du skapar besiktningar direkt i appen – ingen support behövs.
    - **Foto** – ladda upp en bild per punkt
 5. Klicka på **Spara**.
 
+<Note>
+Punkterna förifylls med organisationens aktiva besiktningsmall plus punkterna från det föregående protokollet för samma hyresobjekt – så att du kan verifiera dem i stället för att skriva in allt på nytt.
+</Note>
+
+## Besiktningsmallar
+
+Under **Inställningar → Besiktningsmallar** skapar du återanvändbara checklistor som förifyller nya besiktningsprotokoll – till exempel en flyttstädningslista som verifieras vid utflyttningsbesiktningen.
+
+För varje mall anger du:
+
+- **Namn** – till exempel *Flyttstädning*
+- **Protokolltyp** – vilken rapporttyp mallen gäller för: *Inflyttning*, *Utflyttning* eller *Rutinbesiktning*
+- **Fastighet** – valfritt; lämna som *Alla fastigheter* om mallen ska gälla överallt
+- **Punkter** – rum, objekt och typ (*Skick*, *Att göra* eller *Info*)
+- **Aktiv** – bara aktiva mallar förifyller nya protokoll
+
+Befintliga protokoll som skapats från en mall påverkas inte om mallen redigeras eller tas bort.
+
 ## Signering
 
 Efter en besiktning kan både hyresvärd och hyresgäst signera (godkänna) rapporten med separata knappar. När en part har signerat visas en tidsstämpel.
@@ -47,3 +65,8 @@ Varje besiktningsrapport visas med:
 - **Signeringsstatus** – om hyresvärd och hyresgäst har signerat
 
 Klicka på en rapport för att expandera och se besiktningspunkter, foton och signeringar.
+
+## Skriv ut och jämför
+
+- **Skriv ut** – öppnar protokollet i en utskriftsvänlig vy som också kan sparas som PDF.
+- **Jämför** – ställer protokollet sida vid sida mot ett annat protokoll för samma hyresobjekt, till exempel inflyttnings- mot utflyttningsprotokollet. Gemensamma punkter visas med respektive skick bredvid varandra, och punkter vars skick försämrats markeras i rött så att förslitning och nya skador framgår direkt.

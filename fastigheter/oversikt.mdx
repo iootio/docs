@@ -26,13 +26,15 @@ Tenovo följer en enkel hierarki:
 - **Aktiva och arkiverade** – växla mellan vyerna **Aktiva fastigheter** och **Arkiverade** högst upp på sidan för att se arkiverade fastigheter
 - **Exportera** – ladda ner fastighetslistan som CSV
 - **Portföljstatistik** – kort på fastighetssidan som visar antal fastigheter, antal hyresobjekt, **Bostadsarea**, **Lokalyta** och **Total hyra/mån** för hela beståndet
-- **Detaljsida med flikar** – på en fastighets detaljsida ser du upp till nio flikar: **Översikt**, **Hyresobjekt**, **Hyreskontrakt**, **Ekonomi**, **Energi**, **Drift**, **Efterlevnad**, **Leverantörer** och **Dokument**. Flikarna **Hyresobjekt**, **Energi**, **Drift** och **Efterlevnad** har undervyer (segmenterad navigation):
+- **Detaljsida med flikar** – på en fastighets detaljsida ser du upp till åtta flikar: **Översikt**, **Hyresobjekt**, **Hyreskontrakt**, **Ekonomi**, **Energi**, **Drift**, **Leverantörer** och **Dokument**. Flikarna **Hyresobjekt**, **Energi**, **Drift** och **Leverantörer** har undervyer (segmenterad navigation):
   - **Hyresobjekt** – *Hyresobjekt* och *Byggnader*
-  - **Energi** – *Förbrukning*, *Produktion*, *Energideklaration* och *Netto*
+  - **Energi** – *Förbrukning*, *Produktion*, *Netto* och *Energideklaration*
   - **Drift** – *Besiktningar* (modulstyrt), *Felanmälningar* (modulstyrt) och *Bygglov*
-  - **Efterlevnad** – *Krav*, *Försäkringar* och *Serviceavtal*
+  - **Leverantörer** – *Leverantörer* och *Serviceavtal*
 
-  Fliken **Leverantörer** listar bolag som är kopplade till fastigheten — parter som Tenovo har extraherat när dokument analyserats, till exempel från serviceavtal eller besiktningsprotokoll. Varje part visas med en roll: **Besiktningsman**, **Kontrollansvarig**, **Entreprenör**, **Förvaltare**, **Ägare**, **Styrelse**, **Mäklare** eller **Övrig**. AI-extraherade parter märks med *Föreslaget av AI* och manuellt tillagda med *Manuellt*; där det finns ett källdokument länkar raden direkt till det.
+  Efterlevnad – krav och försäkringar – hanteras på översiktsflikens **Efterlevnad**-kort, inte som en egen flik. Läs mer på sidan om [efterlevnad](/fastigheter/efterlevnad).
+
+  Undervyn **Leverantörer** listar bolag som är kopplade till fastigheten — parter som Tenovo har extraherat när dokument analyserats, till exempel från serviceavtal eller besiktningsprotokoll. Varje part visas med en roll: **Besiktningsman**, **Kontrollansvarig**, **Entreprenör**, **Förvaltare**, **Ägare**, **Styrelse**, **Mäklare** eller **Övrig**. AI-extraherade parter märks med *Föreslaget av AI* och manuellt tillagda med *Manuellt*; där det finns ett källdokument länkar raden direkt till det.
 - **Historik och fler åtgärder** – via kebabmenyn (tre punkter) på detaljsidan når du **Historik** (aktivitetslogg för fastigheten), **Arkivera/Avarkivera** och **Ta bort fastighet**
 
 ## Översiktsfliken
@@ -45,8 +47,9 @@ Fliken **Översikt** på en fastighets detaljsida samlar läget för just den fa
 - **Lediga och uppsagda hyresobjekt** – objekt som är lediga nu eller blir lediga vid avtalets slutdatum
 - **Fastighetsinfo och karta** – adress, beteckning och läge
 - **Byggnader och adresser** – sammanfattningar med genvägar till respektive flik
-- **Efterlevnad** – en kortsammanfattning i rutnät med en bricka per kravtyp: **Energideklaration**, **OVK**, **Hissbesiktning**, **Skyddsrumskontroll**, **Radonmätning**, **Sotning**, **Brandskydd** och **Försäkring**. Varje bricka visar en statusmarkering – *Giltig*, *Löper snart ut*, *Utgången*, *Saknas*, *Ej tillämpligt*, *Okänt* eller *Ej kontrollerad* – och klickbara brickor låter dig ladda upp dokument direkt. För hissbesiktning kan administratörer ange om fastigheten har hiss – **Markera som ingen hiss** eller **Markera som hiss finns** – när Lantmäteriets uppgift saknas eller inte stämmer, så att kravet inte visas som saknat i onödan. Motsvarande finns för sotning, där administratörer deklarerar om fastigheten har eldstad – **Markera som ingen eldstad** eller **Markera som eldstad finns** – eftersom uppgiften inte hämtas automatiskt.
-- **Tidslinje** – en tidslinje över fastighetens händelser, till höger om innehållet. Med knappen **Ny händelse** lägger du till egna händelser direkt på fastigheten, och dokument kopplade till händelser kan öppnas direkt från tidslinjen. Du kan filtrera tidslinjen på tidsspann med växeln **Kommande** / **Alla** och på kategori (Underhåll, Ekonomi, Efterlevnad, Hyresgäst, Serviceavtal eller Övrigt). Händelserna grupperas per år i avsnitt som går att fälla ihop – i vyn *Kommande* är äldre år ihopfällda som standard.
+- **Fastighetsprofil** – en kompletthetsmätare som visar hur stor andel av fastighetens uppgifter som är ifyllda. Märket i sidhuvudet visar procentsatsen och öppnar checklistan **Fastighetsprofil** på översiktsfliken, där varje saknad uppgift har en åtgärdsknapp som tar dig till rätt steg – eller en släppzon där du kan släppa dokument som Tenovo analyserar för att fylla i uppgifterna.
+- **Efterlevnad** – en kortsammanfattning i rutnät med en bricka per kravtyp: **Energideklaration**, **OVK**, **Hissbesiktning**, **Skyddsrumskontroll**, **Radonmätning**, **Sotning**, **Brandskydd** och **Försäkring**. Varje bricka visar en statusmarkering – *Giltig*, *Löper snart ut*, *Utgången*, *Saknas*, *Ej tillämpligt*, *Okänt* eller *Ej kontrollerad*. Klicka på en bricka för att fälla ut den och se respektive registers poster – där kan du lägga till, redigera och ta bort kravposter och försäkringar direkt, eller ladda upp dokument. För hissbesiktning kan administratörer ange om fastigheten har hiss – **Markera som ingen hiss** eller **Markera som hiss finns** – när Lantmäteriets uppgift saknas eller inte stämmer, så att kravet inte visas som saknat i onödan. Motsvarande finns för sotning, där administratörer deklarerar om fastigheten har eldstad – **Markera som ingen eldstad** eller **Markera som eldstad finns** – eftersom uppgiften inte hämtas automatiskt.
+- **Tidslinje** – en tidslinje över fastighetens händelser, till höger om innehållet, uppdelad i två avsnitt: **Kommande** visar öppna händelser som en deadline-lista med närmaste först – även passerade men ej avslutade datum – och **Historik** visar händelseflödet med senaste först. Med knappen **Ny händelse** lägger du till egna händelser direkt på fastigheten, och dokument kopplade till händelser kan öppnas direkt från tidslinjen. Du kan filtrera tidslinjen på kategori (Underhåll, Ekonomi, Efterlevnad, Hyresgäst, Serviceavtal eller Övrigt).
 
 I sidhuvudet visas dessutom en väderruta med aktuellt väder och prognos från SMHI för fastighetens läge, med knappen **Uppdatera väder** för att hämta färsk data.
 
@@ -62,7 +65,7 @@ När du registrerar en ny fastighet hämtas tillgänglig information från Lantm
 </Note>
 
 <Note>
-Fliken **Drift** visas bara om modulen Besiktningar eller Felanmälningar är aktiverad för din organisation. Under fliken samlas besiktningar, felanmälningar och bygglov. Du aktiverar moduler under [Inställningar → Moduler](/installningar/moduler).
+Fliken **Drift** visas bara om modulen Besiktningar eller Felanmälningar är aktiverad för din organisation. Under fliken samlas besiktningar, felanmälningar och bygglov. Läs mer på sidan om [moduler](/installningar/moduler).
 </Note>
 
 ## Snabbstart

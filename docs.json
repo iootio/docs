@@ -96,7 +96,8 @@
           "avtal/avtalsdetaljer",
           "avtal/hyresjustering",
           "avtal/signera-med-bankid",
-          "avtal/avtalsmallar"
+          "avtal/avtalsmallar",
+          "avflyttningar"
         ]
       },
       {
