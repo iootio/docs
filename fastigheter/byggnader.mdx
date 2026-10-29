@@ -1,66 +1,68 @@
 ---
 title: Byggnader
-description: Byggnadsdata från Lantmäteriet och Boverket, energideklarationer och attribut per byggnad.
+description: Byggnadsdata från Lantmäteriet, attribut per byggnad och digital tvilling.
 ---
 
 # Byggnader
 
-När du har registrerat en fastighet kan du hämta byggnadsdata från Lantmäteriet och Boverket. På fastighetens detaljsida finns fliken **Hyresobjekt** med undervyn **Byggnader**, där du ser alla byggnader på fastigheten med detaljerade attribut och energideklarationer. Använd knapparna på undervyn för att hämta data första gången och uppdatera den senare.
+När du har registrerat en fastighet kan du hämta byggnadsdata från Lantmäteriet. På fastighetens detaljsida finns fliken **Byggnader**, där du ser och hanterar fastighetens byggnader med detaljerade attribut.
 
-## Byggnadslistan
+## Fliken Byggnader
 
-Undervyn **Byggnader** visar alla byggnader som är registrerade på fastigheten. Du kan uppdatera datan från Lantmäteriet och Boverket när som helst med knapparna för att hämta aktuell information. Tidsstämplar visar när datan senast hämtades.
+Fliken **Byggnader** visar byggnaderna som är registrerade på fastigheten. Om fastigheten inte har några byggnader ännu visas ett tomt tillstånd med knappen **Hämta från Lantmäteriet** – klicka för att hämta byggnadsdata första gången. Om hämtningen mot Lantmäteriet eller Boverket misslyckas visas en banner högst upp som anger vilken källa som fallerade, med en knapp för att försöka igen.
 
-Klicka på en byggnad för att öppna dess detaljsida.
+När det finns fler än en byggnad visas en **byggnadsväxlare** som en egen rad högst upp på fliken – klicka på en byggnad i växlaren för att visa dess uppgifter direkt på fliken, utan att lämna sidan. Den valda byggnaden speglas i adressfältet, så att du kan dela en länk till just den byggnaden.
 
-## Detaljsida för en byggnad
+Varje byggnad har också en egen detaljsida som nås via dess adress – innehållet är detsamma som i den inbäddade vyn.
 
-På byggnadens detaljsida ser du:
+## Vad du ser för en byggnad
 
-### KPI-kort
+Byggnadens huvud visas med ikon, namn och husnummer. I underrubriken sammanfattas nyckeltalen:
 
-- **Boarea** – total boarea
+- **Huvudändamål** – byggnadens huvudsakliga användning
+- **Boarea** – total boarea i m²
 - **Byggår** – när byggnaden uppfördes
 - **Hyresobjekt** – antal hyresobjekt i byggnaden
-- **Energiklass** – energiklassning från energideklarationen
 
-### Byggnadsattribut
+Under huvudet visar en faktabanner byggnadens registerattribut från Lantmäteriet, till exempel:
 
-- Tillbyggd, entrétyp, hiss
-- Arrende (ofri grund) och servitut
-- Objektidentitet
+- **Tillbyggd** – tillbyggnadsår
+- **Entrétyp**
+- **Hiss**
+- **Arrende (ofri grund)** och **servitut**
+- **Objektidentitet**, **objektstatus**, **huvudbyggnad**, **skyddsrum** och **undantagen från adressättning** när uppgifterna finns
+- **Hyresobjekt** – antal enheter; klicka på talet för att hoppa till fliken **Hyresobjekt** filtrerad på byggnaden
 
-### Energideklaration
+Alla registrerade **byggnadsändamål** visas som etiketter – huvudändamålet är markerat, övriga ändamål listas med typ och boarea där uppgiften finns.
 
-Visar energiklass (A–G på EU-skalan med färgmarkering), primärenergital, energiprestanda, deklarationsdatum, radonmatning och ventilationskontroll. Radon- och ventilationsstatus markeras med färgade badge (grön/röd) beroende på om mätningen visar anmärkningar.
+### Energideklarationer
 
-Om en energideklaration inte är kopplad till byggnaden visas en varning. Tilldela deklarationen från byggnadslistan på undervyn **Byggnader** med knappen **Tilldela**.
+Energideklarationer visas inte längre på byggnadens sida – de samlas under fliken **Energi** med undervyn **Energideklaration**, där energiklass (A–G på EU-skalan), primärenergital och deklarationsdatum visas per byggnad. Energideklarationer hämtas från Boverket via efterlevnadskortet på fliken **Översikt** – läs mer på sidan om [efterlevnad](/fastigheter/efterlevnad).
+
+Om det finns energideklarationer som inte är kopplade till en byggnad visas en banner på fliken **Byggnader** som uppmanar dig att tilldela dem. Administratörer klickar på **Tilldela** för att koppla varje deklaration till rätt byggnad.
 
 ## Digital tvilling
 
-Byggnadens detaljsida kan också bygga upp en **digital tvilling** av byggnaden. Ladda upp en planritning – eller foton – med knappen **Ladda upp ritning eller foto**, så analyserar Tenovo materialet med AI och genererar en modell av byggnaden. Analysen körs i bakgrunden och modellen uppdateras automatiskt när den är klar.
+Byggnadens sida kan också visa en **digital tvilling** av byggnaden. Tvillingen byggs automatiskt när dokument som laddats upp på fastigheten – ritningar, fastighetsfoton, besiktningsprotokoll och energideklarationer – analyseras av Tenovo. Analysen körs i bakgrunden och modellen uppdateras automatiskt när nya underlag har bearbetats.
 
-När modellen finns visar arbetsytan flera visningslägen:
+<Note>
+Den digitala tvillingen är en modul som måste vara aktiverad för din organisation. Läs mer på sidan om [moduler](/installningar/moduler) om du inte ser arbetsytan på byggnadens sida.
+</Note>
+
+När modellen finns visar arbetsytan två visningslägen:
 
 - **2D-plan** – vektoriserad planlösning med rum, ytor och hyresobjektskopplingar
-- **Drift & installationer** – installationer och inventarier, till exempel värmepumpar och solpaneler, i planvyn
 - **3D-modell** – roterbar tredimensionell modell av byggnaden, våningsplan för våningsplan
-- **Ritning vs. foto** – jämförelse mellan ritningen och uppladdade foton (visas när foton finns)
-- **Ritningsarkiv** – de uppladdade artefakterna som underlag (visas när flera dokument finns)
 
-Du kan placera **pins** på ritningen för att markera inventarier och installationer – klicka på en pin eller ett rum för att se detaljer i inspektorpanelen till höger.
+Du växlar våningsplan med nivåväljaren i arbetsytan. Klicka på ett rum eller en yta för att se detaljer i inspektorpanelen till höger, där de uppgifter Tenovo har extraherat samlas med sin källa. Fotomarkörer (**F**) på planen öppnar vyerna från uppladdade foton.
 
 ## Åtgärder i sidhuvudet
 
-På byggnadens detaljsida finns två åtgärder i sidhuvudet:
+På byggnadens sida finns två åtgärder i huvudet:
 
 - **Historik** – öppnar aktivitetsloggen för byggnaden i en sidopanel
 - **Arkivera** – arkiverar byggnaden om den inte längre är aktuell. En arkiverad byggnad visas inte i den dagliga vyn, men all data finns kvar. På en arkiverad byggnad visas en banner om att den är arkiverad, och knappen byts till **Avarkivera** så att du kan återställa den.
 
-## Uppdatera data
-
-Använd knapparna för att hämta data från Lantmäteriet och Boverket. En snurra visar att uppdatering pågår. Datan sparas automatiskt när hämtningen är klar.
-
 <Card title="Energi" icon="zap" href="/fastigheter/energi">
-  Se förbrukning och solpanelsproduktion för fastigheten.
+  Se förbrukning, energideklarationer och solpanelsproduktion för fastigheten.
 </Card>
