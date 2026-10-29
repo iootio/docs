@@ -1,0 +1,85 @@
+---
+title: MCP – anslut AI-verktyg
+description: Anslut externa AI-assistenter som Claude eller ChatGPT till Tenovo via MCP – skrivskyddad åtkomst till fastighetsbeståndet direkt i AI-klienten.
+---
+
+# MCP – anslut AI-verktyg
+
+Tenovo har en inbyggd MCP-server (Model Context Protocol) som låter dig ansluta externa AI-assistenter – till exempel Claude och ChatGPT – direkt till organisationens data. Den anslutna assistenten kan då svara på frågor om fastigheter, hyresobjekt, hyresgäster, avtal, hyror och felanmälningar i sitt eget gränssnitt.
+
+MCP-servern är **skrivskyddad** – assistenten kan läsa och analysera data men aldrig skapa, ändra eller ta bort något i Tenovo.
+
+## Så här fungerar anslutningen
+
+Du gör hela kopplingen i AI-klienten – det finns inget att aktivera i Tenovo. Anslutningen sker via OAuth 2.1:
+
+1. Lägg till Tenovos MCP-adress i AI-klienten.
+2. Klienten öppnar webbläsaren där du loggar in på ditt Tenovo-konto.
+3. På godkännandesidan ser du vilken applikation som begär åtkomst och vad den får läsa.
+4. Klicka **Godkänn åtkomst** för att slutföra kopplingen.
+
+Åtkomsten följer dina egna behörigheter – assistenten ser bara det du själv kan se i de organisationer du är medlem i. Personnummer exponeras aldrig via MCP.
+
+**MCP-adress:**
+
+```
+https://api.tenovo.se/functions/v1/mcp
+```
+
+Servern stöder MCP över Streamable HTTP och kräver att klienten har stöd för OAuth 2.1 – det går inte att ansluta med en API-nyckel.
+
+## Claude
+
+I Claude Desktop eller på claude.ai:
+
+1. Gå till **Settings → Connectors**.
+2. Välj **Add custom connector**.
+3. Klistra in MCP-adressen `https://api.tenovo.se/functions/v1/mcp` som server-URL.
+4. Slutför inloggningen i webbläsaren och godkänn åtkomsten.
+
+## ChatGPT
+
+MCP-servern har stöd för verktygen `search` och `fetch` som ChatGPTs kopplingar använder för företagskunskap:
+
+1. Slå på utvecklarläge i ChatGPTs inställningar.
+2. Skapa en ny koppling och ange MCP-adressen som server-URL.
+3. Godkänn åtkomsten via Tenovo-inloggningen.
+
+## Andra klienter
+
+Klienter som konfigureras via en inställningsfil – till exempel Cursor eller Claude Code – lägger du till så här:
+
+```json
+{
+  "mcpServers": {
+    "tenovo": {
+      "url": "https://api.tenovo.se/functions/v1/mcp"
+    }
+  }
+}
+```
+
+<Note>
+Servern är tillståndslös och svarar bara på POST-anrop – klienter som kräver SSE-transport (Server-Sent Events) stöds inte.
+</Note>
+
+## Vad assistenten kan göra
+
+Via MCP får assistenten tillgång till skrivskyddade verktyg som motsvarar läsningen i appen:
+
+- **Organisationer** – lista de organisationer du är medlem i, med din roll
+- **Fastigheter** – lista fastigheter och hämta detaljer med hyresobjekt, beläggning och öppna felanmälningar
+- **Hyresobjekt** – lista hyresobjekt med beläggningsstatus – uthyrd, uppsagd eller vakant
+- **Hyresgäster** – lista hyresgäster med kontaktuppgifter, aldrig personnummer
+- **Hyreskontrakt** – lista avtal med status, period, månadshyra, hyresobjekt och hyresgäst
+- **Vakansprognos** – avtal som löper ut inom 90 dagar
+- **Hyresavier** – lista aviseringar med status, belopp och förfallodatum, inklusive filter för försenade
+- **Ekonomisk översikt** – nyckeltal för portföljen: hyresintäkter, beläggningsgrad, kostnader och försenade belopp
+- **Felanmälningar** – lista ärenden och en sammanfattning grupperad på prioritet
+- **Sökning** – fritextsökning över fastigheter, hyresgäster, ärenden och dokument
+
+Tillhör du flera organisationer börjar assistenten med att slå upp dem – alla frågor besvaras sedan per organisation, som hålls åtskilda.
+
+<Warning>
+En ansluten AI-assistent hanterar data utanför Tenovo. Godkänn bara åtkomst för applikationer du litar på.
+</Warning>
