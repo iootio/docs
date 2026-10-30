@@ -1,0 +1,58 @@
+---
+title: Anslut AI-verktyg via MCP
+description: Koppla externa AI-assistenter som Claude eller ChatGPT till Tenovo via MCP och låt dem läsa data ur fastighetsbeståndet.
+---
+
+# Anslut AI-verktyg via MCP
+
+Tenovo har en MCP-endpoint (Model Context Protocol) som låter dig koppla externa AI-assistenter — till exempel Claude eller ChatGPT — till ditt Tenovo-konto. Assistenten kan då ställa frågor direkt mot fastighetsbeståndet, som vilka avtal som löper ut eller hur beläggningen ser ut.
+
+<Note>
+Detta är en koppling *ut* från Tenovo till externa AI-verktyg. Den inbyggda [Fastighetsassistenten](/ai-assistent) i appen behöver ingen koppling — den fungerar direkt.
+</Note>
+
+## Koppla en AI-assistent
+
+1. Öppna din AI-assistents inställningar för anpassade kopplingar (till exempel **Connectors** i Claude eller motsvarande i ChatGPT).
+2. Lägg till en ny MCP-server med adressen:
+
+   ```
+   https://api.tenovo.se/functions/v1/mcp
+   ```
+
+3. Starta anslutningen. Du skickas till Tenovo för att logga in och godkänna åtkomsten.
+4. På sidan **Ge åtkomst till Tenovo** ser du vilken tjänst som begär åtkomst. Godkänn för att slutföra kopplingen.
+
+När kopplingen är klar kan assistenten ställa frågor mot din Tenovo-data direkt i konversationen.
+
+## Vad assistenten kan läsa
+
+Åtkomsten är **skrivskyddad** — AI-assistenten kan läsa och analysera data men inte skapa, ändra eller ta bort något. Den kan bland annat:
+
+- **Lista organisationer, fastigheter och hyresobjekt** — inklusive detaljerad fastighetsdata
+- **Lista hyresgäster och hyreskontrakt** — med status och perioder
+- **Se vakansprognoser** — kommande lediga objekt
+- **Lista aviseringar** — inklusive förfallna och obetalda
+- **Hämta ekonomisk överblick** — intäkter och utestående belopp
+- **Lista felanmälningar** — med status och sammanfattning
+- **Söka** i beståndet med fritext
+
+## Åtkomst och säkerhet
+
+- Åtkomsten knyts till ditt konto och din behörighet — assistenten ser bara det du själv har rätt att se, och samma organisationsbegränsningar gäller som i appen.
+- Godkännandet gäller alla organisationer du är medlem i, eftersom åtkomsten följer användaren och inte en enskild organisation.
+- Kopplingen autentiseras via OAuth 2.1 mot ditt Tenovo-konto. Du godkänner alltid åtkomsten själv — ingen kan koppla en assistent åt dig.
+- Behöver du återkalla åtkomsten för en kopplad tjänst, [kontakta support](/support).
+
+<Warning>
+Godkänn bara åtkomstbegäranden från tjänster du själv har initierat. Dela aldrig en åtkomstlänk vidare.
+</Warning>
+
+<CardGroup>
+  <Card title="Fastighetsassistenten" icon="sparkles" href="/ai-assistent">
+    Den inbyggda AI-assistenten i Tenovo – ingen koppling behövs.
+  </Card>
+  <Card title="Integrationer" icon="puzzle" href="/installningar/integrationer">
+    Övriga tjänster som kopplas till organisationen.
+  </Card>
+</CardGroup>

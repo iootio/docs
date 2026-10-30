@@ -158,7 +158,8 @@
         "pages": [
           "ai-assistent",
           "snabbsok",
-          "bostadsko"
+          "bostadsko",
+          "mcp"
         ]
       },
       {
@@ -184,6 +185,7 @@
           "installningar/moduler",
           "installningar/abonnemang",
           "installningar/bokforing",
+          "installningar/besiktningsmallar",
           "installningar/papperskorg"
         ]
       },
