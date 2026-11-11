@@ -143,6 +143,14 @@
         ]
       },
       {
+        "group": "Kommunikation",
+        "icon": "megaphone",
+        "expanded": true,
+        "pages": [
+          "meddelanden"
+        ]
+      },
+      {
         "group": "Hyresgästportalen",
         "icon": "door-open",
         "expanded": true,
@@ -186,7 +194,8 @@
           "installningar/abonnemang",
           "installningar/bokforing",
           "installningar/besiktningsmallar",
-          "installningar/papperskorg"
+          "installningar/papperskorg",
+          "installningar/offentlig-sida"
         ]
       },
       {

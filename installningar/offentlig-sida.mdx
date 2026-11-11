@@ -1,0 +1,84 @@
+---
+title: Offentlig sida
+description: Publicera en företagssida med kontaktuppgifter, fastigheter, lediga objekt och ansökan – utan inloggning för besökaren.
+---
+
+# Offentlig sida
+
+Med **Offentlig sida** publicerar du en företagssida för organisationen på adressen `/bolag/{din-webbadress}`. Sidan är öppen för alla utan inloggning och kan visa lediga objekt, ansökan om bostad, utvalda fastigheter och kontaktuppgifter.
+
+<Note>
+Offentlig sida är en modul som måste vara aktiverad för organisationen för att fliken ska visas under Inställningar. Läs mer på sidan om [moduler](/installningar/moduler).
+</Note>
+
+## Publicera sidan
+
+1. Gå till **Inställningar → Offentlig sida**.
+2. Fyll i önskade uppgifter – en förhandsvisning av sidan visas bredvid formuläret.
+3. Klicka på **Spara** för att spara som utkast.
+4. Klicka på **Publicera** när sidan ska vara synlig för alla.
+
+Statusen **Publicerad** respektive **Utkast** visas högst upp, och när sidan är publicerad finns länken **Öppna sidan** direkt i inställningen. Klicka på **Avpublicera** för att ta ner sidan utan att radera innehållet.
+
+<Note>
+Endast administratörer kan redigera och publicera den offentliga sidan.
+</Note>
+
+## Inställningar per avsnitt
+
+### Sidhuvud
+
+- **Webbadress** – den slug som avgör sidans adress, till exempel `din-fastighets` i `app.tenovo.se/bolag/din-fastighets`. Webbadressen måste vara unik; en varning visas om den är upptagen. Sidan kan inte publiceras utan webbadress.
+- **Rubrik** – sidans huvudrubrik.
+- **Presentationstext** – inledande text om verksamheten.
+
+### Lediga objekt
+
+Styr hur lediga hyresobjekt visas på sidan:
+
+- **Visa inte** – ingen sektion för lediga objekt.
+- **Lista lediga objekt automatiskt** – vakanta hyresobjekt listas direkt på sidan. Slå på **Visa hyra** för att även visa månadshyran.
+- **Länka till extern förmedling (t.ex. Boplats, HomeQ)** – sidan länkar vidare till **Länk till lediga objekt**-adressen du anger.
+
+### Ansökan
+
+Styr hur besökare söker bostad:
+
+- **Visa inte** – ingen ansökningssektion.
+- **Ansök via bostadskö i Tenovo** – välj en av organisationens [bostadsköer](/bostadsko) i listan; intresseanmälan sker via köns publika ansökningsformulär.
+- **Länka till extern ansökan** – ange en egen **Länk till ansökan**-adress.
+
+Under ansökan kan du lägga till steg med rubrik och kort beskrivning som förklarar hur ansökan går till, till exempel *Registrera dig*.
+
+### Våra fastigheter
+
+Slå på **Visa sektionen** och välj de fastigheter som ska lyftas fram. Varje fastighet kan få en egen bild och en valfri kort beskrivning, och du ändrar ordningen med pilknapparna.
+
+### Kontakt
+
+Kontaktuppgifter som visas i sidans kontaktsektion:
+
+- **E-post**, **Telefon** och **Telefontider**
+- **Besöksadress** och **Besökstider**
+- **Postadress**
+- **Jourtelefon** och **Jourtider**
+- **Webbplats** och **Länk till Mina sidor** (till exempel länk till hyresgästportalen)
+- **Leverantörsinformation** – fritext, till exempel information för leverantörer
+
+### Övrigt
+
+- **Visa nyckeltal** – visar antal hyresobjekt, fastigheter och orter på sidan.
+- **Sidfotslänkar** – egna länkar med etikett och adress, till exempel *Jobba hos oss*.
+- **Sociala medier** – länkar till Facebook, Instagram, LinkedIn och YouTube.
+- **SEO** – egen **Titel** och **Beskrivning** för sökmotorer. Om ingen titel anges används organisationens namn.
+
+## Snabbstart
+
+<CardGroup>
+  <Card title="Bostadskö" icon="list" href="/bostadsko">
+    Ta emot ansökningar via en bostadskö på den offentliga sidan.
+  </Card>
+  <Card title="Moduler" icon="squares-2x2" href="/installningar/moduler">
+    Se hur moduler aktiveras för organisationen.
+  </Card>
+</CardGroup>

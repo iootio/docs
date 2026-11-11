@@ -9,18 +9,19 @@ Tenovo hämtar förbrukningsdata och solpanelsproduktion från dina integratione
 
 ## Förutsättningar
 
-För att se förbrukningsdata behöver du ha [Nordic Propeye](/installningar/integrationer)-integrationen kopplad. Nordic Propeye hämtar mätare och avläsningar för el, vatten och värme. För solpanelsproduktion behövs [FusionSolar](/installningar/integrationer).
+För att se förbrukningsdata behöver du ha [Nordic Propeye](/installningar/integrationer)-integrationen kopplad. Nordic Propeye hämtar mätare och avläsningar för el, vatten och värme. För solpanelsproduktion behövs [FusionSolar](/installningar/integrationer), och för driftdata från NIBE-värmepumpar behövs [myUplink](/installningar/integrationer).
 
 Om ingen energiintegration är kopplad visas ett tomt tillstånd på fliken **Energi** med två knappar: **Lägg till integration** (tar dig till Inställningar → Integrationer) och **Ladda upp faktura** (låter dig ladda upp en energifaktura för manuell hantering).
 
 ## Fliken Energi på fastigheten
 
-På fastighetens detaljsida finns fliken **Energi**, som visar en förbrukningsöversikt för hela fastigheten. Fliken är uppdelad i fyra undervyer som du växlar mellan med segmenterade knappar högst upp:
+På fastighetens detaljsida finns fliken **Energi**, som visar en förbrukningsöversikt för hela fastigheten. Fliken är uppdelad i fem undervyer som du växlar mellan med segmenterade knappar högst upp:
 
 - **Förbrukning** – förbrukning per mätartyp (el, vatten, värme) över tid, med KPI-kort, diagram och anomalier
 - **Produktion** – solpanelsproduktion från FusionSolar (visas när integrationen är kopplad)
-- **Energideklaration** – värden extraherade från uppladdade energideklarationer, till exempel energiklass och primärenergital. Om ingen deklaration har analyserats visas ett tomt tillstånd med uppmaning att ladda upp en.
 - **Netto** – produktion ställd mot förbrukning, så att du kan se nettoflödet över tid
+- **Värmesystem** – driftdata från NIBE-värmepumpar via myUplink: framledningstemperaturer, kompressordrift och kurvavvikelser per värmesystem. Välj tidsfönstret **24 timmar** eller **7 dagar**. Kräver att [myUplink](/installningar/integrationer) är kopplat och att värmesystemen är mappade till fastigheten.
+- **Energideklaration** – värden extraherade från uppladdade energideklarationer, till exempel energiklass och primärenergital. Om ingen deklaration har analyserats visas ett tomt tillstånd med uppmaning att ladda upp en.
 
 ### Granularitet
 

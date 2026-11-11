@@ -101,6 +101,20 @@ Hämtar solpanelsproduktion från Huawei FusionSolar och visar den under fliken 
 
 När FusionSolar är frånkopplat men historisk data finns bevarad visas statusen "Frånkopplad — historik bevarad". Läs mer på sidan om [energi](/fastigheter/energi).
 
+### myUplink (NIBE)
+
+Hämtar driftdata från NIBE-värmepumpar via myUplink – temperaturer, kompressordrift och avvikelser per fastighet. Värmesystemen visas under undervyn **Värmesystem** på fastighetens flik **Energi**. Läs mer på sidan om [energi](/fastigheter/energi).
+
+**Koppla myUplink:**
+
+1. Skapa API-uppgifter på dev.myuplink.com (Mitt konto → Applications → Create new application). Callback-URL:en som formuläret kräver används inte – ange valfri adress.
+2. Gå till **Inställningar > Integrationer**.
+3. Leta upp **myUplink (NIBE)** under tillgängliga integrationer och klicka på **Koppla**.
+4. Ange **Klient-ID** och **Klienthemlighet** – Tenovo verifierar uppgifterna och hämtar värmepumparna på kontot.
+5. Mappa varje värmesystem till rätt fastighet i steget **Koppla värmesystem**.
+
+När myUplink är kopplat kan du klicka på **Konfigurera** för att synka manuellt, ändra fastighetsmappningen eller koppla bort integrationen. Om klientuppgifterna löper ut visas integrationen som utgången – ange nya uppgifter för att återuppta synkroniseringen. Vid frånkoppling bevaras mäthistoriken med statusen "Frånkopplad — historik bevarad" tills du väljer att återansluta eller radera uppgifterna permanent.
+
 ## Kalendersynkronisering
 
 Synkronisering med Google Calendar och Outlook hanteras separat, direkt från kalendern. Läs mer på sidan om [kalendersynkronisering](/kalender/synkronisering).
