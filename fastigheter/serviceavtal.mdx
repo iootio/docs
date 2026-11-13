@@ -22,7 +22,7 @@ På fastighetens detaljsida finns fliken **Leverantörer** med undervyn **Servic
    - **Årskostnad (kr)** – avtalets årliga kostnad
    - **Faktureringsfrekvens** – hur ofta avtalet faktureras
    - **Anteckningar** – valfria anteckningar om avtalet
-4. Spara.
+4. Klicka på **Skapa** (eller **Spara** om du redigerar ett befintligt avtal).
 
 ## Servicekategorier
 
@@ -66,16 +66,19 @@ Ett serviceavtal kan ha följande statusar:
 - **Aktiv** – avtalet gäller
 - **Löper ut snart** – avtalet löper ut inom en snar framtid
 - **Utgången** – avtalet har löpt ut
-- **Sagt upp** – avtalet har sagts upp men löper ännu
+- **Sagd upp** – avtalet har sagts upp men löper ännu
 - **Utkast** – avtalet är inte ännu aktivt
 
 ## Nästa åtgärd
 
-Tenovo beräknar automatiskt nästa åtgärd för varje avtal baserat på slutdatum och status. Avtalen sorteras efter hur brådskande åtgärden är:
+Tenovo beräknar automatiskt nästa åtgärd för varje avtal baserat på slutdatum, uppsägningstid och status. Avtalen sorteras efter hur brådskande åtgärden är, där uppsägningsdeadline alltid väger tyngst – det är sista chansen att agera innan avtalet förnyas:
 
-- **Förfallet** – avtalet har löpt ut
-- **Snart förfallet** – avtalet löper ut inom en snar framtid
-- **Aktivt** – avtalet gäller utan förestående åtgärd
+- **Uppsägningsdeadline passerad** – sista dagen att säga upp avtalet har gått ut
+- **Uppsägningsdeadline om N dag(ar)** – deadline inom 30 dagar
+- **Löpt ut** – slutdatumet har passerat
+- **Löper ut om N dag(ar)** – slutdatum inom 60 dagar
+- **Sagt upp** – avtalet är uppsagt
+- **Aktiv** – avtalet gäller utan förestående åtgärd
 
 <Note>
 Om du skriver ett leverantörsnamn utan att välja en leverantör ur registret skapas ingen leverantörspost automatiskt. Leverantörer läggs till manuellt på sidan [Leverantörer](/leverantorer), eller skapas automatiskt när Tenovo analyserar ett dokument från leverantören.

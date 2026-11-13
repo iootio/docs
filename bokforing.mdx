@@ -27,7 +27,7 @@ Sidan har två vyer som du växlar mellan högst upp:
 I listvyn visar varje verifikatsrad:
 
 - **Beskrivning** — vad verifikatet gäller
-- **Status** — till exempel skickad eller betald
+- **Status** — **Ej bokförd**, **Exporterad** (skickad till externt system som Fortnox) eller **Bokförd externt**
 - **Datum** — när verifikatet skapades
 - **Belopp** — verifikatets total
 - **Antal rader** — antal konteringsrader
@@ -58,7 +58,7 @@ Längst upp på sidan finns ett filterfält med:
 
 - **Sök** — sök på beskrivning, kontonummer eller kontobenämning
 - **Typ** — visa alla typer eller en specifik typ (Avisering skickad, Betalning mottagen, Påminnelseavgift, Dröjsmålsränta)
-- **Status** — visa **Ej bokförda** eller **Visa bokförda** (verifikat markerade som bokförda externt)
+- **Status** — visa **Ej bokförda** eller **Bokförda externt**
 - **Sortering** — datum (nyast eller äldst först) eller belopp (störst eller minst först)
 
 ## Markera som bokförd externt
@@ -85,7 +85,7 @@ Klicka på **Exportera SIE** uppe till höger för att ladda ner alla verifikat 
 4. Importera filen i ditt bokföringssystem.
 
 <Tip>
-När [Fortnox-integrationen](/installningar/integrationer) är aktiverad för organisationen skickas verifikaten dit automatiskt och SIE-exporten behövs inte.
+När [Fortnox-integrationen](/installningar/integrationer) är aktiverad och kopplad för organisationen skickas obokförda verifikat till Fortnox automatiskt varje timme, och SIE-exporten behövs inte. Du kan också synka manuellt med knappen **Synka till Fortnox** uppe till höger — markera verifikat först för att bara synka urvalet.
 </Tip>
 
 ## Snabbstart
