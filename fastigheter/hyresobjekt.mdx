@@ -7,14 +7,13 @@ description: Skapa och hantera hyresobjekt som lägenheter, lokaler och parkerin
 
 Ett **hyresobjekt** är den enskilda enhet som hyrs ut – till exempel en lägenhet, en butikslokal eller en parkeringsplats. Varje hyresobjekt tillhör alltid en fastighet och kan kopplas till en specifik byggnad.
 
-Hyresobjekt hanteras inifrån fastighetens detaljsida, inte från en egen meny. Klicka på ett hyresobjekt i listan för att öppna dess detaljsida.
+Hyresobjekt hanteras inifrån fastighetens arbetsyta, inte från en egen meny. Du når dem via hyresobjektsregistret på fliken **Översikt**, via **Enhetskartan** eller direkt i områdesträdet till vänster, där de ligger under sin byggnad och våning.
 
 ## Skapa ett hyresobjekt
 
 1. Gå till **Fastighetsportfölj** i huvudmenyn och öppna den fastighet som objektet ska tillhöra.
-2. Välj fliken **Hyresobjekt**.
-3. Klicka på **Lägg till hyresobjekt**.
-4. Fyll i uppgifterna:
+2. Klicka på **Lägg till hyresobjekt** i hyresobjektsregistret – knappen finns på fliken **Översikt** och i Enhetskartan.
+3. Fyll i uppgifterna:
    - **Fastighet** – väljs automatiskt (fälten döljs när du skapar objektet inifrån en fastighet)
    - **Byggnad** – välj vilken byggnad objektet ligger i (väljs automatiskt om fastigheten bara har en byggnad)
    - **Typ** – välj bland bostadstyper (Bostad, Bostadsrätt, Villa, Våning) eller lokaltyper (Lokal, Garage, Förråd, Kontor, Lager, Verkstad, Parkering, Byggnad, Annat). Klicka på **Visa fler** för att se alla lokaltyper.
@@ -25,42 +24,40 @@ Hyresobjekt hanteras inifrån fastighetens detaljsida, inte från en egen meny. 
    - **Hyra (kr/mån)** – månadshyra för objektet
    - **Belägenhetsadress** – välj en adress från fastigheten i rullgardinsmenyn, eller låt stå som *Ingen adress*
    - **Tillhörande utrymmen** – vindsutrymme nr och källarutrymme nr (visas för bostäder)
-5. Klicka på **Lägg till** (eller **Spara** om du redigerar ett befintligt objekt).
+4. Klicka på **Lägg till** (eller **Spara** om du redigerar ett befintligt objekt).
 
 ## Visa och filtrera objekt
 
-Under fliken **Hyresobjekt** på fastighetens detaljsida kan du:
+Du ser hyresobjekten på tre sätt i arbetsytan:
 
-- **Filtrera på status** – visa *Alla*, *Uthyrda*, *Uppsagda*, *Lediga* eller *Arkiverade* objekt (med antal per filter)
-- **Filtrera på byggnad** – visa objekt för en specifik byggnad via byggnadsfiltret
-- **Växla vy** – klicka på byggnadsikonen för **Byggnadsvy** eller listikonen för **Listvy**
-- **Byggnadsvy** – bostäder med lägenhetsnummer visas i en visuell golvplan; övriga objekt grupperas per typ med kort som visar ikon, beteckning, yta, hyra och hyresgäst
-- **Listvy** – objekt grupperas i avsnitten *Bostäder* och *Lokaler*
+- **Hyresobjektsregistret** – tabellen under flikarna **Översikt** och **Energi**, filtrerad till det område du valt i trädet. Filtrera på status – *Alla*, *Uthyrda*, *Uppsagda*, *Lediga* eller *Arkiverade* (med antal per filter).
+- **Enhetskartan** – en visuell karta över objekten, vald via vyväljaren eller som standardvy på fliken **Uthyrning**. Bostäder med lägenhetsnummer visas i en visuell golvplan; övriga objekt grupperas per typ med kort som visar ikon, beteckning, yta, hyra och hyresgäst. Kartan färgas efter flikens mått – till exempel kontraktsstatus på Uthyrning eller hyresnivå på Intäkter.
+- **Områdesträdet** – expandera en byggnad och en våning för att se objekten i hierarkin, eller sök direkt i trädets sökfält. Objekt utan byggnadskoppling samlas i gruppen **Ej kopplade till byggnad**.
 
 <Tip>
 Om du når gränsen för antal hyresobjekt i ditt abonnemang visas en banner med uppmaning att uppgradera. Läs mer under [Inställningar → Abonnemang](/installningar/abonnemang).
 </Tip>
 
-## Detaljsidan för ett hyresobjekt
+## Öppna ett hyresobjekt
 
-Klicka på ett hyresobjekt i listan för att öppna dess detaljsida. Sidhuvudet visar objektets status (Uthyrd, Uppsagd eller Ledig), adress, nuvarande hyresgäst, area, antal rum och månadshyra.
+Klicka på ett hyresobjekt i registret eller på kartan så öppnas först en snabbtitt i en sidopanel med objektets nyckeluppgifter, hyresgäst, kontrakt och öppna ärenden. Välj **Öppna hyresobjekt** – eller markera objektet direkt i områdesträdet – för att få dess fulla vy på fliken **Översikt**. Vyn visar objektets status (Uthyrd, Uppsagd eller Ledig), uppgifter som våning och förrådsnummer, nuvarande hyresgäst och kontrakt, samt en **Hyresjämförelse**-panel med SCB-statistik för kommunen. Vid en pågående avflyttning visas ett kort med status och framsteg.
 
-I sidhuvudet finns tre åtgärder:
+Med objektet markerat filtreras även de övriga flikarna till just det objektet:
 
-- **Historik** – öppnar aktivitetsloggen för hyresobjektet i en sidopanel
+- **Uthyrning** – objektets hyreskontrakt och hyresgäster
+- **Intäkter** – hyresjämförelse och objektets aviseringar
+- **Utgifter** – kostnader kopplade till objektet
+- **Energi** – elförbrukning för objektet (se [energi](/fastigheter/energi))
+- **Drift → Besiktningar** – objektets besiktningsrapporter (visas när modulen Besiktningar är aktiverad — se [besiktningar](/fastigheter/besiktningar))
+
+Via åtgärdsmenyn på objektets vy kan du:
+
 - **Redigera** – ändra objektets uppgifter
+- **Historik** – öppna aktivitetsloggen för hyresobjektet i en sidopanel
 - **Arkivera** – arkivera objektet utan att ta bort det (byter till **Avarkivera** på ett arkiverat objekt)
+- **Ta bort hyresobjekt** – endast för administratörer. Om objektet har kopplade poster som blockerar borttagning visas orsaken i dialogen, som kan erbjuda **Arkivera** som alternativ. Borttagna hyresobjekt hamnar i [papperskorgen](/installningar/papperskorg) där de kan återställas i 30 dagar.
 
-Detaljsidan har följande flikar:
-
-- **Översikt** – objektdetaljer som våning och förrådsnummer, samt en **Hyresjämförelse**-panel med SCB-statistik för kommunen
-- **Kontrakt** – alla hyreskontrakt för objektet med status och period. Om inga kontrakt finns kan du skapa ett direkt härifrån
-- **Elförbrukning** – mätare, avläsningar och förbrukningshistorik för objektet (se [Energi](/fastigheter/energi))
-- **Besiktningar** – objektets besiktningsrapporter (visas när modulen Besiktningar är aktiverad — se [Besiktningar](/fastigheter/besiktningar))
-
-Ett arkiverat hyresobjekt visas inte i de vanliga listorna men finns kvar med all historik. Arkiverade objekt hittar du via filtret *Arkiverade* under fliken **Hyresobjekt**, och på detaljsidan visas en banner som anger att objektet är arkiverat. Om du försöker ta bort ett objekt som har kopplade poster kan dialogen erbjuda **Arkivera** som alternativ.
-
-Längst ner på sidan kan administratörer ta bort hyresobjektet. Om objektet har kopplade poster som blockerar borttagning visas orsaken i dialogen. Borttagna hyresobjekt hamnar i [papperskorgen](/installningar/papperskorg) där de kan återställas i 30 dagar.
+Ett arkiverat hyresobjekt visas inte i de vanliga listorna men finns kvar med all historik. Arkiverade objekt hittar du via filtret *Arkiverade* i hyresobjektsregistret, och på objektets vy visas en banner som anger att det är arkiverat.
 
 ## Kopplingar
 
@@ -72,7 +69,7 @@ Varje hyresobjekt kan kopplas till:
 - **Mätare** – elmätare kopplade via Nordic Propeye för förbrukningsdebitering
 
 <Note>
-Du kan se alla kopplade avtal och hyresgäster direkt på fastighetens detaljsida under fliken *Hyresobjekt*.
+Du kan se alla kopplade avtal och hyresgäster direkt på fliken **Uthyrning** – markera ett objekt i trädet för att filtrera registren till just det.
 </Note>
 
 <Card title="Energi" icon="zap" href="/fastigheter/energi">

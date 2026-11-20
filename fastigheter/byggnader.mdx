@@ -5,15 +5,15 @@ description: Byggnadsdata från Lantmäteriet, attribut per byggnad och digital 
 
 # Byggnader
 
-När du har registrerat en fastighet kan du hämta byggnadsdata från Lantmäteriet. På fastighetens detaljsida finns fliken **Byggnader**, där du ser och hanterar fastighetens byggnader med detaljerade attribut.
+När du har registrerat en fastighet kan du hämta byggnadsdata från Lantmäteriet. Byggnaderna visas i områdesträdet till vänster på fastighetens detaljsida, där du kan expandera dem för att se våningar och hyresobjekt.
 
-## Fliken Byggnader
+## Välja en byggnad
 
-Fliken **Byggnader** visar byggnaderna som är registrerade på fastigheten. Om fastigheten inte har några byggnader ännu visas ett tomt tillstånd med knappen **Hämta från Lantmäteriet** – klicka för att hämta byggnadsdata första gången. Om hämtningen mot Lantmäteriet eller Boverket misslyckas visas en banner högst upp som anger vilken källa som fallerade, med en knapp för att försöka igen.
+Klicka på en byggnad i områdesträdet för att öppna dess egen vy på fliken **Översikt** – samtidigt filtreras de övriga flikarna till att bara visa byggnadens hyresobjekt, kontrakt, kostnader och förbrukning. Under byggnaden ligger dess våningar och hyresobjekt i samma träd, och objekt som inte är kopplade till någon byggnad samlas i gruppen **Ej kopplade till byggnad**.
 
-När det finns fler än en byggnad visas en **byggnadsväxlare** som en egen rad högst upp på fliken – klicka på en byggnad i växlaren för att visa dess uppgifter direkt på fliken, utan att lämna sidan. Den valda byggnaden speglas i adressfältet, så att du kan dela en länk till just den byggnaden.
+Om fastigheten inte har några byggnader ännu visas ett tomt tillstånd på fliken **Översikt** med knappen **Hämta från Lantmäteriet** – klicka för att hämta byggnadsdata första gången. Om hämtningen mot Lantmäteriet eller Boverket misslyckas visas en banner högst upp som anger vilken källa som fallerade, med en knapp för att försöka igen.
 
-Varje byggnad har också en egen detaljsida som nås via dess adress – innehållet är detsamma som i den inbäddade vyn.
+Den valda byggnaden speglas i adressfältet, så att du kan dela en länk till just den byggnaden.
 
 ## Vad du ser för en byggnad
 
@@ -22,7 +22,6 @@ Byggnadens huvud visas med ikon, namn och husnummer. I underrubriken sammanfatta
 - **Huvudändamål** – byggnadens huvudsakliga användning
 - **Boarea** – total boarea i m²
 - **Byggår** – när byggnaden uppfördes
-- **Hyresobjekt** – antal hyresobjekt i byggnaden
 
 Under huvudet visar en faktabanner byggnadens registerattribut från Lantmäteriet, till exempel:
 
@@ -31,34 +30,35 @@ Under huvudet visar en faktabanner byggnadens registerattribut från Lantmäteri
 - **Hiss**
 - **Arrende (ofri grund)** och **servitut**
 - **Objektidentitet**, **objektstatus**, **huvudbyggnad**, **skyddsrum** och **undantagen från adressättning** när uppgifterna finns
-- **Hyresobjekt** – antal enheter; klicka på talet för att hoppa till fliken **Hyresobjekt** filtrerad på byggnaden
 
 Alla registrerade **byggnadsändamål** visas som etiketter – huvudändamålet är markerat, övriga ändamål listas med typ och boarea där uppgiften finns.
 
+Under byggnadens vy ligger dess hyresobjektsregister – samma register som på fastighetsnivå, men filtrerat till just den byggnaden.
+
 ### Energideklarationer
 
-Energideklarationer visas inte längre på byggnadens sida – de samlas under fliken **Energi** med undervyn **Energideklaration**, där energiklass (A–G på EU-skalan), primärenergital och deklarationsdatum visas per byggnad. Energideklarationer hämtas från Boverket via efterlevnadskortet på fliken **Översikt** – läs mer på sidan om [efterlevnad](/fastigheter/efterlevnad).
+Energideklarationer samlas under fliken **Energi** med undervyn **Energideklaration**, där energiklass (A–G på EU-skalan), primärenergital och deklarationsdatum visas per byggnad. Markera en byggnad i områdesträdet för att se just dess deklarationer. Energideklarationer hämtas från Boverket via efterlevnadskortet på fliken **Översikt** – läs mer på sidan om [efterlevnad](/fastigheter/efterlevnad).
 
-Om det finns energideklarationer som inte är kopplade till en byggnad visas en banner på fliken **Byggnader** som uppmanar dig att tilldela dem. Administratörer klickar på **Tilldela** för att koppla varje deklaration till rätt byggnad.
+Om det finns energideklarationer som inte är kopplade till en byggnad visas en banner på fliken **Översikt** som uppmanar dig att tilldela dem. Administratörer klickar på **Tilldela** för att koppla varje deklaration till rätt byggnad.
 
 ## Digital tvilling
 
-Byggnadens sida kan också visa en **digital tvilling** av byggnaden. Tvillingen byggs automatiskt när dokument som laddats upp på fastigheten – ritningar, fastighetsfoton, besiktningsprotokoll och energideklarationer – analyseras av Tenovo. Analysen körs i bakgrunden och modellen uppdateras automatiskt när nya underlag har bearbetats.
+Byggnaden kan också ha en **digital tvilling** – en modell som byggs automatiskt när dokument som laddats upp på fastigheten (ritningar, fastighetsfoton, besiktningsprotokoll och energideklarationer) analyseras av Tenovo. Analysen körs i bakgrunden och modellen uppdateras automatiskt när nya underlag har bearbetats.
 
 <Note>
-Den digitala tvillingen är en modul som måste vara aktiverad för din organisation. Läs mer på sidan om [moduler](/installningar/moduler) om du inte ser arbetsytan på byggnadens sida.
+Den digitala tvillingen är en modul som måste vara aktiverad för din organisation. Läs mer på sidan om [moduler](/installningar/moduler) om du inte ser vyerna i appen.
 </Note>
 
-När modellen finns visar arbetsytan två visningslägen:
+När modellen finns väljer du den med vyväljaren ovanför innehållet på fastighetens flikar – tvillingen färgas efter flikens mått:
 
-- **2D-plan** – vektoriserad planlösning med rum, ytor och hyresobjektskopplingar
+- **2D-plan** – vektoriserad planlösning med rum, ytor och hyresobjektskopplingar (på nivån *Hela fastigheten* heter vyn **Situationsplan** och visar samtliga byggnader placerade på tomten)
 - **3D-modell** – roterbar tredimensionell modell av byggnaden, våningsplan för våningsplan
 
-Du växlar våningsplan med nivåväljaren i arbetsytan. Klicka på ett rum eller en yta för att se detaljer i inspektorpanelen till höger, där de uppgifter Tenovo har extraherat samlas med sin källa. Fotomarkörer (**F**) på planen öppnar vyerna från uppladdade foton.
+Du växlar våningsplan med nivåväljaren eller direkt i områdesträdet, där tvillingens våningar ligger under byggnaden. Klicka på ett rum eller en yta för att se detaljer i inspektorpanelen till höger, där de uppgifter Tenovo har extraherat samlas med sin källa. Fotomarkörer (**F**) på planen öppnar vyerna från uppladdade foton.
 
-## Åtgärder i sidhuvudet
+## Åtgärder för byggnaden
 
-På byggnadens sida finns två åtgärder i huvudet:
+På byggnadens vy finns två åtgärder i huvudet:
 
 - **Historik** – öppnar aktivitetsloggen för byggnaden i en sidopanel
 - **Arkivera** – arkiverar byggnaden om den inte längre är aktuell. En arkiverad byggnad visas inte i den dagliga vyn, men all data finns kvar. På en arkiverad byggnad visas en banner om att den är arkiverad, och knappen byts till **Avarkivera** så att du kan återställa den.

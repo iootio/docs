@@ -26,11 +26,17 @@ Tenovo följer en enkel hierarki:
 - **Aktiva och arkiverade** – växla mellan vyerna **Aktiva fastigheter** och **Arkiverade** högst upp på sidan för att se arkiverade fastigheter
 - **Exportera** – ladda ner fastighetslistan som CSV
 - **Portföljstatistik** – kort på fastighetssidan som visar antal fastigheter, antal hyresobjekt, **Bostadsarea**, **Lokalyta** och **Total hyra/mån** för hela beståndet. Varje fastighetskort visar dessutom en kompletthetsring för **Fastighetsprofilen** samt nyckeltal för antal byggnader, hyresobjekt och total hyra/mån
-- **Detaljsida med flikar** – på en fastighets detaljsida ser du upp till nio flikar: **Översikt**, **Byggnader**, **Hyresobjekt**, **Hyreskontrakt**, **Ekonomi**, **Energi**, **Drift**, **Leverantörer** och **Dokument**. Fliken **Byggnader** visar den valda byggnadens uppgifter direkt, med en byggnadsväxlare högst upp när fastigheten har flera byggnader. Flikarna **Hyresobjekt**, **Energi**, **Drift** och **Leverantörer** har undervyer (segmenterad navigation):
-  - **Hyresobjekt** – *Uthyrning*, *Kontrakt*, *Hyra*, *Energi* och *Drift* (visas när felanmälningsmodulen är aktiverad) – olika vyer över samma objektkarta
-  - **Energi** – *Förbrukning*, *Produktion*, *Netto*, *Energideklaration* och *Värmesystem*
-  - **Drift** – *Besiktningar* (modulstyrt), *Felanmälningar* (modulstyrt) och *Bygglov*
-  - **Leverantörer** – *Leverantörer* och *Serviceavtal*
+- **Detaljsida som arbetsyta** – en fastighets detaljsida består av ett områdesträd till vänster och flikar ovanför innehållet. I trädet väljer du vilket område som styr vad flikarna visar: **Hela fastigheten**, en enskild **byggnad**, en **våning** eller ett **hyresobjekt**. Sökfältet högst upp i trädet hittar objekt, hyresgäster och byggnader, och det valda området speglas i adressfältet så att du kan dela en länk till det. Flikarna är:
+  - **Översikt** – det valda områdets egen vy: fastighetsöversikten, byggnadens faktavy eller hyresobjektets detaljer, följt av områdets hyresobjektsregister
+  - **Uthyrning** – öppnar på **Enhetskartan**, en visuell karta över hyresobjekten färgad efter kontraktsstatus; i vyn *Översikt* ligger i stället registren **Hyreskontrakt** och **Hyresgäster**
+  - **Intäkter** – hyresjämförelse mot SCB och fastighetens hyresaviseringar (se [kostnader](/fastigheter/kostnader))
+  - **Utgifter** – kostnader kopplade till fastigheten (se [kostnader](/fastigheter/kostnader))
+  - **Energi** – undervyerna *Förbrukning*, *Produktion*, *Netto*, *Värmesystem* och *Energideklaration*, följt av hyresobjektsregistret (se [energi](/fastigheter/energi))
+  - **Drift** – undervyerna *Besiktningar*, *Felanmälningar* och *Bygglov*; fliken visas när modulen Besiktningar eller Felanmälningar är aktiverad (se [besiktningar](/fastigheter/besiktningar) och [bygglov](/fastigheter/bygglov))
+  - **Leverantörer** – undervyerna *Leverantörer* och *Serviceavtal* (se [serviceavtal](/fastigheter/serviceavtal))
+  - **Dokument** – fastighetens dokument (se [dokument](/fastigheter/dokument))
+
+  Med vyväljaren ovanför innehållet växlar du på varje flik mellan flikens egen vy, **Enhetskartan** och – när byggnaden har en digital tvilling – **2D-plan**/**Situationsplan** och **3D-modell**. Enhetskartan och tvillingen färgas efter flikens mått: kontraktsstatus på Uthyrning, hyresnivå på Intäkter, kostnader på Utgifter och förbrukning på Energi.
 
   Efterlevnad – krav och försäkringar – hanteras på översiktsflikens **Efterlevnad**-kort, inte som en egen flik. Läs mer på sidan om [efterlevnad](/fastigheter/efterlevnad).
 
@@ -39,14 +45,15 @@ Tenovo följer en enkel hierarki:
 
 ## Översiktsfliken
 
-Fliken **Översikt** på en fastighets detaljsida samlar läget för just den fastigheten:
+Fliken **Översikt** visar det valda områdets egen vy – med **Hela fastigheten** markerat i trädet samlar den läget för just den fastigheten (väljer du en byggnad eller ett hyresobjekt visas i stället deras egen vy):
 
 - **Nyckeltal** – beläggning, antal hyresobjekt och sammanlagd månadshyra för fastigheten
 - **Fastighetshälsa** – en panel som lyfter fram risker och möjligheter, till exempel kontrakt som löper ut, långa vakanser, gamla felanmälningar, energiavvikelser, saknade energideklarationer, serviceavtal som förfaller eller hyror under portföljmedian. Signalerna grupperas under *Behöver uppmärksammas* och *Möjligheter* med länkar till rätt sida.
 - **Senaste hyreskontrakt** – de fem senast skapade kontrakten med status
 - **Lediga och uppsagda hyresobjekt** – objekt som är lediga nu eller blir lediga vid avtalets slutdatum
 - **Fastighetsinfo och karta** – adress, beteckning och läge
-- **Byggnader och adresser** – sammanfattningar med genvägar till respektive flik
+- **Byggnader och adresser** – sammanfattningar med genvägar till respektive byggnad i områdesträdet
+- **Hyresobjekt** – fastighetens hyresobjektsregister underst på fliken, med statusfilter (*Alla*, *Uthyrda*, *Uppsagda*, *Lediga*, *Arkiverade*) och knappen **Lägg till hyresobjekt**
 - **Fastighetsprofil** – en kompletthetsmätare som visar hur stor andel av fastighetens uppgifter som är ifyllda. Märket i sidhuvudet visar procentsatsen och öppnar checklistan **Fastighetsprofil** i en sidopanel – oavsett vilken flik du står på. Där har varje saknad uppgift en åtgärdsknapp som tar dig till rätt steg, eller en släppzon där du kan släppa dokument som Tenovo analyserar för att fylla i uppgifterna.
 - **Efterlevnad** – en kortsammanfattning i rutnät med en bricka per kravtyp: **Energideklaration**, **OVK**, **Hissbesiktning**, **Skyddsrumskontroll**, **Radonmätning**, **Sotning**, **Brandskydd** och **Försäkring**. Varje bricka visar en statusmarkering – *Giltig*, *Löper snart ut*, *Utgången*, *Saknas*, *Ej tillämpligt*, *Okänt* eller *Ej kontrollerad*. Klicka på en bricka för att fälla ut den och se respektive registers poster – där kan du lägga till, redigera och ta bort kravposter och försäkringar direkt, eller ladda upp dokument. För hissbesiktning kan administratörer ange om fastigheten har hiss – **Markera som ingen hiss** eller **Markera som hiss finns** – när Lantmäteriets uppgift saknas eller inte stämmer, så att kravet inte visas som saknat i onödan. Motsvarande finns för sotning, där administratörer deklarerar om fastigheten har eldstad – **Markera som ingen eldstad** eller **Markera som eldstad finns** – eftersom uppgiften inte hämtas automatiskt.
 - **Tidslinje** – en tidslinje över fastighetens händelser, till höger om innehållet, uppdelad i två avsnitt: **Kommande** visar öppna händelser som en deadline-lista med närmaste först – även passerade men ej avslutade datum – och **Historik** visar händelseflödet med senaste först. Med knappen **Ny händelse** lägger du till egna händelser direkt på fastigheten, och dokument kopplade till händelser kan öppnas direkt från tidslinjen. Du kan filtrera tidslinjen på kategori (Underhåll, Ekonomi, Efterlevnad, Hyresgäst, Serviceavtal eller Övrigt).
